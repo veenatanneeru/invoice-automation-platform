@@ -1,0 +1,8242 @@
+[
+  {
+    "file": "invoice_0001.pdf",
+    "layout": "modern",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Rodriguez, Figueroa and Sanchez",
+      "currency": "USD",
+      "invoice_number": "INV-22676",
+      "invoice_date": "2026-02-17",
+      "due_date": "2026-04-03",
+      "po_number": "PO-476417",
+      "subtotal": 10460.59,
+      "tax": 0.0,
+      "total": 10460.59
+    },
+    "line_items": [
+      {
+        "description": "Consulting hours",
+        "quantity": 14,
+        "unit_price": 316.12,
+        "amount": 4425.68
+      },
+      {
+        "description": "Data storage",
+        "quantity": 7,
+        "unit_price": 862.13,
+        "amount": 6034.91
+      }
+    ]
+  },
+  {
+    "file": "invoice_0002.pdf",
+    "layout": "compact",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Baldwin Ltd",
+      "currency": "USD",
+      "invoice_number": "INV-46434",
+      "invoice_date": "2026-02-21",
+      "due_date": "2026-04-07",
+      "po_number": "PO-575435",
+      "subtotal": 38005.48,
+      "tax": 1900.27,
+      "total": 39905.75
+    },
+    "line_items": [
+      {
+        "description": "API usage fees",
+        "quantity": 15,
+        "unit_price": 489.56,
+        "amount": 7343.4
+      },
+      {
+        "description": "Network equipment",
+        "quantity": 13,
+        "unit_price": 84.74,
+        "amount": 1101.62
+      },
+      {
+        "description": "Data storage",
+        "quantity": 20,
+        "unit_price": 798.62,
+        "amount": 15972.4
+      },
+      {
+        "description": "Software license (annual)",
+        "quantity": 19,
+        "unit_price": 185.18,
+        "amount": 3518.42
+      },
+      {
+        "description": "Marketing materials",
+        "quantity": 2,
+        "unit_price": 600.22,
+        "amount": 1200.44
+      },
+      {
+        "description": "Hardware repair",
+        "quantity": 10,
+        "unit_price": 886.92,
+        "amount": 8869.2
+      }
+    ]
+  },
+  {
+    "file": "invoice_0003.pdf",
+    "layout": "compact",
+    "expected_flags": [
+      "missing_po"
+    ],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Porter, Wilkerson and Day",
+      "currency": "USD",
+      "invoice_number": "INV-93886",
+      "invoice_date": "2026-07-14",
+      "due_date": "2026-08-28",
+      "po_number": null,
+      "subtotal": 15952.2,
+      "tax": 1595.22,
+      "total": 17547.42
+    },
+    "line_items": [
+      {
+        "description": "Network equipment",
+        "quantity": 12,
+        "unit_price": 200.41,
+        "amount": 2404.92
+      },
+      {
+        "description": "Consulting hours",
+        "quantity": 3,
+        "unit_price": 554.08,
+        "amount": 1662.24
+      },
+      {
+        "description": "Consulting hours",
+        "quantity": 18,
+        "unit_price": 660.28,
+        "amount": 11885.04
+      }
+    ]
+  },
+  {
+    "file": "invoice_0004.pdf",
+    "layout": "compact",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Pena, Marshall and Ramos",
+      "currency": "EUR",
+      "invoice_number": "INV-18675",
+      "invoice_date": "2026-07-25",
+      "due_date": "2026-09-08",
+      "po_number": "PO-321231",
+      "subtotal": 5938.4,
+      "tax": 489.92,
+      "total": 6428.32
+    },
+    "line_items": [
+      {
+        "description": "Marketing materials",
+        "quantity": 8,
+        "unit_price": 742.3,
+        "amount": 5938.4
+      }
+    ]
+  },
+  {
+    "file": "invoice_0005.pdf",
+    "layout": "compact",
+    "expected_flags": [
+      "duplicate"
+    ],
+    "duplicate_of": "invoice_0003.pdf",
+    "fields": {
+      "vendor_name": "Porter, Wilkerson and Day",
+      "currency": "USD",
+      "invoice_number": "INV-93886",
+      "invoice_date": "2026-07-14",
+      "due_date": "2026-08-28",
+      "po_number": null,
+      "subtotal": 15952.2,
+      "tax": 1595.22,
+      "total": 17547.42
+    },
+    "line_items": [
+      {
+        "description": "Network equipment",
+        "quantity": 12,
+        "unit_price": 200.41,
+        "amount": 2404.92
+      },
+      {
+        "description": "Consulting hours",
+        "quantity": 3,
+        "unit_price": 554.08,
+        "amount": 1662.24
+      },
+      {
+        "description": "Consulting hours",
+        "quantity": 18,
+        "unit_price": 660.28,
+        "amount": 11885.04
+      }
+    ]
+  },
+  {
+    "file": "invoice_0006.pdf",
+    "layout": "classic",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Bryant-Hickman",
+      "currency": "USD",
+      "invoice_number": "INV-21915",
+      "invoice_date": "2026-09-18",
+      "due_date": "2026-11-02",
+      "po_number": "PO-892495",
+      "subtotal": 20602.08,
+      "tax": 1030.1,
+      "total": 21632.18
+    },
+    "line_items": [
+      {
+        "description": "Consulting hours",
+        "quantity": 15,
+        "unit_price": 141.44,
+        "amount": 2121.6
+      },
+      {
+        "description": "Training workshop",
+        "quantity": 8,
+        "unit_price": 674.32,
+        "amount": 5394.56
+      },
+      {
+        "description": "Security audit",
+        "quantity": 9,
+        "unit_price": 676.11,
+        "amount": 6084.99
+      },
+      {
+        "description": "Office supplies",
+        "quantity": 19,
+        "unit_price": 368.47,
+        "amount": 7000.93
+      }
+    ]
+  },
+  {
+    "file": "invoice_0007.pdf",
+    "layout": "compact",
+    "expected_flags": [
+      "duplicate"
+    ],
+    "duplicate_of": "invoice_0002.pdf",
+    "fields": {
+      "vendor_name": "Baldwin Ltd",
+      "currency": "USD",
+      "invoice_number": "INV-46434",
+      "invoice_date": "2026-02-21",
+      "due_date": "2026-04-07",
+      "po_number": "PO-575435",
+      "subtotal": 38005.48,
+      "tax": 1900.27,
+      "total": 39905.75
+    },
+    "line_items": [
+      {
+        "description": "API usage fees",
+        "quantity": 15,
+        "unit_price": 489.56,
+        "amount": 7343.4
+      },
+      {
+        "description": "Network equipment",
+        "quantity": 13,
+        "unit_price": 84.74,
+        "amount": 1101.62
+      },
+      {
+        "description": "Data storage",
+        "quantity": 20,
+        "unit_price": 798.62,
+        "amount": 15972.4
+      },
+      {
+        "description": "Software license (annual)",
+        "quantity": 19,
+        "unit_price": 185.18,
+        "amount": 3518.42
+      },
+      {
+        "description": "Marketing materials",
+        "quantity": 2,
+        "unit_price": 600.22,
+        "amount": 1200.44
+      },
+      {
+        "description": "Hardware repair",
+        "quantity": 10,
+        "unit_price": 886.92,
+        "amount": 8869.2
+      }
+    ]
+  },
+  {
+    "file": "invoice_0008.pdf",
+    "layout": "classic",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Carpenter LLC",
+      "currency": "GBP",
+      "invoice_number": "INV-48469",
+      "invoice_date": "2026-06-24",
+      "due_date": "2026-07-24",
+      "po_number": "PO-555884",
+      "subtotal": 27842.45,
+      "tax": 2297.0,
+      "total": 30139.45
+    },
+    "line_items": [
+      {
+        "description": "Security audit",
+        "quantity": 20,
+        "unit_price": 71.22,
+        "amount": 1424.4
+      },
+      {
+        "description": "Training workshop",
+        "quantity": 20,
+        "unit_price": 896.57,
+        "amount": 17931.4
+      },
+      {
+        "description": "Hardware repair",
+        "quantity": 9,
+        "unit_price": 874.4,
+        "amount": 7869.6
+      },
+      {
+        "description": "Software license (annual)",
+        "quantity": 1,
+        "unit_price": 617.05,
+        "amount": 617.05
+      }
+    ]
+  },
+  {
+    "file": "invoice_0009.pdf",
+    "layout": "modern",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Mccullough, Hunter and Estrada",
+      "currency": "USD",
+      "invoice_number": "INV-24662",
+      "invoice_date": "2026-09-08",
+      "due_date": "2026-10-08",
+      "po_number": "PO-480612",
+      "subtotal": 39109.37,
+      "tax": 3226.52,
+      "total": 42335.89
+    },
+    "line_items": [
+      {
+        "description": "Marketing materials",
+        "quantity": 9,
+        "unit_price": 875.12,
+        "amount": 7876.08
+      },
+      {
+        "description": "Software license (annual)",
+        "quantity": 6,
+        "unit_price": 464.3,
+        "amount": 2785.8
+      },
+      {
+        "description": "Training workshop",
+        "quantity": 10,
+        "unit_price": 759.88,
+        "amount": 7598.8
+      },
+      {
+        "description": "Data storage",
+        "quantity": 20,
+        "unit_price": 191.04,
+        "amount": 3820.8
+      },
+      {
+        "description": "Marketing materials",
+        "quantity": 6,
+        "unit_price": 492.35,
+        "amount": 2954.1
+      },
+      {
+        "description": "Courier and freight",
+        "quantity": 17,
+        "unit_price": 827.87,
+        "amount": 14073.79
+      }
+    ]
+  },
+  {
+    "file": "invoice_0010.pdf",
+    "layout": "modern",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Peterson, Carter and Moore",
+      "currency": "GBP",
+      "invoice_number": "INV-98039",
+      "invoice_date": "2026-06-09",
+      "due_date": "2026-07-24",
+      "po_number": "PO-781446",
+      "subtotal": 14247.23,
+      "tax": 712.36,
+      "total": 14959.59
+    },
+    "line_items": [
+      {
+        "description": "Maintenance contract",
+        "quantity": 3,
+        "unit_price": 90.8,
+        "amount": 272.4
+      },
+      {
+        "description": "Training workshop",
+        "quantity": 3,
+        "unit_price": 880.52,
+        "amount": 2641.56
+      },
+      {
+        "description": "Maintenance contract",
+        "quantity": 5,
+        "unit_price": 128.63,
+        "amount": 643.15
+      },
+      {
+        "description": "Training workshop",
+        "quantity": 18,
+        "unit_price": 161.14,
+        "amount": 2900.52
+      },
+      {
+        "description": "Office supplies",
+        "quantity": 20,
+        "unit_price": 389.48,
+        "amount": 7789.6
+      }
+    ]
+  },
+  {
+    "file": "invoice_0011.pdf",
+    "layout": "compact",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Medina PLC",
+      "currency": "GBP",
+      "invoice_number": "INV-53309",
+      "invoice_date": "2026-02-04",
+      "due_date": "2026-03-06",
+      "po_number": "PO-174299",
+      "subtotal": 7517.9,
+      "tax": 375.89,
+      "total": 7893.79
+    },
+    "line_items": [
+      {
+        "description": "Software license (annual)",
+        "quantity": 4,
+        "unit_price": 234.4,
+        "amount": 937.6
+      },
+      {
+        "description": "Training workshop",
+        "quantity": 11,
+        "unit_price": 33.62,
+        "amount": 369.82
+      },
+      {
+        "description": "Cloud hosting services",
+        "quantity": 8,
+        "unit_price": 535.77,
+        "amount": 4286.16
+      },
+      {
+        "description": "Cloud hosting services",
+        "quantity": 3,
+        "unit_price": 641.44,
+        "amount": 1924.32
+      }
+    ]
+  },
+  {
+    "file": "invoice_0012.pdf",
+    "layout": "classic",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Carpenter LLC",
+      "currency": "GBP",
+      "invoice_number": "INV-71213",
+      "invoice_date": "2026-08-05",
+      "due_date": "2026-09-19",
+      "po_number": "PO-864491",
+      "subtotal": 25496.79,
+      "tax": 2103.49,
+      "total": 27600.28
+    },
+    "line_items": [
+      {
+        "description": "IT support retainer",
+        "quantity": 7,
+        "unit_price": 492.22,
+        "amount": 3445.54
+      },
+      {
+        "description": "Office supplies",
+        "quantity": 19,
+        "unit_price": 524.95,
+        "amount": 9974.05
+      },
+      {
+        "description": "Office supplies",
+        "quantity": 16,
+        "unit_price": 729.63,
+        "amount": 11674.08
+      },
+      {
+        "description": "Security audit",
+        "quantity": 4,
+        "unit_price": 100.78,
+        "amount": 403.12
+      }
+    ]
+  },
+  {
+    "file": "invoice_0013.pdf",
+    "layout": "modern",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Walker-Velasquez",
+      "currency": "USD",
+      "invoice_number": "INV-34931",
+      "invoice_date": "2026-05-08",
+      "due_date": "2026-06-07",
+      "po_number": "PO-662336",
+      "subtotal": 742.64,
+      "tax": 0.0,
+      "total": 742.64
+    },
+    "line_items": [
+      {
+        "description": "Data storage",
+        "quantity": 2,
+        "unit_price": 371.32,
+        "amount": 742.64
+      }
+    ]
+  },
+  {
+    "file": "invoice_0014.pdf",
+    "layout": "modern",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Porter, Wilkerson and Day",
+      "currency": "USD",
+      "invoice_number": "INV-31798",
+      "invoice_date": "2026-02-17",
+      "due_date": "2026-03-19",
+      "po_number": "PO-526156",
+      "subtotal": 6592.41,
+      "tax": 0.0,
+      "total": 6592.41
+    },
+    "line_items": [
+      {
+        "description": "API usage fees",
+        "quantity": 15,
+        "unit_price": 236.08,
+        "amount": 3541.2
+      },
+      {
+        "description": "Hardware repair",
+        "quantity": 3,
+        "unit_price": 407.17,
+        "amount": 1221.51
+      },
+      {
+        "description": "Printing services",
+        "quantity": 18,
+        "unit_price": 101.65,
+        "amount": 1829.7
+      }
+    ]
+  },
+  {
+    "file": "invoice_0015.pdf",
+    "layout": "compact",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Morton-Chase",
+      "currency": "USD",
+      "invoice_number": "INV-65444",
+      "invoice_date": "2026-08-21",
+      "due_date": "2026-10-05",
+      "po_number": "PO-830429",
+      "subtotal": 2102.34,
+      "tax": 173.44,
+      "total": 2275.78
+    },
+    "line_items": [
+      {
+        "description": "Security audit",
+        "quantity": 6,
+        "unit_price": 350.39,
+        "amount": 2102.34
+      }
+    ]
+  },
+  {
+    "file": "invoice_0016.pdf",
+    "layout": "classic",
+    "expected_flags": [
+      "exceeds_po"
+    ],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Moore, Campbell and Clark",
+      "currency": "GBP",
+      "invoice_number": "INV-87992",
+      "invoice_date": "2026-04-06",
+      "due_date": "2026-05-06",
+      "po_number": "PO-171262",
+      "subtotal": 24377.29,
+      "tax": 0.0,
+      "total": 24377.29
+    },
+    "line_items": [
+      {
+        "description": "Network equipment",
+        "quantity": 16,
+        "unit_price": 152.0,
+        "amount": 2432.0
+      },
+      {
+        "description": "Courier and freight",
+        "quantity": 7,
+        "unit_price": 872.31,
+        "amount": 6106.17
+      },
+      {
+        "description": "Data storage",
+        "quantity": 18,
+        "unit_price": 68.95,
+        "amount": 1241.1
+      },
+      {
+        "description": "Maintenance contract",
+        "quantity": 2,
+        "unit_price": 59.38,
+        "amount": 118.76
+      },
+      {
+        "description": "Training workshop",
+        "quantity": 17,
+        "unit_price": 828.66,
+        "amount": 14087.22
+      },
+      {
+        "description": "Training workshop",
+        "quantity": 6,
+        "unit_price": 65.34,
+        "amount": 392.04
+      }
+    ]
+  },
+  {
+    "file": "invoice_0017.pdf",
+    "layout": "modern",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Arnold-Patterson",
+      "currency": "USD",
+      "invoice_number": "INV-97782",
+      "invoice_date": "2026-05-14",
+      "due_date": "2026-06-13",
+      "po_number": "PO-850981",
+      "subtotal": 11439.88,
+      "tax": 943.79,
+      "total": 12383.67
+    },
+    "line_items": [
+      {
+        "description": "Courier and freight",
+        "quantity": 19,
+        "unit_price": 541.15,
+        "amount": 10281.85
+      },
+      {
+        "description": "Courier and freight",
+        "quantity": 3,
+        "unit_price": 386.01,
+        "amount": 1158.03
+      }
+    ]
+  },
+  {
+    "file": "invoice_0018.pdf",
+    "layout": "modern",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Morton-Chase",
+      "currency": "USD",
+      "invoice_number": "INV-37938",
+      "invoice_date": "2026-02-07",
+      "due_date": "2026-04-08",
+      "po_number": "PO-630458",
+      "subtotal": 4266.12,
+      "tax": 0.0,
+      "total": 4266.12
+    },
+    "line_items": [
+      {
+        "description": "API usage fees",
+        "quantity": 10,
+        "unit_price": 419.64,
+        "amount": 4196.4
+      },
+      {
+        "description": "Courier and freight",
+        "quantity": 3,
+        "unit_price": 23.24,
+        "amount": 69.72
+      }
+    ]
+  },
+  {
+    "file": "invoice_0019.pdf",
+    "layout": "compact",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Henderson-Owens",
+      "currency": "USD",
+      "invoice_number": "INV-49651",
+      "invoice_date": "2026-10-06",
+      "due_date": "2026-12-05",
+      "po_number": "PO-741390",
+      "subtotal": 2736.24,
+      "tax": 273.62,
+      "total": 3009.86
+    },
+    "line_items": [
+      {
+        "description": "Consulting hours",
+        "quantity": 8,
+        "unit_price": 342.03,
+        "amount": 2736.24
+      }
+    ]
+  },
+  {
+    "file": "invoice_0020.pdf",
+    "layout": "classic",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Carpenter LLC",
+      "currency": "GBP",
+      "invoice_number": "INV-42914",
+      "invoice_date": "2026-09-16",
+      "due_date": "2026-10-31",
+      "po_number": "PO-987204",
+      "subtotal": 16855.54,
+      "tax": 1390.58,
+      "total": 18246.12
+    },
+    "line_items": [
+      {
+        "description": "Software license (annual)",
+        "quantity": 10,
+        "unit_price": 839.6,
+        "amount": 8396.0
+      },
+      {
+        "description": "API usage fees",
+        "quantity": 5,
+        "unit_price": 249.05,
+        "amount": 1245.25
+      },
+      {
+        "description": "Consulting hours",
+        "quantity": 4,
+        "unit_price": 672.04,
+        "amount": 2688.16
+      },
+      {
+        "description": "Office supplies",
+        "quantity": 9,
+        "unit_price": 264.35,
+        "amount": 2379.15
+      },
+      {
+        "description": "Printing services",
+        "quantity": 11,
+        "unit_price": 195.18,
+        "amount": 2146.98
+      }
+    ]
+  },
+  {
+    "file": "invoice_0021.pdf",
+    "layout": "classic",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Mitchell-Horton",
+      "currency": "USD",
+      "invoice_number": "INV-19862",
+      "invoice_date": "2026-01-05",
+      "due_date": "2026-02-04",
+      "po_number": "PO-824586",
+      "subtotal": 6956.47,
+      "tax": 695.65,
+      "total": 7652.12
+    },
+    "line_items": [
+      {
+        "description": "Marketing materials",
+        "quantity": 2,
+        "unit_price": 18.14,
+        "amount": 36.28
+      },
+      {
+        "description": "Network equipment",
+        "quantity": 5,
+        "unit_price": 578.85,
+        "amount": 2894.25
+      },
+      {
+        "description": "Training workshop",
+        "quantity": 6,
+        "unit_price": 670.99,
+        "amount": 4025.94
+      }
+    ]
+  },
+  {
+    "file": "invoice_0022.pdf",
+    "layout": "classic",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Henderson-Owens",
+      "currency": "USD",
+      "invoice_number": "INV-33206",
+      "invoice_date": "2026-05-02",
+      "due_date": "2026-06-01",
+      "po_number": "PO-532322",
+      "subtotal": 24022.0,
+      "tax": 1201.1,
+      "total": 25223.1
+    },
+    "line_items": [
+      {
+        "description": "Consulting hours",
+        "quantity": 18,
+        "unit_price": 146.06,
+        "amount": 2629.08
+      },
+      {
+        "description": "API usage fees",
+        "quantity": 2,
+        "unit_price": 287.81,
+        "amount": 575.62
+      },
+      {
+        "description": "Office supplies",
+        "quantity": 2,
+        "unit_price": 810.55,
+        "amount": 1621.1
+      },
+      {
+        "description": "Data storage",
+        "quantity": 8,
+        "unit_price": 605.24,
+        "amount": 4841.92
+      },
+      {
+        "description": "Security audit",
+        "quantity": 18,
+        "unit_price": 797.46,
+        "amount": 14354.28
+      }
+    ]
+  },
+  {
+    "file": "invoice_0023.pdf",
+    "layout": "modern",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Jones-Young",
+      "currency": "EUR",
+      "invoice_number": "INV-96511",
+      "invoice_date": "2026-04-25",
+      "due_date": "2026-05-25",
+      "po_number": "PO-302511",
+      "subtotal": 11679.51,
+      "tax": 583.98,
+      "total": 12263.49
+    },
+    "line_items": [
+      {
+        "description": "Marketing materials",
+        "quantity": 8,
+        "unit_price": 251.12,
+        "amount": 2008.96
+      },
+      {
+        "description": "Cloud hosting services",
+        "quantity": 4,
+        "unit_price": 353.55,
+        "amount": 1414.2
+      },
+      {
+        "description": "Hardware repair",
+        "quantity": 16,
+        "unit_price": 211.85,
+        "amount": 3389.6
+      },
+      {
+        "description": "Hardware repair",
+        "quantity": 15,
+        "unit_price": 324.45,
+        "amount": 4866.75
+      }
+    ]
+  },
+  {
+    "file": "invoice_0024.pdf",
+    "layout": "modern",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Howard LLC",
+      "currency": "USD",
+      "invoice_number": "INV-24208",
+      "invoice_date": "2026-05-16",
+      "due_date": "2026-06-15",
+      "po_number": "PO-725550",
+      "subtotal": 15702.5,
+      "tax": 785.12,
+      "total": 16487.62
+    },
+    "line_items": [
+      {
+        "description": "Security audit",
+        "quantity": 12,
+        "unit_price": 582.71,
+        "amount": 6992.52
+      },
+      {
+        "description": "Cloud hosting services",
+        "quantity": 18,
+        "unit_price": 308.07,
+        "amount": 5545.26
+      },
+      {
+        "description": "Network equipment",
+        "quantity": 4,
+        "unit_price": 791.18,
+        "amount": 3164.72
+      }
+    ]
+  },
+  {
+    "file": "invoice_0025.pdf",
+    "layout": "modern",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Jones-Young",
+      "currency": "EUR",
+      "invoice_number": "INV-19171",
+      "invoice_date": "2026-07-06",
+      "due_date": "2026-08-20",
+      "po_number": "PO-796503",
+      "subtotal": 29228.43,
+      "tax": 1461.42,
+      "total": 30689.85
+    },
+    "line_items": [
+      {
+        "description": "Software license (annual)",
+        "quantity": 20,
+        "unit_price": 886.05,
+        "amount": 17721.0
+      },
+      {
+        "description": "Office supplies",
+        "quantity": 13,
+        "unit_price": 811.06,
+        "amount": 10543.78
+      },
+      {
+        "description": "Security audit",
+        "quantity": 9,
+        "unit_price": 54.28,
+        "amount": 488.52
+      },
+      {
+        "description": "Marketing materials",
+        "quantity": 1,
+        "unit_price": 475.13,
+        "amount": 475.13
+      }
+    ]
+  },
+  {
+    "file": "invoice_0026.pdf",
+    "layout": "classic",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Carpenter LLC",
+      "currency": "GBP",
+      "invoice_number": "INV-48752",
+      "invoice_date": "2026-06-17",
+      "due_date": "2026-08-01",
+      "po_number": "PO-681343",
+      "subtotal": 4638.0,
+      "tax": 463.8,
+      "total": 5101.8
+    },
+    "line_items": [
+      {
+        "description": "Printing services",
+        "quantity": 10,
+        "unit_price": 463.8,
+        "amount": 4638.0
+      }
+    ]
+  },
+  {
+    "file": "invoice_0027.pdf",
+    "layout": "compact",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Carpenter LLC",
+      "currency": "GBP",
+      "invoice_number": "INV-98555",
+      "invoice_date": "2026-08-15",
+      "due_date": "2026-09-29",
+      "po_number": "PO-324082",
+      "subtotal": 23032.64,
+      "tax": 2303.26,
+      "total": 25335.9
+    },
+    "line_items": [
+      {
+        "description": "Network equipment",
+        "quantity": 6,
+        "unit_price": 559.73,
+        "amount": 3358.38
+      },
+      {
+        "description": "Cloud hosting services",
+        "quantity": 13,
+        "unit_price": 499.92,
+        "amount": 6498.96
+      },
+      {
+        "description": "Security audit",
+        "quantity": 10,
+        "unit_price": 268.92,
+        "amount": 2689.2
+      },
+      {
+        "description": "Data storage",
+        "quantity": 19,
+        "unit_price": 551.9,
+        "amount": 10486.1
+      }
+    ]
+  },
+  {
+    "file": "invoice_0028.pdf",
+    "layout": "classic",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Mccullough, Hunter and Estrada",
+      "currency": "USD",
+      "invoice_number": "INV-36100",
+      "invoice_date": "2026-06-08",
+      "due_date": "2026-07-08",
+      "po_number": "PO-254511",
+      "subtotal": 7031.25,
+      "tax": 351.56,
+      "total": 7382.81
+    },
+    "line_items": [
+      {
+        "description": "Printing services",
+        "quantity": 3,
+        "unit_price": 266.15,
+        "amount": 798.45
+      },
+      {
+        "description": "Hardware repair",
+        "quantity": 20,
+        "unit_price": 311.64,
+        "amount": 6232.8
+      }
+    ]
+  },
+  {
+    "file": "invoice_0029.pdf",
+    "layout": "classic",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Bryant-Hickman",
+      "currency": "USD",
+      "invoice_number": "INV-16582",
+      "invoice_date": "2026-09-23",
+      "due_date": "2026-11-07",
+      "po_number": "PO-684482",
+      "subtotal": 16485.05,
+      "tax": 824.25,
+      "total": 17309.3
+    },
+    "line_items": [
+      {
+        "description": "API usage fees",
+        "quantity": 3,
+        "unit_price": 418.04,
+        "amount": 1254.12
+      },
+      {
+        "description": "IT support retainer",
+        "quantity": 19,
+        "unit_price": 187.08,
+        "amount": 3554.52
+      },
+      {
+        "description": "Office supplies",
+        "quantity": 13,
+        "unit_price": 452.52,
+        "amount": 5882.76
+      },
+      {
+        "description": "Cloud hosting services",
+        "quantity": 5,
+        "unit_price": 595.61,
+        "amount": 2978.05
+      },
+      {
+        "description": "Office supplies",
+        "quantity": 4,
+        "unit_price": 703.9,
+        "amount": 2815.6
+      }
+    ]
+  },
+  {
+    "file": "invoice_0030.pdf",
+    "layout": "modern",
+    "expected_flags": [
+      "prompt_injection"
+    ],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Mejia Inc",
+      "currency": "USD",
+      "invoice_number": "INV-30861",
+      "invoice_date": "2026-10-08",
+      "due_date": "2026-11-22",
+      "po_number": "PO-879779",
+      "subtotal": 36510.7,
+      "tax": 3651.07,
+      "total": 40161.77
+    },
+    "line_items": [
+      {
+        "description": "Printing services",
+        "quantity": 5,
+        "unit_price": 724.25,
+        "amount": 3621.25
+      },
+      {
+        "description": "Courier and freight",
+        "quantity": 17,
+        "unit_price": 889.28,
+        "amount": 15117.76
+      },
+      {
+        "description": "API usage fees",
+        "quantity": 11,
+        "unit_price": 855.79,
+        "amount": 9413.69
+      },
+      {
+        "description": "IT support retainer",
+        "quantity": 15,
+        "unit_price": 557.2,
+        "amount": 8358.0
+      }
+    ]
+  },
+  {
+    "file": "invoice_0031.pdf",
+    "layout": "modern",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Pena, Marshall and Ramos",
+      "currency": "EUR",
+      "invoice_number": "INV-47450",
+      "invoice_date": "2026-02-09",
+      "due_date": "2026-04-10",
+      "po_number": "PO-345884",
+      "subtotal": 15349.47,
+      "tax": 1534.95,
+      "total": 16884.42
+    },
+    "line_items": [
+      {
+        "description": "Training workshop",
+        "quantity": 9,
+        "unit_price": 692.75,
+        "amount": 6234.75
+      },
+      {
+        "description": "Network equipment",
+        "quantity": 16,
+        "unit_price": 569.67,
+        "amount": 9114.72
+      }
+    ]
+  },
+  {
+    "file": "invoice_0032.pdf",
+    "layout": "modern",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Moore, Campbell and Clark",
+      "currency": "GBP",
+      "invoice_number": "INV-64377",
+      "invoice_date": "2026-04-20",
+      "due_date": "2026-05-20",
+      "po_number": "PO-527398",
+      "subtotal": 742.45,
+      "tax": 37.12,
+      "total": 779.57
+    },
+    "line_items": [
+      {
+        "description": "Security audit",
+        "quantity": 5,
+        "unit_price": 148.49,
+        "amount": 742.45
+      }
+    ]
+  },
+  {
+    "file": "invoice_0033.pdf",
+    "layout": "modern",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Mitchell-Horton",
+      "currency": "USD",
+      "invoice_number": "INV-10772",
+      "invoice_date": "2026-07-14",
+      "due_date": "2026-08-28",
+      "po_number": "PO-468845",
+      "subtotal": 5264.77,
+      "tax": 0.0,
+      "total": 5264.77
+    },
+    "line_items": [
+      {
+        "description": "Security audit",
+        "quantity": 7,
+        "unit_price": 752.11,
+        "amount": 5264.77
+      }
+    ]
+  },
+  {
+    "file": "invoice_0034.pdf",
+    "layout": "compact",
+    "expected_flags": [
+      "total_mismatch"
+    ],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Mitchell-Horton",
+      "currency": "USD",
+      "invoice_number": "INV-80008",
+      "invoice_date": "2026-03-07",
+      "due_date": "2026-05-06",
+      "po_number": "PO-128276",
+      "subtotal": 38018.69,
+      "tax": 3801.87,
+      "total": 42000.17
+    },
+    "line_items": [
+      {
+        "description": "API usage fees",
+        "quantity": 18,
+        "unit_price": 722.88,
+        "amount": 13011.84
+      },
+      {
+        "description": "Network equipment",
+        "quantity": 8,
+        "unit_price": 447.08,
+        "amount": 3576.64
+      },
+      {
+        "description": "Security audit",
+        "quantity": 14,
+        "unit_price": 444.79,
+        "amount": 6227.06
+      },
+      {
+        "description": "Marketing materials",
+        "quantity": 11,
+        "unit_price": 606.95,
+        "amount": 6676.45
+      },
+      {
+        "description": "Hardware repair",
+        "quantity": 13,
+        "unit_price": 655.9,
+        "amount": 8526.7
+      }
+    ]
+  },
+  {
+    "file": "invoice_0035.pdf",
+    "layout": "compact",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Walker-Velasquez",
+      "currency": "USD",
+      "invoice_number": "INV-71644",
+      "invoice_date": "2026-05-10",
+      "due_date": "2026-06-09",
+      "po_number": "PO-120324",
+      "subtotal": 10719.53,
+      "tax": 1071.95,
+      "total": 11791.48
+    },
+    "line_items": [
+      {
+        "description": "Consulting hours",
+        "quantity": 5,
+        "unit_price": 782.16,
+        "amount": 3910.8
+      },
+      {
+        "description": "Data storage",
+        "quantity": 2,
+        "unit_price": 245.24,
+        "amount": 490.48
+      },
+      {
+        "description": "Data storage",
+        "quantity": 7,
+        "unit_price": 417.41,
+        "amount": 2921.87
+      },
+      {
+        "description": "Hardware repair",
+        "quantity": 13,
+        "unit_price": 261.26,
+        "amount": 3396.38
+      }
+    ]
+  },
+  {
+    "file": "invoice_0036.pdf",
+    "layout": "classic",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Henderson-Owens",
+      "currency": "USD",
+      "invoice_number": "INV-29973",
+      "invoice_date": "2026-01-11",
+      "due_date": "2026-03-12",
+      "po_number": "PO-350132",
+      "subtotal": 3484.17,
+      "tax": 174.21,
+      "total": 3658.38
+    },
+    "line_items": [
+      {
+        "description": "Printing services",
+        "quantity": 3,
+        "unit_price": 706.39,
+        "amount": 2119.17
+      },
+      {
+        "description": "Office supplies",
+        "quantity": 2,
+        "unit_price": 682.5,
+        "amount": 1365.0
+      }
+    ]
+  },
+  {
+    "file": "invoice_0037.pdf",
+    "layout": "compact",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Mejia Inc",
+      "currency": "USD",
+      "invoice_number": "INV-35995",
+      "invoice_date": "2026-07-23",
+      "due_date": "2026-09-21",
+      "po_number": "PO-179688",
+      "subtotal": 14113.7,
+      "tax": 1411.37,
+      "total": 15525.07
+    },
+    "line_items": [
+      {
+        "description": "Network equipment",
+        "quantity": 7,
+        "unit_price": 426.56,
+        "amount": 2985.92
+      },
+      {
+        "description": "Courier and freight",
+        "quantity": 12,
+        "unit_price": 163.49,
+        "amount": 1961.88
+      },
+      {
+        "description": "Consulting hours",
+        "quantity": 4,
+        "unit_price": 703.35,
+        "amount": 2813.4
+      },
+      {
+        "description": "Cloud hosting services",
+        "quantity": 10,
+        "unit_price": 110.67,
+        "amount": 1106.7
+      },
+      {
+        "description": "API usage fees",
+        "quantity": 10,
+        "unit_price": 524.58,
+        "amount": 5245.8
+      }
+    ]
+  },
+  {
+    "file": "invoice_0038.pdf",
+    "layout": "modern",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Walker-Velasquez",
+      "currency": "USD",
+      "invoice_number": "INV-66148",
+      "invoice_date": "2026-06-27",
+      "due_date": "2026-08-26",
+      "po_number": "PO-793655",
+      "subtotal": 17085.88,
+      "tax": 0.0,
+      "total": 17085.88
+    },
+    "line_items": [
+      {
+        "description": "Network equipment",
+        "quantity": 4,
+        "unit_price": 632.02,
+        "amount": 2528.08
+      },
+      {
+        "description": "Marketing materials",
+        "quantity": 20,
+        "unit_price": 727.89,
+        "amount": 14557.8
+      }
+    ]
+  },
+  {
+    "file": "invoice_0039.pdf",
+    "layout": "compact",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Walker-Velasquez",
+      "currency": "USD",
+      "invoice_number": "INV-45400",
+      "invoice_date": "2026-09-25",
+      "due_date": "2026-11-24",
+      "po_number": "PO-745830",
+      "subtotal": 12115.82,
+      "tax": 605.79,
+      "total": 12721.61
+    },
+    "line_items": [
+      {
+        "description": "Hardware repair",
+        "quantity": 1,
+        "unit_price": 766.87,
+        "amount": 766.87
+      },
+      {
+        "description": "Data storage",
+        "quantity": 16,
+        "unit_price": 108.4,
+        "amount": 1734.4
+      },
+      {
+        "description": "Security audit",
+        "quantity": 15,
+        "unit_price": 640.97,
+        "amount": 9614.55
+      }
+    ]
+  },
+  {
+    "file": "invoice_0040.pdf",
+    "layout": "classic",
+    "expected_flags": [
+      "total_mismatch"
+    ],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Larson Ltd",
+      "currency": "USD",
+      "invoice_number": "INV-74789",
+      "invoice_date": "2026-06-22",
+      "due_date": "2026-07-22",
+      "po_number": "PO-992288",
+      "subtotal": 25746.63,
+      "tax": 2574.66,
+      "total": 28379.93
+    },
+    "line_items": [
+      {
+        "description": "Hardware repair",
+        "quantity": 19,
+        "unit_price": 252.53,
+        "amount": 4798.07
+      },
+      {
+        "description": "Software license (annual)",
+        "quantity": 8,
+        "unit_price": 750.2,
+        "amount": 6001.6
+      },
+      {
+        "description": "Office supplies",
+        "quantity": 9,
+        "unit_price": 795.24,
+        "amount": 7157.16
+      },
+      {
+        "description": "Printing services",
+        "quantity": 15,
+        "unit_price": 519.32,
+        "amount": 7789.8
+      }
+    ]
+  },
+  {
+    "file": "invoice_0041.pdf",
+    "layout": "modern",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Allen-Allen",
+      "currency": "USD",
+      "invoice_number": "INV-41499",
+      "invoice_date": "2026-09-08",
+      "due_date": "2026-11-07",
+      "po_number": "PO-824156",
+      "subtotal": 12344.03,
+      "tax": 1234.4,
+      "total": 13578.43
+    },
+    "line_items": [
+      {
+        "description": "IT support retainer",
+        "quantity": 9,
+        "unit_price": 794.08,
+        "amount": 7146.72
+      },
+      {
+        "description": "Training workshop",
+        "quantity": 9,
+        "unit_price": 506.88,
+        "amount": 4561.92
+      },
+      {
+        "description": "IT support retainer",
+        "quantity": 7,
+        "unit_price": 90.77,
+        "amount": 635.39
+      }
+    ]
+  },
+  {
+    "file": "invoice_0042.pdf",
+    "layout": "modern",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Bryant-Hickman",
+      "currency": "USD",
+      "invoice_number": "INV-69473",
+      "invoice_date": "2026-06-30",
+      "due_date": "2026-08-29",
+      "po_number": "PO-384076",
+      "subtotal": 20168.27,
+      "tax": 1663.88,
+      "total": 21832.15
+    },
+    "line_items": [
+      {
+        "description": "Office supplies",
+        "quantity": 1,
+        "unit_price": 97.35,
+        "amount": 97.35
+      },
+      {
+        "description": "Network equipment",
+        "quantity": 13,
+        "unit_price": 627.23,
+        "amount": 8153.99
+      },
+      {
+        "description": "Training workshop",
+        "quantity": 19,
+        "unit_price": 341.58,
+        "amount": 6490.02
+      },
+      {
+        "description": "IT support retainer",
+        "quantity": 17,
+        "unit_price": 319.23,
+        "amount": 5426.91
+      }
+    ]
+  },
+  {
+    "file": "invoice_0043.pdf",
+    "layout": "modern",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Mejia Inc",
+      "currency": "USD",
+      "invoice_number": "INV-80010",
+      "invoice_date": "2026-06-04",
+      "due_date": "2026-07-04",
+      "po_number": "PO-232731",
+      "subtotal": 33913.6,
+      "tax": 1695.68,
+      "total": 35609.28
+    },
+    "line_items": [
+      {
+        "description": "IT support retainer",
+        "quantity": 7,
+        "unit_price": 294.26,
+        "amount": 2059.82
+      },
+      {
+        "description": "IT support retainer",
+        "quantity": 18,
+        "unit_price": 856.53,
+        "amount": 15417.54
+      },
+      {
+        "description": "IT support retainer",
+        "quantity": 6,
+        "unit_price": 184.51,
+        "amount": 1107.06
+      },
+      {
+        "description": "Courier and freight",
+        "quantity": 16,
+        "unit_price": 259.7,
+        "amount": 4155.2
+      },
+      {
+        "description": "Software license (annual)",
+        "quantity": 17,
+        "unit_price": 543.16,
+        "amount": 9233.72
+      },
+      {
+        "description": "Data storage",
+        "quantity": 7,
+        "unit_price": 277.18,
+        "amount": 1940.26
+      }
+    ]
+  },
+  {
+    "file": "invoice_0044.pdf",
+    "layout": "compact",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Baldwin Ltd",
+      "currency": "USD",
+      "invoice_number": "INV-74454",
+      "invoice_date": "2026-02-03",
+      "due_date": "2026-03-20",
+      "po_number": "PO-177680",
+      "subtotal": 25459.26,
+      "tax": 0.0,
+      "total": 25459.26
+    },
+    "line_items": [
+      {
+        "description": "Consulting hours",
+        "quantity": 10,
+        "unit_price": 632.21,
+        "amount": 6322.1
+      },
+      {
+        "description": "Cloud hosting services",
+        "quantity": 16,
+        "unit_price": 105.79,
+        "amount": 1692.64
+      },
+      {
+        "description": "Maintenance contract",
+        "quantity": 19,
+        "unit_price": 266.64,
+        "amount": 5066.16
+      },
+      {
+        "description": "Cloud hosting services",
+        "quantity": 15,
+        "unit_price": 316.52,
+        "amount": 4747.8
+      },
+      {
+        "description": "Maintenance contract",
+        "quantity": 9,
+        "unit_price": 847.84,
+        "amount": 7630.56
+      }
+    ]
+  },
+  {
+    "file": "invoice_0045.pdf",
+    "layout": "modern",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Baldwin Ltd",
+      "currency": "USD",
+      "invoice_number": "INV-59856",
+      "invoice_date": "2026-04-26",
+      "due_date": "2026-06-25",
+      "po_number": "PO-572398",
+      "subtotal": 6348.16,
+      "tax": 634.82,
+      "total": 6982.98
+    },
+    "line_items": [
+      {
+        "description": "Network equipment",
+        "quantity": 5,
+        "unit_price": 732.86,
+        "amount": 3664.3
+      },
+      {
+        "description": "Software license (annual)",
+        "quantity": 3,
+        "unit_price": 894.62,
+        "amount": 2683.86
+      }
+    ]
+  },
+  {
+    "file": "invoice_0046.pdf",
+    "layout": "compact",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Arnold-Patterson",
+      "currency": "USD",
+      "invoice_number": "INV-63545",
+      "invoice_date": "2026-03-22",
+      "due_date": "2026-04-21",
+      "po_number": "PO-572387",
+      "subtotal": 26918.46,
+      "tax": 0.0,
+      "total": 26918.46
+    },
+    "line_items": [
+      {
+        "description": "Cloud hosting services",
+        "quantity": 10,
+        "unit_price": 518.24,
+        "amount": 5182.4
+      },
+      {
+        "description": "Software license (annual)",
+        "quantity": 20,
+        "unit_price": 864.7,
+        "amount": 17294.0
+      },
+      {
+        "description": "Network equipment",
+        "quantity": 7,
+        "unit_price": 568.58,
+        "amount": 3980.06
+      },
+      {
+        "description": "Consulting hours",
+        "quantity": 3,
+        "unit_price": 154.0,
+        "amount": 462.0
+      }
+    ]
+  },
+  {
+    "file": "invoice_0047.pdf",
+    "layout": "compact",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Vaughn, Marquez and Ross",
+      "currency": "GBP",
+      "invoice_number": "INV-40595",
+      "invoice_date": "2026-02-06",
+      "due_date": "2026-04-07",
+      "po_number": "PO-377405",
+      "subtotal": 2159.76,
+      "tax": 215.98,
+      "total": 2375.74
+    },
+    "line_items": [
+      {
+        "description": "Network equipment",
+        "quantity": 8,
+        "unit_price": 269.97,
+        "amount": 2159.76
+      }
+    ]
+  },
+  {
+    "file": "invoice_0048.pdf",
+    "layout": "modern",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Burton Ltd",
+      "currency": "USD",
+      "invoice_number": "INV-71433",
+      "invoice_date": "2026-08-13",
+      "due_date": "2026-09-12",
+      "po_number": "PO-822131",
+      "subtotal": 11889.56,
+      "tax": 980.89,
+      "total": 12870.45
+    },
+    "line_items": [
+      {
+        "description": "Printing services",
+        "quantity": 4,
+        "unit_price": 496.94,
+        "amount": 1987.76
+      },
+      {
+        "description": "Hardware repair",
+        "quantity": 5,
+        "unit_price": 818.94,
+        "amount": 4094.7
+      },
+      {
+        "description": "Consulting hours",
+        "quantity": 5,
+        "unit_price": 78.2,
+        "amount": 391.0
+      },
+      {
+        "description": "Hardware repair",
+        "quantity": 10,
+        "unit_price": 541.61,
+        "amount": 5416.1
+      }
+    ]
+  },
+  {
+    "file": "invoice_0049.pdf",
+    "layout": "compact",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Allen-Allen",
+      "currency": "USD",
+      "invoice_number": "INV-71669",
+      "invoice_date": "2026-01-21",
+      "due_date": "2026-02-20",
+      "po_number": "PO-644173",
+      "subtotal": 25994.17,
+      "tax": 2144.52,
+      "total": 28138.69
+    },
+    "line_items": [
+      {
+        "description": "Software license (annual)",
+        "quantity": 18,
+        "unit_price": 452.01,
+        "amount": 8136.18
+      },
+      {
+        "description": "Security audit",
+        "quantity": 20,
+        "unit_price": 50.28,
+        "amount": 1005.6
+      },
+      {
+        "description": "Cloud hosting services",
+        "quantity": 11,
+        "unit_price": 549.29,
+        "amount": 6042.19
+      },
+      {
+        "description": "Printing services",
+        "quantity": 3,
+        "unit_price": 217.6,
+        "amount": 652.8
+      },
+      {
+        "description": "Cloud hosting services",
+        "quantity": 19,
+        "unit_price": 534.6,
+        "amount": 10157.4
+      }
+    ]
+  },
+  {
+    "file": "invoice_0050.pdf",
+    "layout": "classic",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Allen-Allen",
+      "currency": "USD",
+      "invoice_number": "INV-52081",
+      "invoice_date": "2026-07-29",
+      "due_date": "2026-09-12",
+      "po_number": "PO-802685",
+      "subtotal": 21576.2,
+      "tax": 1780.04,
+      "total": 23356.24
+    },
+    "line_items": [
+      {
+        "description": "Hardware repair",
+        "quantity": 19,
+        "unit_price": 400.76,
+        "amount": 7614.44
+      },
+      {
+        "description": "Maintenance contract",
+        "quantity": 16,
+        "unit_price": 872.61,
+        "amount": 13961.76
+      }
+    ]
+  },
+  {
+    "file": "invoice_0051.pdf",
+    "layout": "modern",
+    "expected_flags": [
+      "duplicate"
+    ],
+    "duplicate_of": "invoice_0024.pdf",
+    "fields": {
+      "vendor_name": "Howard LLC",
+      "currency": "USD",
+      "invoice_number": "INV-24208",
+      "invoice_date": "2026-05-16",
+      "due_date": "2026-06-15",
+      "po_number": "PO-725550",
+      "subtotal": 15702.5,
+      "tax": 785.12,
+      "total": 16487.62
+    },
+    "line_items": [
+      {
+        "description": "Security audit",
+        "quantity": 12,
+        "unit_price": 582.71,
+        "amount": 6992.52
+      },
+      {
+        "description": "Cloud hosting services",
+        "quantity": 18,
+        "unit_price": 308.07,
+        "amount": 5545.26
+      },
+      {
+        "description": "Network equipment",
+        "quantity": 4,
+        "unit_price": 791.18,
+        "amount": 3164.72
+      }
+    ]
+  },
+  {
+    "file": "invoice_0052.pdf",
+    "layout": "modern",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Bryant-Hickman",
+      "currency": "USD",
+      "invoice_number": "INV-96200",
+      "invoice_date": "2026-09-21",
+      "due_date": "2026-10-21",
+      "po_number": "PO-668950",
+      "subtotal": 13100.07,
+      "tax": 1310.01,
+      "total": 14410.08
+    },
+    "line_items": [
+      {
+        "description": "Training workshop",
+        "quantity": 13,
+        "unit_price": 735.01,
+        "amount": 9555.13
+      },
+      {
+        "description": "Data storage",
+        "quantity": 2,
+        "unit_price": 417.52,
+        "amount": 835.04
+      },
+      {
+        "description": "Marketing materials",
+        "quantity": 9,
+        "unit_price": 301.1,
+        "amount": 2709.9
+      }
+    ]
+  },
+  {
+    "file": "invoice_0053.pdf",
+    "layout": "compact",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Burton Ltd",
+      "currency": "USD",
+      "invoice_number": "INV-82199",
+      "invoice_date": "2026-03-23",
+      "due_date": "2026-05-07",
+      "po_number": "PO-114338",
+      "subtotal": 27602.41,
+      "tax": 1380.12,
+      "total": 28982.53
+    },
+    "line_items": [
+      {
+        "description": "Maintenance contract",
+        "quantity": 12,
+        "unit_price": 566.03,
+        "amount": 6792.36
+      },
+      {
+        "description": "Office supplies",
+        "quantity": 15,
+        "unit_price": 687.59,
+        "amount": 10313.85
+      },
+      {
+        "description": "API usage fees",
+        "quantity": 9,
+        "unit_price": 501.06,
+        "amount": 4509.54
+      },
+      {
+        "description": "IT support retainer",
+        "quantity": 10,
+        "unit_price": 402.73,
+        "amount": 4027.3
+      },
+      {
+        "description": "Printing services",
+        "quantity": 16,
+        "unit_price": 122.46,
+        "amount": 1959.36
+      }
+    ]
+  },
+  {
+    "file": "invoice_0054.pdf",
+    "layout": "compact",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Peterson, Carter and Moore",
+      "currency": "GBP",
+      "invoice_number": "INV-48254",
+      "invoice_date": "2026-09-13",
+      "due_date": "2026-11-12",
+      "po_number": "PO-633590",
+      "subtotal": 12797.25,
+      "tax": 639.86,
+      "total": 13437.11
+    },
+    "line_items": [
+      {
+        "description": "Printing services",
+        "quantity": 15,
+        "unit_price": 853.15,
+        "amount": 12797.25
+      }
+    ]
+  },
+  {
+    "file": "invoice_0055.pdf",
+    "layout": "classic",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Bryant-Hickman",
+      "currency": "USD",
+      "invoice_number": "INV-45018",
+      "invoice_date": "2026-06-24",
+      "due_date": "2026-08-23",
+      "po_number": "PO-960408",
+      "subtotal": 18003.48,
+      "tax": 1800.35,
+      "total": 19803.83
+    },
+    "line_items": [
+      {
+        "description": "Consulting hours",
+        "quantity": 8,
+        "unit_price": 419.26,
+        "amount": 3354.08
+      },
+      {
+        "description": "Courier and freight",
+        "quantity": 13,
+        "unit_price": 183.69,
+        "amount": 2387.97
+      },
+      {
+        "description": "Consulting hours",
+        "quantity": 17,
+        "unit_price": 675.47,
+        "amount": 11482.99
+      },
+      {
+        "description": "Marketing materials",
+        "quantity": 3,
+        "unit_price": 259.48,
+        "amount": 778.44
+      }
+    ]
+  },
+  {
+    "file": "invoice_0056.pdf",
+    "layout": "modern",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Vaughn, Marquez and Ross",
+      "currency": "GBP",
+      "invoice_number": "INV-63841",
+      "invoice_date": "2026-07-16",
+      "due_date": "2026-08-15",
+      "po_number": "PO-145767",
+      "subtotal": 37752.58,
+      "tax": 1887.63,
+      "total": 39640.21
+    },
+    "line_items": [
+      {
+        "description": "Maintenance contract",
+        "quantity": 19,
+        "unit_price": 899.03,
+        "amount": 17081.57
+      },
+      {
+        "description": "Maintenance contract",
+        "quantity": 5,
+        "unit_price": 410.19,
+        "amount": 2050.95
+      },
+      {
+        "description": "Marketing materials",
+        "quantity": 12,
+        "unit_price": 309.21,
+        "amount": 3710.52
+      },
+      {
+        "description": "API usage fees",
+        "quantity": 18,
+        "unit_price": 348.83,
+        "amount": 6278.94
+      },
+      {
+        "description": "IT support retainer",
+        "quantity": 11,
+        "unit_price": 784.6,
+        "amount": 8630.6
+      }
+    ]
+  },
+  {
+    "file": "invoice_0057.pdf",
+    "layout": "compact",
+    "expected_flags": [
+      "total_mismatch"
+    ],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Mclaughlin, Gonzalez and Reynolds",
+      "currency": "EUR",
+      "invoice_number": "INV-69890",
+      "invoice_date": "2026-02-21",
+      "due_date": "2026-04-22",
+      "po_number": "PO-116093",
+      "subtotal": 24762.73,
+      "tax": 2476.27,
+      "total": 27113.06
+    },
+    "line_items": [
+      {
+        "description": "Marketing materials",
+        "quantity": 13,
+        "unit_price": 889.75,
+        "amount": 11566.75
+      },
+      {
+        "description": "Cloud hosting services",
+        "quantity": 5,
+        "unit_price": 453.37,
+        "amount": 2266.85
+      },
+      {
+        "description": "Courier and freight",
+        "quantity": 5,
+        "unit_price": 459.53,
+        "amount": 2297.65
+      },
+      {
+        "description": "Hardware repair",
+        "quantity": 11,
+        "unit_price": 784.68,
+        "amount": 8631.48
+      }
+    ]
+  },
+  {
+    "file": "invoice_0058.pdf",
+    "layout": "compact",
+    "expected_flags": [
+      "exceeds_po"
+    ],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Howard LLC",
+      "currency": "USD",
+      "invoice_number": "INV-90931",
+      "invoice_date": "2026-10-05",
+      "due_date": "2026-11-04",
+      "po_number": "PO-171744",
+      "subtotal": 25289.2,
+      "tax": 2528.92,
+      "total": 27818.12
+    },
+    "line_items": [
+      {
+        "description": "IT support retainer",
+        "quantity": 9,
+        "unit_price": 314.63,
+        "amount": 2831.67
+      },
+      {
+        "description": "Hardware repair",
+        "quantity": 13,
+        "unit_price": 590.11,
+        "amount": 7671.43
+      },
+      {
+        "description": "Hardware repair",
+        "quantity": 11,
+        "unit_price": 769.32,
+        "amount": 8462.52
+      },
+      {
+        "description": "Data storage",
+        "quantity": 18,
+        "unit_price": 351.31,
+        "amount": 6323.58
+      }
+    ]
+  },
+  {
+    "file": "invoice_0059.pdf",
+    "layout": "modern",
+    "expected_flags": [
+      "prompt_injection"
+    ],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Peterson, Carter and Moore",
+      "currency": "GBP",
+      "invoice_number": "INV-20350",
+      "invoice_date": "2026-03-29",
+      "due_date": "2026-04-28",
+      "po_number": "PO-739098",
+      "subtotal": 26930.01,
+      "tax": 1346.5,
+      "total": 28276.51
+    },
+    "line_items": [
+      {
+        "description": "Software license (annual)",
+        "quantity": 3,
+        "unit_price": 399.06,
+        "amount": 1197.18
+      },
+      {
+        "description": "IT support retainer",
+        "quantity": 4,
+        "unit_price": 407.66,
+        "amount": 1630.64
+      },
+      {
+        "description": "Cloud hosting services",
+        "quantity": 10,
+        "unit_price": 814.53,
+        "amount": 8145.3
+      },
+      {
+        "description": "Network equipment",
+        "quantity": 11,
+        "unit_price": 719.59,
+        "amount": 7915.49
+      },
+      {
+        "description": "Consulting hours",
+        "quantity": 12,
+        "unit_price": 346.73,
+        "amount": 4160.76
+      },
+      {
+        "description": "Courier and freight",
+        "quantity": 8,
+        "unit_price": 485.08,
+        "amount": 3880.64
+      }
+    ]
+  },
+  {
+    "file": "invoice_0060.pdf",
+    "layout": "compact",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Peterson, Carter and Moore",
+      "currency": "GBP",
+      "invoice_number": "INV-87014",
+      "invoice_date": "2026-08-15",
+      "due_date": "2026-09-29",
+      "po_number": "PO-413685",
+      "subtotal": 13444.45,
+      "tax": 0.0,
+      "total": 13444.45
+    },
+    "line_items": [
+      {
+        "description": "Maintenance contract",
+        "quantity": 19,
+        "unit_price": 141.66,
+        "amount": 2691.54
+      },
+      {
+        "description": "Printing services",
+        "quantity": 9,
+        "unit_price": 421.72,
+        "amount": 3795.48
+      },
+      {
+        "description": "Maintenance contract",
+        "quantity": 1,
+        "unit_price": 810.53,
+        "amount": 810.53
+      },
+      {
+        "description": "Consulting hours",
+        "quantity": 10,
+        "unit_price": 614.69,
+        "amount": 6146.9
+      }
+    ]
+  },
+  {
+    "file": "invoice_0061.pdf",
+    "layout": "compact",
+    "expected_flags": [
+      "exceeds_po"
+    ],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Mclaughlin, Gonzalez and Reynolds",
+      "currency": "EUR",
+      "invoice_number": "INV-96275",
+      "invoice_date": "2026-06-01",
+      "due_date": "2026-07-01",
+      "po_number": "PO-515032",
+      "subtotal": 24279.03,
+      "tax": 2003.02,
+      "total": 26282.05
+    },
+    "line_items": [
+      {
+        "description": "Office supplies",
+        "quantity": 15,
+        "unit_price": 763.09,
+        "amount": 11446.35
+      },
+      {
+        "description": "Software license (annual)",
+        "quantity": 13,
+        "unit_price": 770.2,
+        "amount": 10012.6
+      },
+      {
+        "description": "Data storage",
+        "quantity": 8,
+        "unit_price": 352.51,
+        "amount": 2820.08
+      }
+    ]
+  },
+  {
+    "file": "invoice_0062.pdf",
+    "layout": "compact",
+    "expected_flags": [
+      "duplicate"
+    ],
+    "duplicate_of": "invoice_0053.pdf",
+    "fields": {
+      "vendor_name": "Burton Ltd",
+      "currency": "USD",
+      "invoice_number": "INV-82199",
+      "invoice_date": "2026-03-23",
+      "due_date": "2026-05-07",
+      "po_number": "PO-114338",
+      "subtotal": 27602.41,
+      "tax": 1380.12,
+      "total": 28982.53
+    },
+    "line_items": [
+      {
+        "description": "Maintenance contract",
+        "quantity": 12,
+        "unit_price": 566.03,
+        "amount": 6792.36
+      },
+      {
+        "description": "Office supplies",
+        "quantity": 15,
+        "unit_price": 687.59,
+        "amount": 10313.85
+      },
+      {
+        "description": "API usage fees",
+        "quantity": 9,
+        "unit_price": 501.06,
+        "amount": 4509.54
+      },
+      {
+        "description": "IT support retainer",
+        "quantity": 10,
+        "unit_price": 402.73,
+        "amount": 4027.3
+      },
+      {
+        "description": "Printing services",
+        "quantity": 16,
+        "unit_price": 122.46,
+        "amount": 1959.36
+      }
+    ]
+  },
+  {
+    "file": "invoice_0063.pdf",
+    "layout": "classic",
+    "expected_flags": [
+      "total_mismatch"
+    ],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Baldwin Ltd",
+      "currency": "USD",
+      "invoice_number": "INV-14373",
+      "invoice_date": "2026-06-08",
+      "due_date": "2026-07-23",
+      "po_number": "PO-707727",
+      "subtotal": 40348.89,
+      "tax": 0.0,
+      "total": 40569.94
+    },
+    "line_items": [
+      {
+        "description": "API usage fees",
+        "quantity": 16,
+        "unit_price": 752.06,
+        "amount": 12032.96
+      },
+      {
+        "description": "Office supplies",
+        "quantity": 10,
+        "unit_price": 701.53,
+        "amount": 7015.3
+      },
+      {
+        "description": "Office supplies",
+        "quantity": 20,
+        "unit_price": 724.71,
+        "amount": 14494.2
+      },
+      {
+        "description": "Printing services",
+        "quantity": 7,
+        "unit_price": 564.49,
+        "amount": 3951.43
+      },
+      {
+        "description": "API usage fees",
+        "quantity": 5,
+        "unit_price": 571.0,
+        "amount": 2855.0
+      }
+    ]
+  },
+  {
+    "file": "invoice_0064.pdf",
+    "layout": "compact",
+    "expected_flags": [
+      "prompt_injection"
+    ],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Jones-Young",
+      "currency": "EUR",
+      "invoice_number": "INV-98647",
+      "invoice_date": "2026-03-14",
+      "due_date": "2026-04-13",
+      "po_number": "PO-859396",
+      "subtotal": 47809.6,
+      "tax": 0.0,
+      "total": 47809.6
+    },
+    "line_items": [
+      {
+        "description": "Consulting hours",
+        "quantity": 14,
+        "unit_price": 170.44,
+        "amount": 2386.16
+      },
+      {
+        "description": "Data storage",
+        "quantity": 18,
+        "unit_price": 790.67,
+        "amount": 14232.06
+      },
+      {
+        "description": "Network equipment",
+        "quantity": 17,
+        "unit_price": 459.09,
+        "amount": 7804.53
+      },
+      {
+        "description": "Hardware repair",
+        "quantity": 6,
+        "unit_price": 242.42,
+        "amount": 1454.52
+      },
+      {
+        "description": "Network equipment",
+        "quantity": 16,
+        "unit_price": 871.13,
+        "amount": 13938.08
+      },
+      {
+        "description": "Maintenance contract",
+        "quantity": 11,
+        "unit_price": 726.75,
+        "amount": 7994.25
+      }
+    ]
+  },
+  {
+    "file": "invoice_0065.pdf",
+    "layout": "modern",
+    "expected_flags": [
+      "exceeds_po"
+    ],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Moore, Campbell and Clark",
+      "currency": "GBP",
+      "invoice_number": "INV-58689",
+      "invoice_date": "2026-07-15",
+      "due_date": "2026-09-13",
+      "po_number": "PO-213609",
+      "subtotal": 13878.48,
+      "tax": 1144.97,
+      "total": 15023.45
+    },
+    "line_items": [
+      {
+        "description": "Cloud hosting services",
+        "quantity": 3,
+        "unit_price": 714.75,
+        "amount": 2144.25
+      },
+      {
+        "description": "Maintenance contract",
+        "quantity": 9,
+        "unit_price": 489.87,
+        "amount": 4408.83
+      },
+      {
+        "description": "Printing services",
+        "quantity": 12,
+        "unit_price": 610.45,
+        "amount": 7325.4
+      }
+    ]
+  },
+  {
+    "file": "invoice_0066.pdf",
+    "layout": "classic",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Moore, Campbell and Clark",
+      "currency": "GBP",
+      "invoice_number": "INV-25220",
+      "invoice_date": "2026-06-05",
+      "due_date": "2026-07-20",
+      "po_number": "PO-201913",
+      "subtotal": 18170.99,
+      "tax": 0.0,
+      "total": 18170.99
+    },
+    "line_items": [
+      {
+        "description": "Software license (annual)",
+        "quantity": 20,
+        "unit_price": 210.91,
+        "amount": 4218.2
+      },
+      {
+        "description": "Network equipment",
+        "quantity": 15,
+        "unit_price": 819.81,
+        "amount": 12297.15
+      },
+      {
+        "description": "Cloud hosting services",
+        "quantity": 14,
+        "unit_price": 118.26,
+        "amount": 1655.64
+      }
+    ]
+  },
+  {
+    "file": "invoice_0067.pdf",
+    "layout": "compact",
+    "expected_flags": [
+      "duplicate"
+    ],
+    "duplicate_of": "invoice_0011.pdf",
+    "fields": {
+      "vendor_name": "Medina PLC",
+      "currency": "GBP",
+      "invoice_number": "INV-53309",
+      "invoice_date": "2026-02-04",
+      "due_date": "2026-03-06",
+      "po_number": "PO-174299",
+      "subtotal": 7517.9,
+      "tax": 375.89,
+      "total": 7893.79
+    },
+    "line_items": [
+      {
+        "description": "Software license (annual)",
+        "quantity": 4,
+        "unit_price": 234.4,
+        "amount": 937.6
+      },
+      {
+        "description": "Training workshop",
+        "quantity": 11,
+        "unit_price": 33.62,
+        "amount": 369.82
+      },
+      {
+        "description": "Cloud hosting services",
+        "quantity": 8,
+        "unit_price": 535.77,
+        "amount": 4286.16
+      },
+      {
+        "description": "Cloud hosting services",
+        "quantity": 3,
+        "unit_price": 641.44,
+        "amount": 1924.32
+      }
+    ]
+  },
+  {
+    "file": "invoice_0068.pdf",
+    "layout": "compact",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Henderson-Owens",
+      "currency": "USD",
+      "invoice_number": "INV-58147",
+      "invoice_date": "2026-02-20",
+      "due_date": "2026-04-21",
+      "po_number": "PO-670913",
+      "subtotal": 33176.01,
+      "tax": 2737.02,
+      "total": 35913.03
+    },
+    "line_items": [
+      {
+        "description": "IT support retainer",
+        "quantity": 18,
+        "unit_price": 385.93,
+        "amount": 6946.74
+      },
+      {
+        "description": "Printing services",
+        "quantity": 5,
+        "unit_price": 798.59,
+        "amount": 3992.95
+      },
+      {
+        "description": "Courier and freight",
+        "quantity": 4,
+        "unit_price": 752.82,
+        "amount": 3011.28
+      },
+      {
+        "description": "Network equipment",
+        "quantity": 14,
+        "unit_price": 846.06,
+        "amount": 11844.84
+      },
+      {
+        "description": "Office supplies",
+        "quantity": 2,
+        "unit_price": 625.9,
+        "amount": 1251.8
+      },
+      {
+        "description": "Office supplies",
+        "quantity": 15,
+        "unit_price": 408.56,
+        "amount": 6128.4
+      }
+    ]
+  },
+  {
+    "file": "invoice_0069.pdf",
+    "layout": "classic",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Morton-Chase",
+      "currency": "USD",
+      "invoice_number": "INV-84000",
+      "invoice_date": "2026-05-05",
+      "due_date": "2026-06-04",
+      "po_number": "PO-315173",
+      "subtotal": 25033.37,
+      "tax": 2065.25,
+      "total": 27098.62
+    },
+    "line_items": [
+      {
+        "description": "Hardware repair",
+        "quantity": 7,
+        "unit_price": 871.86,
+        "amount": 6103.02
+      },
+      {
+        "description": "Office supplies",
+        "quantity": 15,
+        "unit_price": 96.13,
+        "amount": 1441.95
+      },
+      {
+        "description": "Cloud hosting services",
+        "quantity": 20,
+        "unit_price": 874.42,
+        "amount": 17488.4
+      }
+    ]
+  },
+  {
+    "file": "invoice_0070.pdf",
+    "layout": "classic",
+    "expected_flags": [
+      "missing_invoice_number"
+    ],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Moore, Campbell and Clark",
+      "currency": "GBP",
+      "invoice_number": null,
+      "invoice_date": "2026-05-22",
+      "due_date": "2026-06-21",
+      "po_number": "PO-666456",
+      "subtotal": 6362.52,
+      "tax": 0.0,
+      "total": 6362.52
+    },
+    "line_items": [
+      {
+        "description": "Hardware repair",
+        "quantity": 19,
+        "unit_price": 206.12,
+        "amount": 3916.28
+      },
+      {
+        "description": "Consulting hours",
+        "quantity": 8,
+        "unit_price": 305.78,
+        "amount": 2446.24
+      }
+    ]
+  },
+  {
+    "file": "invoice_0071.pdf",
+    "layout": "modern",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Rodriguez, Figueroa and Sanchez",
+      "currency": "USD",
+      "invoice_number": "INV-26614",
+      "invoice_date": "2026-05-16",
+      "due_date": "2026-06-15",
+      "po_number": "PO-877747",
+      "subtotal": 4621.08,
+      "tax": 231.05,
+      "total": 4852.13
+    },
+    "line_items": [
+      {
+        "description": "Marketing materials",
+        "quantity": 1,
+        "unit_price": 332.04,
+        "amount": 332.04
+      },
+      {
+        "description": "Cloud hosting services",
+        "quantity": 8,
+        "unit_price": 536.13,
+        "amount": 4289.04
+      }
+    ]
+  },
+  {
+    "file": "invoice_0072.pdf",
+    "layout": "classic",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Mccullough, Hunter and Estrada",
+      "currency": "USD",
+      "invoice_number": "INV-39038",
+      "invoice_date": "2026-08-20",
+      "due_date": "2026-10-19",
+      "po_number": "PO-744986",
+      "subtotal": 6587.52,
+      "tax": 0.0,
+      "total": 6587.52
+    },
+    "line_items": [
+      {
+        "description": "Data storage",
+        "quantity": 16,
+        "unit_price": 411.72,
+        "amount": 6587.52
+      }
+    ]
+  },
+  {
+    "file": "invoice_0073.pdf",
+    "layout": "compact",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Carpenter LLC",
+      "currency": "GBP",
+      "invoice_number": "INV-46046",
+      "invoice_date": "2026-02-03",
+      "due_date": "2026-03-05",
+      "po_number": "PO-754644",
+      "subtotal": 23860.68,
+      "tax": 1193.03,
+      "total": 25053.71
+    },
+    "line_items": [
+      {
+        "description": "Cloud hosting services",
+        "quantity": 10,
+        "unit_price": 420.37,
+        "amount": 4203.7
+      },
+      {
+        "description": "Hardware repair",
+        "quantity": 2,
+        "unit_price": 898.75,
+        "amount": 1797.5
+      },
+      {
+        "description": "Software license (annual)",
+        "quantity": 13,
+        "unit_price": 392.25,
+        "amount": 5099.25
+      },
+      {
+        "description": "Maintenance contract",
+        "quantity": 16,
+        "unit_price": 645.48,
+        "amount": 10327.68
+      },
+      {
+        "description": "Data storage",
+        "quantity": 3,
+        "unit_price": 810.85,
+        "amount": 2432.55
+      }
+    ]
+  },
+  {
+    "file": "invoice_0074.pdf",
+    "layout": "modern",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Mclaughlin, Gonzalez and Reynolds",
+      "currency": "EUR",
+      "invoice_number": "INV-69186",
+      "invoice_date": "2026-04-21",
+      "due_date": "2026-06-05",
+      "po_number": "PO-339592",
+      "subtotal": 17242.43,
+      "tax": 0.0,
+      "total": 17242.43
+    },
+    "line_items": [
+      {
+        "description": "Training workshop",
+        "quantity": 13,
+        "unit_price": 895.25,
+        "amount": 11638.25
+      },
+      {
+        "description": "Courier and freight",
+        "quantity": 10,
+        "unit_price": 416.54,
+        "amount": 4165.4
+      },
+      {
+        "description": "IT support retainer",
+        "quantity": 14,
+        "unit_price": 102.77,
+        "amount": 1438.78
+      }
+    ]
+  },
+  {
+    "file": "invoice_0075.pdf",
+    "layout": "compact",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Larson Ltd",
+      "currency": "USD",
+      "invoice_number": "INV-22656",
+      "invoice_date": "2026-02-17",
+      "due_date": "2026-04-03",
+      "po_number": "PO-880758",
+      "subtotal": 24829.78,
+      "tax": 0.0,
+      "total": 24829.78
+    },
+    "line_items": [
+      {
+        "description": "Data storage",
+        "quantity": 14,
+        "unit_price": 660.71,
+        "amount": 9249.94
+      },
+      {
+        "description": "Network equipment",
+        "quantity": 14,
+        "unit_price": 291.58,
+        "amount": 4082.12
+      },
+      {
+        "description": "Printing services",
+        "quantity": 12,
+        "unit_price": 858.93,
+        "amount": 10307.16
+      },
+      {
+        "description": "Hardware repair",
+        "quantity": 16,
+        "unit_price": 74.41,
+        "amount": 1190.56
+      }
+    ]
+  },
+  {
+    "file": "invoice_0076.pdf",
+    "layout": "classic",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Ferguson and Sons",
+      "currency": "USD",
+      "invoice_number": "INV-85748",
+      "invoice_date": "2026-06-30",
+      "due_date": "2026-07-30",
+      "po_number": "PO-632060",
+      "subtotal": 23890.08,
+      "tax": 1970.93,
+      "total": 25861.01
+    },
+    "line_items": [
+      {
+        "description": "Training workshop",
+        "quantity": 2,
+        "unit_price": 534.02,
+        "amount": 1068.04
+      },
+      {
+        "description": "Software license (annual)",
+        "quantity": 18,
+        "unit_price": 306.74,
+        "amount": 5521.32
+      },
+      {
+        "description": "Printing services",
+        "quantity": 14,
+        "unit_price": 327.93,
+        "amount": 4591.02
+      },
+      {
+        "description": "IT support retainer",
+        "quantity": 14,
+        "unit_price": 783.26,
+        "amount": 10965.64
+      },
+      {
+        "description": "Courier and freight",
+        "quantity": 2,
+        "unit_price": 872.03,
+        "amount": 1744.06
+      }
+    ]
+  },
+  {
+    "file": "invoice_0077.pdf",
+    "layout": "compact",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Bryant-Hickman",
+      "currency": "USD",
+      "invoice_number": "INV-91490",
+      "invoice_date": "2026-08-08",
+      "due_date": "2026-10-07",
+      "po_number": "PO-743378",
+      "subtotal": 2699.44,
+      "tax": 134.97,
+      "total": 2834.41
+    },
+    "line_items": [
+      {
+        "description": "Training workshop",
+        "quantity": 4,
+        "unit_price": 324.85,
+        "amount": 1299.4
+      },
+      {
+        "description": "Network equipment",
+        "quantity": 12,
+        "unit_price": 116.67,
+        "amount": 1400.04
+      }
+    ]
+  },
+  {
+    "file": "invoice_0078.pdf",
+    "layout": "modern",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Rodriguez, Figueroa and Sanchez",
+      "currency": "USD",
+      "invoice_number": "INV-59308",
+      "invoice_date": "2026-09-29",
+      "due_date": "2026-10-29",
+      "po_number": "PO-540226",
+      "subtotal": 23538.77,
+      "tax": 0.0,
+      "total": 23538.77
+    },
+    "line_items": [
+      {
+        "description": "Network equipment",
+        "quantity": 9,
+        "unit_price": 40.62,
+        "amount": 365.58
+      },
+      {
+        "description": "Data storage",
+        "quantity": 10,
+        "unit_price": 830.56,
+        "amount": 8305.6
+      },
+      {
+        "description": "Consulting hours",
+        "quantity": 1,
+        "unit_price": 175.54,
+        "amount": 175.54
+      },
+      {
+        "description": "Software license (annual)",
+        "quantity": 19,
+        "unit_price": 596.75,
+        "amount": 11338.25
+      },
+      {
+        "description": "Cloud hosting services",
+        "quantity": 5,
+        "unit_price": 670.76,
+        "amount": 3353.8
+      }
+    ]
+  },
+  {
+    "file": "invoice_0079.pdf",
+    "layout": "modern",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Henderson-Owens",
+      "currency": "USD",
+      "invoice_number": "INV-68079",
+      "invoice_date": "2026-02-11",
+      "due_date": "2026-03-28",
+      "po_number": "PO-794093",
+      "subtotal": 10302.85,
+      "tax": 0.0,
+      "total": 10302.85
+    },
+    "line_items": [
+      {
+        "description": "Courier and freight",
+        "quantity": 11,
+        "unit_price": 702.5,
+        "amount": 7727.5
+      },
+      {
+        "description": "Cloud hosting services",
+        "quantity": 20,
+        "unit_price": 90.19,
+        "amount": 1803.8
+      },
+      {
+        "description": "Courier and freight",
+        "quantity": 5,
+        "unit_price": 154.31,
+        "amount": 771.55
+      }
+    ]
+  },
+  {
+    "file": "invoice_0080.pdf",
+    "layout": "classic",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Larson Ltd",
+      "currency": "USD",
+      "invoice_number": "INV-88554",
+      "invoice_date": "2026-04-23",
+      "due_date": "2026-06-07",
+      "po_number": "PO-157443",
+      "subtotal": 16987.58,
+      "tax": 0.0,
+      "total": 16987.58
+    },
+    "line_items": [
+      {
+        "description": "Training workshop",
+        "quantity": 9,
+        "unit_price": 205.78,
+        "amount": 1852.02
+      },
+      {
+        "description": "Software license (annual)",
+        "quantity": 4,
+        "unit_price": 320.48,
+        "amount": 1281.92
+      },
+      {
+        "description": "Courier and freight",
+        "quantity": 10,
+        "unit_price": 615.22,
+        "amount": 6152.2
+      },
+      {
+        "description": "Network equipment",
+        "quantity": 16,
+        "unit_price": 481.34,
+        "amount": 7701.44
+      }
+    ]
+  },
+  {
+    "file": "invoice_0081.pdf",
+    "layout": "classic",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Burton Ltd",
+      "currency": "USD",
+      "invoice_number": "INV-79806",
+      "invoice_date": "2026-03-08",
+      "due_date": "2026-04-22",
+      "po_number": "PO-837852",
+      "subtotal": 2895.63,
+      "tax": 144.78,
+      "total": 3040.41
+    },
+    "line_items": [
+      {
+        "description": "Software license (annual)",
+        "quantity": 9,
+        "unit_price": 271.16,
+        "amount": 2440.44
+      },
+      {
+        "description": "Security audit",
+        "quantity": 1,
+        "unit_price": 455.19,
+        "amount": 455.19
+      }
+    ]
+  },
+  {
+    "file": "invoice_0082.pdf",
+    "layout": "modern",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Carpenter LLC",
+      "currency": "GBP",
+      "invoice_number": "INV-93904",
+      "invoice_date": "2026-07-27",
+      "due_date": "2026-09-25",
+      "po_number": "PO-537983",
+      "subtotal": 4235.24,
+      "tax": 423.52,
+      "total": 4658.76
+    },
+    "line_items": [
+      {
+        "description": "IT support retainer",
+        "quantity": 3,
+        "unit_price": 366.41,
+        "amount": 1099.23
+      },
+      {
+        "description": "Maintenance contract",
+        "quantity": 2,
+        "unit_price": 401.05,
+        "amount": 802.1
+      },
+      {
+        "description": "Courier and freight",
+        "quantity": 3,
+        "unit_price": 777.97,
+        "amount": 2333.91
+      }
+    ]
+  },
+  {
+    "file": "invoice_0083.pdf",
+    "layout": "compact",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Rodriguez, Figueroa and Sanchez",
+      "currency": "USD",
+      "invoice_number": "INV-87184",
+      "invoice_date": "2026-05-05",
+      "due_date": "2026-06-19",
+      "po_number": "PO-519902",
+      "subtotal": 16731.0,
+      "tax": 0.0,
+      "total": 16731.0
+    },
+    "line_items": [
+      {
+        "description": "Courier and freight",
+        "quantity": 6,
+        "unit_price": 724.17,
+        "amount": 4345.02
+      },
+      {
+        "description": "API usage fees",
+        "quantity": 15,
+        "unit_price": 751.34,
+        "amount": 11270.1
+      },
+      {
+        "description": "Hardware repair",
+        "quantity": 12,
+        "unit_price": 92.99,
+        "amount": 1115.88
+      }
+    ]
+  },
+  {
+    "file": "invoice_0084.pdf",
+    "layout": "modern",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Vaughn, Marquez and Ross",
+      "currency": "GBP",
+      "invoice_number": "INV-92306",
+      "invoice_date": "2026-02-08",
+      "due_date": "2026-03-10",
+      "po_number": "PO-618119",
+      "subtotal": 11491.4,
+      "tax": 574.57,
+      "total": 12065.97
+    },
+    "line_items": [
+      {
+        "description": "Marketing materials",
+        "quantity": 11,
+        "unit_price": 211.09,
+        "amount": 2321.99
+      },
+      {
+        "description": "Printing services",
+        "quantity": 6,
+        "unit_price": 82.6,
+        "amount": 495.6
+      },
+      {
+        "description": "Office supplies",
+        "quantity": 4,
+        "unit_price": 484.59,
+        "amount": 1938.36
+      },
+      {
+        "description": "Hardware repair",
+        "quantity": 12,
+        "unit_price": 325.72,
+        "amount": 3908.64
+      },
+      {
+        "description": "Consulting hours",
+        "quantity": 5,
+        "unit_price": 224.1,
+        "amount": 1120.5
+      },
+      {
+        "description": "Courier and freight",
+        "quantity": 9,
+        "unit_price": 189.59,
+        "amount": 1706.31
+      }
+    ]
+  },
+  {
+    "file": "invoice_0085.pdf",
+    "layout": "classic",
+    "expected_flags": [
+      "total_mismatch"
+    ],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Pena, Marshall and Ramos",
+      "currency": "EUR",
+      "invoice_number": "INV-76497",
+      "invoice_date": "2026-01-29",
+      "due_date": "2026-03-15",
+      "po_number": "PO-177794",
+      "subtotal": 37078.61,
+      "tax": 3058.99,
+      "total": 40278.81
+    },
+    "line_items": [
+      {
+        "description": "API usage fees",
+        "quantity": 15,
+        "unit_price": 617.8,
+        "amount": 9267.0
+      },
+      {
+        "description": "Courier and freight",
+        "quantity": 19,
+        "unit_price": 584.05,
+        "amount": 11096.95
+      },
+      {
+        "description": "Printing services",
+        "quantity": 11,
+        "unit_price": 779.86,
+        "amount": 8578.46
+      },
+      {
+        "description": "Software license (annual)",
+        "quantity": 11,
+        "unit_price": 148.6,
+        "amount": 1634.6
+      },
+      {
+        "description": "Network equipment",
+        "quantity": 16,
+        "unit_price": 406.35,
+        "amount": 6501.6
+      }
+    ]
+  },
+  {
+    "file": "invoice_0086.pdf",
+    "layout": "compact",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Vaughn, Marquez and Ross",
+      "currency": "GBP",
+      "invoice_number": "INV-82655",
+      "invoice_date": "2026-08-25",
+      "due_date": "2026-10-24",
+      "po_number": "PO-930281",
+      "subtotal": 1677.84,
+      "tax": 167.78,
+      "total": 1845.62
+    },
+    "line_items": [
+      {
+        "description": "Training workshop",
+        "quantity": 3,
+        "unit_price": 559.28,
+        "amount": 1677.84
+      }
+    ]
+  },
+  {
+    "file": "invoice_0087.pdf",
+    "layout": "compact",
+    "expected_flags": [
+      "duplicate"
+    ],
+    "duplicate_of": "invoice_0061.pdf",
+    "fields": {
+      "vendor_name": "Mclaughlin, Gonzalez and Reynolds",
+      "currency": "EUR",
+      "invoice_number": "INV-96275",
+      "invoice_date": "2026-06-01",
+      "due_date": "2026-07-01",
+      "po_number": "PO-515032",
+      "subtotal": 24279.03,
+      "tax": 2003.02,
+      "total": 26282.05
+    },
+    "line_items": [
+      {
+        "description": "Office supplies",
+        "quantity": 15,
+        "unit_price": 763.09,
+        "amount": 11446.35
+      },
+      {
+        "description": "Software license (annual)",
+        "quantity": 13,
+        "unit_price": 770.2,
+        "amount": 10012.6
+      },
+      {
+        "description": "Data storage",
+        "quantity": 8,
+        "unit_price": 352.51,
+        "amount": 2820.08
+      }
+    ]
+  },
+  {
+    "file": "invoice_0088.pdf",
+    "layout": "modern",
+    "expected_flags": [
+      "prompt_injection"
+    ],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Arnold-Patterson",
+      "currency": "USD",
+      "invoice_number": "INV-47079",
+      "invoice_date": "2026-07-06",
+      "due_date": "2026-08-20",
+      "po_number": "PO-506235",
+      "subtotal": 31054.97,
+      "tax": 1552.75,
+      "total": 32607.72
+    },
+    "line_items": [
+      {
+        "description": "Maintenance contract",
+        "quantity": 7,
+        "unit_price": 299.55,
+        "amount": 2096.85
+      },
+      {
+        "description": "Cloud hosting services",
+        "quantity": 17,
+        "unit_price": 148.51,
+        "amount": 2524.67
+      },
+      {
+        "description": "API usage fees",
+        "quantity": 15,
+        "unit_price": 106.6,
+        "amount": 1599.0
+      },
+      {
+        "description": "Software license (annual)",
+        "quantity": 11,
+        "unit_price": 884.41,
+        "amount": 9728.51
+      },
+      {
+        "description": "Cloud hosting services",
+        "quantity": 17,
+        "unit_price": 586.82,
+        "amount": 9975.94
+      },
+      {
+        "description": "Maintenance contract",
+        "quantity": 8,
+        "unit_price": 641.25,
+        "amount": 5130.0
+      }
+    ]
+  },
+  {
+    "file": "invoice_0089.pdf",
+    "layout": "compact",
+    "expected_flags": [
+      "total_mismatch"
+    ],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Carpenter LLC",
+      "currency": "GBP",
+      "invoice_number": "INV-50662",
+      "invoice_date": "2026-03-14",
+      "due_date": "2026-04-28",
+      "po_number": "PO-787923",
+      "subtotal": 34966.73,
+      "tax": 0.0,
+      "total": 35009.77
+    },
+    "line_items": [
+      {
+        "description": "Printing services",
+        "quantity": 2,
+        "unit_price": 713.47,
+        "amount": 1426.94
+      },
+      {
+        "description": "Software license (annual)",
+        "quantity": 11,
+        "unit_price": 73.33,
+        "amount": 806.63
+      },
+      {
+        "description": "Network equipment",
+        "quantity": 18,
+        "unit_price": 615.37,
+        "amount": 11076.66
+      },
+      {
+        "description": "Printing services",
+        "quantity": 9,
+        "unit_price": 655.5,
+        "amount": 5899.5
+      },
+      {
+        "description": "Data storage",
+        "quantity": 20,
+        "unit_price": 787.85,
+        "amount": 15757.0
+      }
+    ]
+  },
+  {
+    "file": "invoice_0090.pdf",
+    "layout": "classic",
+    "expected_flags": [
+      "prompt_injection"
+    ],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Vaughn, Marquez and Ross",
+      "currency": "GBP",
+      "invoice_number": "INV-39693",
+      "invoice_date": "2026-09-06",
+      "due_date": "2026-10-06",
+      "po_number": "PO-244247",
+      "subtotal": 22270.03,
+      "tax": 1837.28,
+      "total": 24107.31
+    },
+    "line_items": [
+      {
+        "description": "Data storage",
+        "quantity": 13,
+        "unit_price": 584.49,
+        "amount": 7598.37
+      },
+      {
+        "description": "Hardware repair",
+        "quantity": 5,
+        "unit_price": 608.05,
+        "amount": 3040.25
+      },
+      {
+        "description": "Printing services",
+        "quantity": 17,
+        "unit_price": 97.71,
+        "amount": 1661.07
+      },
+      {
+        "description": "Cloud hosting services",
+        "quantity": 14,
+        "unit_price": 465.01,
+        "amount": 6510.14
+      },
+      {
+        "description": "Office supplies",
+        "quantity": 12,
+        "unit_price": 288.35,
+        "amount": 3460.2
+      }
+    ]
+  },
+  {
+    "file": "invoice_0091.pdf",
+    "layout": "compact",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Mejia Inc",
+      "currency": "USD",
+      "invoice_number": "INV-57749",
+      "invoice_date": "2026-01-23",
+      "due_date": "2026-03-09",
+      "po_number": "PO-809217",
+      "subtotal": 32428.96,
+      "tax": 3242.9,
+      "total": 35671.86
+    },
+    "line_items": [
+      {
+        "description": "API usage fees",
+        "quantity": 18,
+        "unit_price": 754.08,
+        "amount": 13573.44
+      },
+      {
+        "description": "Data storage",
+        "quantity": 17,
+        "unit_price": 48.41,
+        "amount": 822.97
+      },
+      {
+        "description": "Security audit",
+        "quantity": 20,
+        "unit_price": 130.98,
+        "amount": 2619.6
+      },
+      {
+        "description": "Hardware repair",
+        "quantity": 5,
+        "unit_price": 158.59,
+        "amount": 792.95
+      },
+      {
+        "description": "Consulting hours",
+        "quantity": 20,
+        "unit_price": 731.0,
+        "amount": 14620.0
+      }
+    ]
+  },
+  {
+    "file": "invoice_0092.pdf",
+    "layout": "compact",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Larson Ltd",
+      "currency": "USD",
+      "invoice_number": "INV-60052",
+      "invoice_date": "2026-08-25",
+      "due_date": "2026-10-09",
+      "po_number": "PO-627335",
+      "subtotal": 39259.47,
+      "tax": 3925.95,
+      "total": 43185.42
+    },
+    "line_items": [
+      {
+        "description": "Marketing materials",
+        "quantity": 10,
+        "unit_price": 680.87,
+        "amount": 6808.7
+      },
+      {
+        "description": "Office supplies",
+        "quantity": 15,
+        "unit_price": 222.09,
+        "amount": 3331.35
+      },
+      {
+        "description": "Marketing materials",
+        "quantity": 10,
+        "unit_price": 869.55,
+        "amount": 8695.5
+      },
+      {
+        "description": "Office supplies",
+        "quantity": 16,
+        "unit_price": 815.02,
+        "amount": 13040.32
+      },
+      {
+        "description": "Courier and freight",
+        "quantity": 12,
+        "unit_price": 615.3,
+        "amount": 7383.6
+      }
+    ]
+  },
+  {
+    "file": "invoice_0093.pdf",
+    "layout": "classic",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Porter, Wilkerson and Day",
+      "currency": "USD",
+      "invoice_number": "INV-77621",
+      "invoice_date": "2026-02-22",
+      "due_date": "2026-04-23",
+      "po_number": "PO-992512",
+      "subtotal": 3914.48,
+      "tax": 322.94,
+      "total": 4237.42
+    },
+    "line_items": [
+      {
+        "description": "Network equipment",
+        "quantity": 20,
+        "unit_price": 137.48,
+        "amount": 2749.6
+      },
+      {
+        "description": "Hardware repair",
+        "quantity": 2,
+        "unit_price": 582.44,
+        "amount": 1164.88
+      }
+    ]
+  },
+  {
+    "file": "invoice_0094.pdf",
+    "layout": "classic",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Pena, Marshall and Ramos",
+      "currency": "EUR",
+      "invoice_number": "INV-13495",
+      "invoice_date": "2026-08-19",
+      "due_date": "2026-10-03",
+      "po_number": "PO-535050",
+      "subtotal": 7466.25,
+      "tax": 373.31,
+      "total": 7839.56
+    },
+    "line_items": [
+      {
+        "description": "Training workshop",
+        "quantity": 9,
+        "unit_price": 412.65,
+        "amount": 3713.85
+      },
+      {
+        "description": "Software license (annual)",
+        "quantity": 5,
+        "unit_price": 750.48,
+        "amount": 3752.4
+      }
+    ]
+  },
+  {
+    "file": "invoice_0095.pdf",
+    "layout": "modern",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Henderson-Owens",
+      "currency": "USD",
+      "invoice_number": "INV-28035",
+      "invoice_date": "2026-06-21",
+      "due_date": "2026-07-21",
+      "po_number": "PO-140163",
+      "subtotal": 11956.55,
+      "tax": 0.0,
+      "total": 11956.55
+    },
+    "line_items": [
+      {
+        "description": "Data storage",
+        "quantity": 13,
+        "unit_price": 895.15,
+        "amount": 11636.95
+      },
+      {
+        "description": "API usage fees",
+        "quantity": 8,
+        "unit_price": 39.95,
+        "amount": 319.6
+      }
+    ]
+  },
+  {
+    "file": "invoice_0096.pdf",
+    "layout": "compact",
+    "expected_flags": [
+      "prompt_injection"
+    ],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Bryant-Hickman",
+      "currency": "USD",
+      "invoice_number": "INV-93748",
+      "invoice_date": "2026-05-03",
+      "due_date": "2026-06-17",
+      "po_number": "PO-932463",
+      "subtotal": 26320.16,
+      "tax": 0.0,
+      "total": 26320.16
+    },
+    "line_items": [
+      {
+        "description": "Maintenance contract",
+        "quantity": 5,
+        "unit_price": 686.57,
+        "amount": 3432.85
+      },
+      {
+        "description": "API usage fees",
+        "quantity": 15,
+        "unit_price": 559.58,
+        "amount": 8393.7
+      },
+      {
+        "description": "Office supplies",
+        "quantity": 3,
+        "unit_price": 31.82,
+        "amount": 95.46
+      },
+      {
+        "description": "IT support retainer",
+        "quantity": 5,
+        "unit_price": 500.69,
+        "amount": 2503.45
+      },
+      {
+        "description": "Software license (annual)",
+        "quantity": 20,
+        "unit_price": 482.08,
+        "amount": 9641.6
+      },
+      {
+        "description": "Software license (annual)",
+        "quantity": 10,
+        "unit_price": 225.31,
+        "amount": 2253.1
+      }
+    ]
+  },
+  {
+    "file": "invoice_0097.pdf",
+    "layout": "compact",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Mejia Inc",
+      "currency": "USD",
+      "invoice_number": "INV-97584",
+      "invoice_date": "2026-04-06",
+      "due_date": "2026-06-05",
+      "po_number": "PO-189772",
+      "subtotal": 26603.54,
+      "tax": 2660.35,
+      "total": 29263.89
+    },
+    "line_items": [
+      {
+        "description": "Printing services",
+        "quantity": 20,
+        "unit_price": 489.41,
+        "amount": 9788.2
+      },
+      {
+        "description": "IT support retainer",
+        "quantity": 17,
+        "unit_price": 523.92,
+        "amount": 8906.64
+      },
+      {
+        "description": "Cloud hosting services",
+        "quantity": 5,
+        "unit_price": 272.78,
+        "amount": 1363.9
+      },
+      {
+        "description": "Courier and freight",
+        "quantity": 20,
+        "unit_price": 327.24,
+        "amount": 6544.8
+      }
+    ]
+  },
+  {
+    "file": "invoice_0098.pdf",
+    "layout": "compact",
+    "expected_flags": [
+      "exceeds_po"
+    ],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Howard LLC",
+      "currency": "USD",
+      "invoice_number": "INV-53583",
+      "invoice_date": "2026-02-23",
+      "due_date": "2026-04-24",
+      "po_number": "PO-239890",
+      "subtotal": 21230.14,
+      "tax": 1061.51,
+      "total": 22291.65
+    },
+    "line_items": [
+      {
+        "description": "Training workshop",
+        "quantity": 18,
+        "unit_price": 463.99,
+        "amount": 8351.82
+      },
+      {
+        "description": "Hardware repair",
+        "quantity": 18,
+        "unit_price": 33.0,
+        "amount": 594.0
+      },
+      {
+        "description": "Security audit",
+        "quantity": 16,
+        "unit_price": 53.53,
+        "amount": 856.48
+      },
+      {
+        "description": "Cloud hosting services",
+        "quantity": 12,
+        "unit_price": 239.48,
+        "amount": 2873.76
+      },
+      {
+        "description": "Data storage",
+        "quantity": 12,
+        "unit_price": 712.84,
+        "amount": 8554.08
+      }
+    ]
+  },
+  {
+    "file": "invoice_0099.pdf",
+    "layout": "classic",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Walker-Velasquez",
+      "currency": "USD",
+      "invoice_number": "INV-36422",
+      "invoice_date": "2026-01-19",
+      "due_date": "2026-03-05",
+      "po_number": "PO-145934",
+      "subtotal": 17644.38,
+      "tax": 1764.44,
+      "total": 19408.82
+    },
+    "line_items": [
+      {
+        "description": "Maintenance contract",
+        "quantity": 15,
+        "unit_price": 883.02,
+        "amount": 13245.3
+      },
+      {
+        "description": "Software license (annual)",
+        "quantity": 6,
+        "unit_price": 733.18,
+        "amount": 4399.08
+      }
+    ]
+  },
+  {
+    "file": "invoice_0100.pdf",
+    "layout": "modern",
+    "expected_flags": [
+      "duplicate"
+    ],
+    "duplicate_of": "invoice_0043.pdf",
+    "fields": {
+      "vendor_name": "Mejia Inc",
+      "currency": "USD",
+      "invoice_number": "INV-80010",
+      "invoice_date": "2026-06-04",
+      "due_date": "2026-07-04",
+      "po_number": "PO-232731",
+      "subtotal": 33913.6,
+      "tax": 1695.68,
+      "total": 35609.28
+    },
+    "line_items": [
+      {
+        "description": "IT support retainer",
+        "quantity": 7,
+        "unit_price": 294.26,
+        "amount": 2059.82
+      },
+      {
+        "description": "IT support retainer",
+        "quantity": 18,
+        "unit_price": 856.53,
+        "amount": 15417.54
+      },
+      {
+        "description": "IT support retainer",
+        "quantity": 6,
+        "unit_price": 184.51,
+        "amount": 1107.06
+      },
+      {
+        "description": "Courier and freight",
+        "quantity": 16,
+        "unit_price": 259.7,
+        "amount": 4155.2
+      },
+      {
+        "description": "Software license (annual)",
+        "quantity": 17,
+        "unit_price": 543.16,
+        "amount": 9233.72
+      },
+      {
+        "description": "Data storage",
+        "quantity": 7,
+        "unit_price": 277.18,
+        "amount": 1940.26
+      }
+    ]
+  },
+  {
+    "file": "invoice_0101.pdf",
+    "layout": "modern",
+    "expected_flags": [
+      "prompt_injection"
+    ],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Medina PLC",
+      "currency": "GBP",
+      "invoice_number": "INV-67637",
+      "invoice_date": "2026-07-24",
+      "due_date": "2026-09-22",
+      "po_number": "PO-505426",
+      "subtotal": 12377.65,
+      "tax": 1237.77,
+      "total": 13615.42
+    },
+    "line_items": [
+      {
+        "description": "Cloud hosting services",
+        "quantity": 18,
+        "unit_price": 433.96,
+        "amount": 7811.28
+      },
+      {
+        "description": "Hardware repair",
+        "quantity": 7,
+        "unit_price": 268.21,
+        "amount": 1877.47
+      },
+      {
+        "description": "Data storage",
+        "quantity": 2,
+        "unit_price": 781.23,
+        "amount": 1562.46
+      },
+      {
+        "description": "Data storage",
+        "quantity": 9,
+        "unit_price": 125.16,
+        "amount": 1126.44
+      }
+    ]
+  },
+  {
+    "file": "invoice_0102.pdf",
+    "layout": "compact",
+    "expected_flags": [
+      "exceeds_po"
+    ],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Bryant-Hickman",
+      "currency": "USD",
+      "invoice_number": "INV-68183",
+      "invoice_date": "2026-03-27",
+      "due_date": "2026-05-26",
+      "po_number": "PO-468623",
+      "subtotal": 17089.73,
+      "tax": 1708.97,
+      "total": 18798.7
+    },
+    "line_items": [
+      {
+        "description": "Marketing materials",
+        "quantity": 16,
+        "unit_price": 340.1,
+        "amount": 5441.6
+      },
+      {
+        "description": "Software license (annual)",
+        "quantity": 17,
+        "unit_price": 251.05,
+        "amount": 4267.85
+      },
+      {
+        "description": "Courier and freight",
+        "quantity": 14,
+        "unit_price": 84.85,
+        "amount": 1187.9
+      },
+      {
+        "description": "Data storage",
+        "quantity": 6,
+        "unit_price": 497.74,
+        "amount": 2986.44
+      },
+      {
+        "description": "Printing services",
+        "quantity": 4,
+        "unit_price": 85.86,
+        "amount": 343.44
+      },
+      {
+        "description": "Courier and freight",
+        "quantity": 10,
+        "unit_price": 286.25,
+        "amount": 2862.5
+      }
+    ]
+  },
+  {
+    "file": "invoice_0103.pdf",
+    "layout": "modern",
+    "expected_flags": [
+      "duplicate"
+    ],
+    "duplicate_of": "invoice_0048.pdf",
+    "fields": {
+      "vendor_name": "Burton Ltd",
+      "currency": "USD",
+      "invoice_number": "INV-71433",
+      "invoice_date": "2026-08-13",
+      "due_date": "2026-09-12",
+      "po_number": "PO-822131",
+      "subtotal": 11889.56,
+      "tax": 980.89,
+      "total": 12870.45
+    },
+    "line_items": [
+      {
+        "description": "Printing services",
+        "quantity": 4,
+        "unit_price": 496.94,
+        "amount": 1987.76
+      },
+      {
+        "description": "Hardware repair",
+        "quantity": 5,
+        "unit_price": 818.94,
+        "amount": 4094.7
+      },
+      {
+        "description": "Consulting hours",
+        "quantity": 5,
+        "unit_price": 78.2,
+        "amount": 391.0
+      },
+      {
+        "description": "Hardware repair",
+        "quantity": 10,
+        "unit_price": 541.61,
+        "amount": 5416.1
+      }
+    ]
+  },
+  {
+    "file": "invoice_0104.pdf",
+    "layout": "compact",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Mitchell-Horton",
+      "currency": "USD",
+      "invoice_number": "INV-18812",
+      "invoice_date": "2026-01-18",
+      "due_date": "2026-02-17",
+      "po_number": "PO-347459",
+      "subtotal": 9687.03,
+      "tax": 968.7,
+      "total": 10655.73
+    },
+    "line_items": [
+      {
+        "description": "Printing services",
+        "quantity": 2,
+        "unit_price": 81.41,
+        "amount": 162.82
+      },
+      {
+        "description": "Marketing materials",
+        "quantity": 13,
+        "unit_price": 336.53,
+        "amount": 4374.89
+      },
+      {
+        "description": "Consulting hours",
+        "quantity": 6,
+        "unit_price": 858.22,
+        "amount": 5149.32
+      }
+    ]
+  },
+  {
+    "file": "invoice_0105.pdf",
+    "layout": "compact",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Morton-Chase",
+      "currency": "USD",
+      "invoice_number": "INV-34385",
+      "invoice_date": "2026-01-14",
+      "due_date": "2026-03-15",
+      "po_number": "PO-623285",
+      "subtotal": 33182.93,
+      "tax": 0.0,
+      "total": 33182.93
+    },
+    "line_items": [
+      {
+        "description": "Printing services",
+        "quantity": 2,
+        "unit_price": 550.51,
+        "amount": 1101.02
+      },
+      {
+        "description": "Data storage",
+        "quantity": 15,
+        "unit_price": 854.71,
+        "amount": 12820.65
+      },
+      {
+        "description": "Courier and freight",
+        "quantity": 15,
+        "unit_price": 690.33,
+        "amount": 10354.95
+      },
+      {
+        "description": "Security audit",
+        "quantity": 5,
+        "unit_price": 483.57,
+        "amount": 2417.85
+      },
+      {
+        "description": "Office supplies",
+        "quantity": 11,
+        "unit_price": 589.86,
+        "amount": 6488.46
+      }
+    ]
+  },
+  {
+    "file": "invoice_0106.pdf",
+    "layout": "modern",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Moore, Campbell and Clark",
+      "currency": "GBP",
+      "invoice_number": "INV-47431",
+      "invoice_date": "2026-04-20",
+      "due_date": "2026-06-19",
+      "po_number": "PO-827691",
+      "subtotal": 6307.56,
+      "tax": 630.76,
+      "total": 6938.32
+    },
+    "line_items": [
+      {
+        "description": "IT support retainer",
+        "quantity": 9,
+        "unit_price": 700.84,
+        "amount": 6307.56
+      }
+    ]
+  },
+  {
+    "file": "invoice_0107.pdf",
+    "layout": "modern",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Ferguson and Sons",
+      "currency": "USD",
+      "invoice_number": "INV-51889",
+      "invoice_date": "2026-02-14",
+      "due_date": "2026-04-15",
+      "po_number": "PO-800280",
+      "subtotal": 2517.0,
+      "tax": 251.7,
+      "total": 2768.7
+    },
+    "line_items": [
+      {
+        "description": "IT support retainer",
+        "quantity": 15,
+        "unit_price": 167.8,
+        "amount": 2517.0
+      }
+    ]
+  },
+  {
+    "file": "invoice_0108.pdf",
+    "layout": "modern",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Moore, Campbell and Clark",
+      "currency": "GBP",
+      "invoice_number": "INV-85009",
+      "invoice_date": "2026-07-04",
+      "due_date": "2026-09-02",
+      "po_number": "PO-486831",
+      "subtotal": 18314.35,
+      "tax": 0.0,
+      "total": 18314.35
+    },
+    "line_items": [
+      {
+        "description": "Hardware repair",
+        "quantity": 10,
+        "unit_price": 803.83,
+        "amount": 8038.3
+      },
+      {
+        "description": "API usage fees",
+        "quantity": 6,
+        "unit_price": 644.95,
+        "amount": 3869.7
+      },
+      {
+        "description": "Training workshop",
+        "quantity": 6,
+        "unit_price": 717.42,
+        "amount": 4304.52
+      },
+      {
+        "description": "Office supplies",
+        "quantity": 8,
+        "unit_price": 122.41,
+        "amount": 979.28
+      },
+      {
+        "description": "Maintenance contract",
+        "quantity": 5,
+        "unit_price": 224.51,
+        "amount": 1122.55
+      }
+    ]
+  },
+  {
+    "file": "invoice_0109.pdf",
+    "layout": "classic",
+    "expected_flags": [
+      "missing_po"
+    ],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Moore, Campbell and Clark",
+      "currency": "GBP",
+      "invoice_number": "INV-63665",
+      "invoice_date": "2026-09-27",
+      "due_date": "2026-11-11",
+      "po_number": null,
+      "subtotal": 19624.9,
+      "tax": 1962.49,
+      "total": 21587.39
+    },
+    "line_items": [
+      {
+        "description": "Software license (annual)",
+        "quantity": 20,
+        "unit_price": 797.56,
+        "amount": 15951.2
+      },
+      {
+        "description": "IT support retainer",
+        "quantity": 10,
+        "unit_price": 367.37,
+        "amount": 3673.7
+      }
+    ]
+  },
+  {
+    "file": "invoice_0110.pdf",
+    "layout": "classic",
+    "expected_flags": [
+      "exceeds_po"
+    ],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Walker-Velasquez",
+      "currency": "USD",
+      "invoice_number": "INV-93859",
+      "invoice_date": "2026-03-07",
+      "due_date": "2026-05-06",
+      "po_number": "PO-716338",
+      "subtotal": 6408.9,
+      "tax": 528.73,
+      "total": 6937.63
+    },
+    "line_items": [
+      {
+        "description": "Training workshop",
+        "quantity": 15,
+        "unit_price": 427.26,
+        "amount": 6408.9
+      }
+    ]
+  },
+  {
+    "file": "invoice_0111.pdf",
+    "layout": "compact",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Baldwin Ltd",
+      "currency": "USD",
+      "invoice_number": "INV-39552",
+      "invoice_date": "2026-06-15",
+      "due_date": "2026-08-14",
+      "po_number": "PO-462831",
+      "subtotal": 2557.14,
+      "tax": 127.86,
+      "total": 2685.0
+    },
+    "line_items": [
+      {
+        "description": "Consulting hours",
+        "quantity": 17,
+        "unit_price": 150.42,
+        "amount": 2557.14
+      }
+    ]
+  },
+  {
+    "file": "invoice_0112.pdf",
+    "layout": "modern",
+    "expected_flags": [
+      "duplicate"
+    ],
+    "duplicate_of": "invoice_0013.pdf",
+    "fields": {
+      "vendor_name": "Walker-Velasquez",
+      "currency": "USD",
+      "invoice_number": "INV-34931",
+      "invoice_date": "2026-05-08",
+      "due_date": "2026-06-07",
+      "po_number": "PO-662336",
+      "subtotal": 742.64,
+      "tax": 0.0,
+      "total": 742.64
+    },
+    "line_items": [
+      {
+        "description": "Data storage",
+        "quantity": 2,
+        "unit_price": 371.32,
+        "amount": 742.64
+      }
+    ]
+  },
+  {
+    "file": "invoice_0113.pdf",
+    "layout": "compact",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Walker-Velasquez",
+      "currency": "USD",
+      "invoice_number": "INV-15958",
+      "invoice_date": "2026-01-15",
+      "due_date": "2026-02-14",
+      "po_number": "PO-772612",
+      "subtotal": 21215.47,
+      "tax": 0.0,
+      "total": 21215.47
+    },
+    "line_items": [
+      {
+        "description": "Network equipment",
+        "quantity": 9,
+        "unit_price": 125.78,
+        "amount": 1132.02
+      },
+      {
+        "description": "Training workshop",
+        "quantity": 20,
+        "unit_price": 487.13,
+        "amount": 9742.6
+      },
+      {
+        "description": "Courier and freight",
+        "quantity": 6,
+        "unit_price": 538.75,
+        "amount": 3232.5
+      },
+      {
+        "description": "Courier and freight",
+        "quantity": 5,
+        "unit_price": 166.51,
+        "amount": 832.55
+      },
+      {
+        "description": "API usage fees",
+        "quantity": 20,
+        "unit_price": 313.79,
+        "amount": 6275.8
+      }
+    ]
+  },
+  {
+    "file": "invoice_0114.pdf",
+    "layout": "modern",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Burton Ltd",
+      "currency": "USD",
+      "invoice_number": "INV-64476",
+      "invoice_date": "2026-03-22",
+      "due_date": "2026-05-06",
+      "po_number": "PO-607774",
+      "subtotal": 33851.99,
+      "tax": 0.0,
+      "total": 33851.99
+    },
+    "line_items": [
+      {
+        "description": "Cloud hosting services",
+        "quantity": 14,
+        "unit_price": 562.03,
+        "amount": 7868.42
+      },
+      {
+        "description": "Training workshop",
+        "quantity": 16,
+        "unit_price": 801.76,
+        "amount": 12828.16
+      },
+      {
+        "description": "Network equipment",
+        "quantity": 10,
+        "unit_price": 583.09,
+        "amount": 5830.9
+      },
+      {
+        "description": "Marketing materials",
+        "quantity": 16,
+        "unit_price": 231.72,
+        "amount": 3707.52
+      },
+      {
+        "description": "Software license (annual)",
+        "quantity": 13,
+        "unit_price": 278.23,
+        "amount": 3616.99
+      }
+    ]
+  },
+  {
+    "file": "invoice_0115.pdf",
+    "layout": "classic",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Clark-Wright",
+      "currency": "GBP",
+      "invoice_number": "INV-23917",
+      "invoice_date": "2026-09-21",
+      "due_date": "2026-11-20",
+      "po_number": "PO-434617",
+      "subtotal": 19090.03,
+      "tax": 1574.93,
+      "total": 20664.96
+    },
+    "line_items": [
+      {
+        "description": "Data storage",
+        "quantity": 11,
+        "unit_price": 777.41,
+        "amount": 8551.51
+      },
+      {
+        "description": "Consulting hours",
+        "quantity": 12,
+        "unit_price": 878.21,
+        "amount": 10538.52
+      }
+    ]
+  },
+  {
+    "file": "invoice_0116.pdf",
+    "layout": "modern",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Allen-Allen",
+      "currency": "USD",
+      "invoice_number": "INV-75308",
+      "invoice_date": "2026-04-08",
+      "due_date": "2026-05-08",
+      "po_number": "PO-639728",
+      "subtotal": 21744.72,
+      "tax": 1793.94,
+      "total": 23538.66
+    },
+    "line_items": [
+      {
+        "description": "Cloud hosting services",
+        "quantity": 8,
+        "unit_price": 139.68,
+        "amount": 1117.44
+      },
+      {
+        "description": "Hardware repair",
+        "quantity": 10,
+        "unit_price": 851.67,
+        "amount": 8516.7
+      },
+      {
+        "description": "Hardware repair",
+        "quantity": 20,
+        "unit_price": 385.05,
+        "amount": 7701.0
+      },
+      {
+        "description": "API usage fees",
+        "quantity": 6,
+        "unit_price": 734.93,
+        "amount": 4409.58
+      }
+    ]
+  },
+  {
+    "file": "invoice_0117.pdf",
+    "layout": "classic",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Vaughn, Marquez and Ross",
+      "currency": "GBP",
+      "invoice_number": "INV-11071",
+      "invoice_date": "2026-05-27",
+      "due_date": "2026-07-26",
+      "po_number": "PO-988324",
+      "subtotal": 11475.56,
+      "tax": 1147.56,
+      "total": 12623.12
+    },
+    "line_items": [
+      {
+        "description": "Security audit",
+        "quantity": 1,
+        "unit_price": 94.69,
+        "amount": 94.69
+      },
+      {
+        "description": "Office supplies",
+        "quantity": 17,
+        "unit_price": 419.65,
+        "amount": 7134.05
+      },
+      {
+        "description": "Cloud hosting services",
+        "quantity": 7,
+        "unit_price": 531.26,
+        "amount": 3718.82
+      },
+      {
+        "description": "Courier and freight",
+        "quantity": 2,
+        "unit_price": 264.0,
+        "amount": 528.0
+      }
+    ]
+  },
+  {
+    "file": "invoice_0118.pdf",
+    "layout": "modern",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Allen-Allen",
+      "currency": "USD",
+      "invoice_number": "INV-58915",
+      "invoice_date": "2026-02-19",
+      "due_date": "2026-04-05",
+      "po_number": "PO-933510",
+      "subtotal": 35918.3,
+      "tax": 1795.92,
+      "total": 37714.22
+    },
+    "line_items": [
+      {
+        "description": "Data storage",
+        "quantity": 12,
+        "unit_price": 691.01,
+        "amount": 8292.12
+      },
+      {
+        "description": "Courier and freight",
+        "quantity": 2,
+        "unit_price": 369.51,
+        "amount": 739.02
+      },
+      {
+        "description": "Training workshop",
+        "quantity": 18,
+        "unit_price": 187.27,
+        "amount": 3370.86
+      },
+      {
+        "description": "Training workshop",
+        "quantity": 10,
+        "unit_price": 80.08,
+        "amount": 800.8
+      },
+      {
+        "description": "Network equipment",
+        "quantity": 15,
+        "unit_price": 691.5,
+        "amount": 10372.5
+      },
+      {
+        "description": "Software license (annual)",
+        "quantity": 20,
+        "unit_price": 617.15,
+        "amount": 12343.0
+      }
+    ]
+  },
+  {
+    "file": "invoice_0119.pdf",
+    "layout": "classic",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Henderson-Owens",
+      "currency": "USD",
+      "invoice_number": "INV-78069",
+      "invoice_date": "2026-06-20",
+      "due_date": "2026-08-04",
+      "po_number": "PO-579187",
+      "subtotal": 4697.97,
+      "tax": 234.9,
+      "total": 4932.87
+    },
+    "line_items": [
+      {
+        "description": "Security audit",
+        "quantity": 7,
+        "unit_price": 548.18,
+        "amount": 3837.26
+      },
+      {
+        "description": "Cloud hosting services",
+        "quantity": 17,
+        "unit_price": 50.63,
+        "amount": 860.71
+      }
+    ]
+  },
+  {
+    "file": "invoice_0120.pdf",
+    "layout": "modern",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Medina PLC",
+      "currency": "GBP",
+      "invoice_number": "INV-76809",
+      "invoice_date": "2026-06-22",
+      "due_date": "2026-08-21",
+      "po_number": "PO-658198",
+      "subtotal": 11408.42,
+      "tax": 941.19,
+      "total": 12349.61
+    },
+    "line_items": [
+      {
+        "description": "Data storage",
+        "quantity": 11,
+        "unit_price": 839.26,
+        "amount": 9231.86
+      },
+      {
+        "description": "Courier and freight",
+        "quantity": 6,
+        "unit_price": 362.76,
+        "amount": 2176.56
+      }
+    ]
+  },
+  {
+    "file": "invoice_0121.pdf",
+    "layout": "compact",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Vaughn, Marquez and Ross",
+      "currency": "GBP",
+      "invoice_number": "INV-72973",
+      "invoice_date": "2026-01-27",
+      "due_date": "2026-03-28",
+      "po_number": "PO-278794",
+      "subtotal": 11614.41,
+      "tax": 580.72,
+      "total": 12195.13
+    },
+    "line_items": [
+      {
+        "description": "Printing services",
+        "quantity": 1,
+        "unit_price": 341.0,
+        "amount": 341.0
+      },
+      {
+        "description": "Courier and freight",
+        "quantity": 4,
+        "unit_price": 882.21,
+        "amount": 3528.84
+      },
+      {
+        "description": "IT support retainer",
+        "quantity": 10,
+        "unit_price": 720.13,
+        "amount": 7201.3
+      },
+      {
+        "description": "Network equipment",
+        "quantity": 1,
+        "unit_price": 543.27,
+        "amount": 543.27
+      }
+    ]
+  },
+  {
+    "file": "invoice_0122.pdf",
+    "layout": "compact",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Clark-Wright",
+      "currency": "GBP",
+      "invoice_number": "INV-90147",
+      "invoice_date": "2026-07-30",
+      "due_date": "2026-09-28",
+      "po_number": "PO-594514",
+      "subtotal": 9731.47,
+      "tax": 486.57,
+      "total": 10218.04
+    },
+    "line_items": [
+      {
+        "description": "Office supplies",
+        "quantity": 5,
+        "unit_price": 742.17,
+        "amount": 3710.85
+      },
+      {
+        "description": "IT support retainer",
+        "quantity": 2,
+        "unit_price": 521.72,
+        "amount": 1043.44
+      },
+      {
+        "description": "Maintenance contract",
+        "quantity": 4,
+        "unit_price": 183.84,
+        "amount": 735.36
+      },
+      {
+        "description": "Security audit",
+        "quantity": 11,
+        "unit_price": 385.62,
+        "amount": 4241.82
+      }
+    ]
+  },
+  {
+    "file": "invoice_0123.pdf",
+    "layout": "modern",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Mclaughlin, Gonzalez and Reynolds",
+      "currency": "EUR",
+      "invoice_number": "INV-54869",
+      "invoice_date": "2026-08-24",
+      "due_date": "2026-10-23",
+      "po_number": "PO-672808",
+      "subtotal": 11055.3,
+      "tax": 552.76,
+      "total": 11608.06
+    },
+    "line_items": [
+      {
+        "description": "Data storage",
+        "quantity": 17,
+        "unit_price": 198.5,
+        "amount": 3374.5
+      },
+      {
+        "description": "Data storage",
+        "quantity": 16,
+        "unit_price": 480.05,
+        "amount": 7680.8
+      }
+    ]
+  },
+  {
+    "file": "invoice_0124.pdf",
+    "layout": "compact",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Mccullough, Hunter and Estrada",
+      "currency": "USD",
+      "invoice_number": "INV-85166",
+      "invoice_date": "2026-05-28",
+      "due_date": "2026-06-27",
+      "po_number": "PO-809489",
+      "subtotal": 40136.76,
+      "tax": 3311.28,
+      "total": 43448.04
+    },
+    "line_items": [
+      {
+        "description": "Office supplies",
+        "quantity": 9,
+        "unit_price": 554.92,
+        "amount": 4994.28
+      },
+      {
+        "description": "Network equipment",
+        "quantity": 8,
+        "unit_price": 261.92,
+        "amount": 2095.36
+      },
+      {
+        "description": "Network equipment",
+        "quantity": 8,
+        "unit_price": 848.21,
+        "amount": 6785.68
+      },
+      {
+        "description": "IT support retainer",
+        "quantity": 10,
+        "unit_price": 638.84,
+        "amount": 6388.4
+      },
+      {
+        "description": "Data storage",
+        "quantity": 16,
+        "unit_price": 295.58,
+        "amount": 4729.28
+      },
+      {
+        "description": "Marketing materials",
+        "quantity": 18,
+        "unit_price": 841.32,
+        "amount": 15143.76
+      }
+    ]
+  },
+  {
+    "file": "invoice_0125.pdf",
+    "layout": "modern",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Morton-Chase",
+      "currency": "USD",
+      "invoice_number": "INV-83664",
+      "invoice_date": "2026-10-03",
+      "due_date": "2026-11-17",
+      "po_number": "PO-829988",
+      "subtotal": 8412.35,
+      "tax": 420.62,
+      "total": 8832.97
+    },
+    "line_items": [
+      {
+        "description": "Network equipment",
+        "quantity": 5,
+        "unit_price": 272.05,
+        "amount": 1360.25
+      },
+      {
+        "description": "Maintenance contract",
+        "quantity": 3,
+        "unit_price": 321.53,
+        "amount": 964.59
+      },
+      {
+        "description": "Office supplies",
+        "quantity": 9,
+        "unit_price": 676.39,
+        "amount": 6087.51
+      }
+    ]
+  },
+  {
+    "file": "invoice_0126.pdf",
+    "layout": "modern",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Clark-Wright",
+      "currency": "GBP",
+      "invoice_number": "INV-36143",
+      "invoice_date": "2026-09-02",
+      "due_date": "2026-11-01",
+      "po_number": "PO-892630",
+      "subtotal": 12178.33,
+      "tax": 1217.83,
+      "total": 13396.16
+    },
+    "line_items": [
+      {
+        "description": "Cloud hosting services",
+        "quantity": 19,
+        "unit_price": 226.76,
+        "amount": 4308.44
+      },
+      {
+        "description": "Office supplies",
+        "quantity": 17,
+        "unit_price": 214.72,
+        "amount": 3650.24
+      },
+      {
+        "description": "Data storage",
+        "quantity": 2,
+        "unit_price": 103.68,
+        "amount": 207.36
+      },
+      {
+        "description": "Marketing materials",
+        "quantity": 16,
+        "unit_price": 103.98,
+        "amount": 1663.68
+      },
+      {
+        "description": "Training workshop",
+        "quantity": 5,
+        "unit_price": 19.59,
+        "amount": 97.95
+      },
+      {
+        "description": "API usage fees",
+        "quantity": 6,
+        "unit_price": 375.11,
+        "amount": 2250.66
+      }
+    ]
+  },
+  {
+    "file": "invoice_0127.pdf",
+    "layout": "modern",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Walker-Velasquez",
+      "currency": "USD",
+      "invoice_number": "INV-33040",
+      "invoice_date": "2026-03-31",
+      "due_date": "2026-05-15",
+      "po_number": "PO-138105",
+      "subtotal": 1776.84,
+      "tax": 0.0,
+      "total": 1776.84
+    },
+    "line_items": [
+      {
+        "description": "Office supplies",
+        "quantity": 3,
+        "unit_price": 592.28,
+        "amount": 1776.84
+      }
+    ]
+  },
+  {
+    "file": "invoice_0128.pdf",
+    "layout": "classic",
+    "expected_flags": [
+      "total_mismatch"
+    ],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Porter, Wilkerson and Day",
+      "currency": "USD",
+      "invoice_number": "INV-70150",
+      "invoice_date": "2026-03-25",
+      "due_date": "2026-05-24",
+      "po_number": "PO-779776",
+      "subtotal": 30155.01,
+      "tax": 2487.79,
+      "total": 32859.79
+    },
+    "line_items": [
+      {
+        "description": "Cloud hosting services",
+        "quantity": 10,
+        "unit_price": 790.92,
+        "amount": 7909.2
+      },
+      {
+        "description": "Software license (annual)",
+        "quantity": 10,
+        "unit_price": 517.65,
+        "amount": 5176.5
+      },
+      {
+        "description": "Printing services",
+        "quantity": 11,
+        "unit_price": 266.84,
+        "amount": 2935.24
+      },
+      {
+        "description": "API usage fees",
+        "quantity": 18,
+        "unit_price": 479.02,
+        "amount": 8622.36
+      },
+      {
+        "description": "Maintenance contract",
+        "quantity": 5,
+        "unit_price": 768.19,
+        "amount": 3840.95
+      },
+      {
+        "description": "Software license (annual)",
+        "quantity": 9,
+        "unit_price": 185.64,
+        "amount": 1670.76
+      }
+    ]
+  },
+  {
+    "file": "invoice_0129.pdf",
+    "layout": "modern",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Vaughn, Marquez and Ross",
+      "currency": "GBP",
+      "invoice_number": "INV-40870",
+      "invoice_date": "2026-05-14",
+      "due_date": "2026-06-28",
+      "po_number": "PO-568436",
+      "subtotal": 17447.46,
+      "tax": 0.0,
+      "total": 17447.46
+    },
+    "line_items": [
+      {
+        "description": "Hardware repair",
+        "quantity": 7,
+        "unit_price": 170.31,
+        "amount": 1192.17
+      },
+      {
+        "description": "Training workshop",
+        "quantity": 13,
+        "unit_price": 746.89,
+        "amount": 9709.57
+      },
+      {
+        "description": "Printing services",
+        "quantity": 11,
+        "unit_price": 91.76,
+        "amount": 1009.36
+      },
+      {
+        "description": "Consulting hours",
+        "quantity": 4,
+        "unit_price": 178.53,
+        "amount": 714.12
+      },
+      {
+        "description": "Office supplies",
+        "quantity": 16,
+        "unit_price": 301.39,
+        "amount": 4822.24
+      }
+    ]
+  },
+  {
+    "file": "invoice_0130.pdf",
+    "layout": "modern",
+    "expected_flags": [
+      "exceeds_po"
+    ],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Vaughn, Marquez and Ross",
+      "currency": "GBP",
+      "invoice_number": "INV-38947",
+      "invoice_date": "2026-07-08",
+      "due_date": "2026-09-06",
+      "po_number": "PO-329772",
+      "subtotal": 24069.4,
+      "tax": 1985.73,
+      "total": 26055.13
+    },
+    "line_items": [
+      {
+        "description": "Printing services",
+        "quantity": 19,
+        "unit_price": 25.12,
+        "amount": 477.28
+      },
+      {
+        "description": "Cloud hosting services",
+        "quantity": 12,
+        "unit_price": 628.1,
+        "amount": 7537.2
+      },
+      {
+        "description": "Consulting hours",
+        "quantity": 4,
+        "unit_price": 426.87,
+        "amount": 1707.48
+      },
+      {
+        "description": "API usage fees",
+        "quantity": 13,
+        "unit_price": 622.18,
+        "amount": 8088.34
+      },
+      {
+        "description": "Printing services",
+        "quantity": 10,
+        "unit_price": 625.91,
+        "amount": 6259.1
+      }
+    ]
+  },
+  {
+    "file": "invoice_0131.pdf",
+    "layout": "compact",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Mccullough, Hunter and Estrada",
+      "currency": "USD",
+      "invoice_number": "INV-24707",
+      "invoice_date": "2026-02-09",
+      "due_date": "2026-04-10",
+      "po_number": "PO-164758",
+      "subtotal": 43115.84,
+      "tax": 3557.06,
+      "total": 46672.9
+    },
+    "line_items": [
+      {
+        "description": "Training workshop",
+        "quantity": 12,
+        "unit_price": 383.02,
+        "amount": 4596.24
+      },
+      {
+        "description": "Marketing materials",
+        "quantity": 16,
+        "unit_price": 685.26,
+        "amount": 10964.16
+      },
+      {
+        "description": "Printing services",
+        "quantity": 7,
+        "unit_price": 689.25,
+        "amount": 4824.75
+      },
+      {
+        "description": "Software license (annual)",
+        "quantity": 20,
+        "unit_price": 787.72,
+        "amount": 15754.4
+      },
+      {
+        "description": "IT support retainer",
+        "quantity": 17,
+        "unit_price": 410.37,
+        "amount": 6976.29
+      }
+    ]
+  },
+  {
+    "file": "invoice_0132.pdf",
+    "layout": "modern",
+    "expected_flags": [
+      "prompt_injection"
+    ],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Burton Ltd",
+      "currency": "USD",
+      "invoice_number": "INV-17567",
+      "invoice_date": "2026-08-22",
+      "due_date": "2026-10-21",
+      "po_number": "PO-685941",
+      "subtotal": 17370.1,
+      "tax": 1737.01,
+      "total": 19107.11
+    },
+    "line_items": [
+      {
+        "description": "Data storage",
+        "quantity": 18,
+        "unit_price": 147.62,
+        "amount": 2657.16
+      },
+      {
+        "description": "Printing services",
+        "quantity": 17,
+        "unit_price": 406.03,
+        "amount": 6902.51
+      },
+      {
+        "description": "Maintenance contract",
+        "quantity": 7,
+        "unit_price": 649.47,
+        "amount": 4546.29
+      },
+      {
+        "description": "Maintenance contract",
+        "quantity": 3,
+        "unit_price": 810.52,
+        "amount": 2431.56
+      },
+      {
+        "description": "Training workshop",
+        "quantity": 2,
+        "unit_price": 416.29,
+        "amount": 832.58
+      }
+    ]
+  },
+  {
+    "file": "invoice_0133.pdf",
+    "layout": "modern",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Vaughn, Marquez and Ross",
+      "currency": "GBP",
+      "invoice_number": "INV-60132",
+      "invoice_date": "2026-08-04",
+      "due_date": "2026-09-18",
+      "po_number": "PO-570325",
+      "subtotal": 5888.83,
+      "tax": 294.44,
+      "total": 6183.27
+    },
+    "line_items": [
+      {
+        "description": "Hardware repair",
+        "quantity": 1,
+        "unit_price": 365.41,
+        "amount": 365.41
+      },
+      {
+        "description": "Courier and freight",
+        "quantity": 1,
+        "unit_price": 675.04,
+        "amount": 675.04
+      },
+      {
+        "description": "Data storage",
+        "quantity": 3,
+        "unit_price": 55.08,
+        "amount": 165.24
+      },
+      {
+        "description": "Cloud hosting services",
+        "quantity": 3,
+        "unit_price": 493.93,
+        "amount": 1481.79
+      },
+      {
+        "description": "Maintenance contract",
+        "quantity": 3,
+        "unit_price": 887.73,
+        "amount": 2663.19
+      },
+      {
+        "description": "Consulting hours",
+        "quantity": 2,
+        "unit_price": 269.08,
+        "amount": 538.16
+      }
+    ]
+  },
+  {
+    "file": "invoice_0134.pdf",
+    "layout": "modern",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Carpenter LLC",
+      "currency": "GBP",
+      "invoice_number": "INV-55371",
+      "invoice_date": "2026-05-07",
+      "due_date": "2026-06-21",
+      "po_number": "PO-262656",
+      "subtotal": 24045.69,
+      "tax": 1202.28,
+      "total": 25247.97
+    },
+    "line_items": [
+      {
+        "description": "Hardware repair",
+        "quantity": 18,
+        "unit_price": 132.7,
+        "amount": 2388.6
+      },
+      {
+        "description": "Training workshop",
+        "quantity": 12,
+        "unit_price": 119.99,
+        "amount": 1439.88
+      },
+      {
+        "description": "IT support retainer",
+        "quantity": 13,
+        "unit_price": 483.03,
+        "amount": 6279.39
+      },
+      {
+        "description": "Marketing materials",
+        "quantity": 8,
+        "unit_price": 753.82,
+        "amount": 6030.56
+      },
+      {
+        "description": "Maintenance contract",
+        "quantity": 1,
+        "unit_price": 880.96,
+        "amount": 880.96
+      },
+      {
+        "description": "Security audit",
+        "quantity": 18,
+        "unit_price": 390.35,
+        "amount": 7026.3
+      }
+    ]
+  },
+  {
+    "file": "invoice_0135.pdf",
+    "layout": "compact",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Mccullough, Hunter and Estrada",
+      "currency": "USD",
+      "invoice_number": "INV-18819",
+      "invoice_date": "2026-05-04",
+      "due_date": "2026-06-03",
+      "po_number": "PO-205797",
+      "subtotal": 1462.78,
+      "tax": 0.0,
+      "total": 1462.78
+    },
+    "line_items": [
+      {
+        "description": "Security audit",
+        "quantity": 2,
+        "unit_price": 731.39,
+        "amount": 1462.78
+      }
+    ]
+  },
+  {
+    "file": "invoice_0136.pdf",
+    "layout": "compact",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Clark-Wright",
+      "currency": "GBP",
+      "invoice_number": "INV-28777",
+      "invoice_date": "2026-05-02",
+      "due_date": "2026-06-16",
+      "po_number": "PO-792282",
+      "subtotal": 22308.0,
+      "tax": 1840.41,
+      "total": 24148.41
+    },
+    "line_items": [
+      {
+        "description": "Cloud hosting services",
+        "quantity": 2,
+        "unit_price": 231.59,
+        "amount": 463.18
+      },
+      {
+        "description": "Training workshop",
+        "quantity": 13,
+        "unit_price": 403.48,
+        "amount": 5245.24
+      },
+      {
+        "description": "Marketing materials",
+        "quantity": 7,
+        "unit_price": 682.63,
+        "amount": 4778.41
+      },
+      {
+        "description": "Network equipment",
+        "quantity": 2,
+        "unit_price": 139.02,
+        "amount": 278.04
+      },
+      {
+        "description": "IT support retainer",
+        "quantity": 8,
+        "unit_price": 736.97,
+        "amount": 5895.76
+      },
+      {
+        "description": "Courier and freight",
+        "quantity": 19,
+        "unit_price": 297.23,
+        "amount": 5647.37
+      }
+    ]
+  },
+  {
+    "file": "invoice_0137.pdf",
+    "layout": "classic",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Vaughn, Marquez and Ross",
+      "currency": "GBP",
+      "invoice_number": "INV-64568",
+      "invoice_date": "2026-09-26",
+      "due_date": "2026-11-10",
+      "po_number": "PO-528090",
+      "subtotal": 12594.56,
+      "tax": 1259.46,
+      "total": 13854.02
+    },
+    "line_items": [
+      {
+        "description": "Courier and freight",
+        "quantity": 2,
+        "unit_price": 507.7,
+        "amount": 1015.4
+      },
+      {
+        "description": "Security audit",
+        "quantity": 6,
+        "unit_price": 569.0,
+        "amount": 3414.0
+      },
+      {
+        "description": "Data storage",
+        "quantity": 18,
+        "unit_price": 453.62,
+        "amount": 8165.16
+      }
+    ]
+  },
+  {
+    "file": "invoice_0138.pdf",
+    "layout": "modern",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Porter, Wilkerson and Day",
+      "currency": "USD",
+      "invoice_number": "INV-94765",
+      "invoice_date": "2026-04-15",
+      "due_date": "2026-05-30",
+      "po_number": "PO-182911",
+      "subtotal": 38232.86,
+      "tax": 3154.21,
+      "total": 41387.07
+    },
+    "line_items": [
+      {
+        "description": "Office supplies",
+        "quantity": 16,
+        "unit_price": 228.26,
+        "amount": 3652.16
+      },
+      {
+        "description": "Consulting hours",
+        "quantity": 10,
+        "unit_price": 773.92,
+        "amount": 7739.2
+      },
+      {
+        "description": "Training workshop",
+        "quantity": 15,
+        "unit_price": 824.55,
+        "amount": 12368.25
+      },
+      {
+        "description": "Training workshop",
+        "quantity": 14,
+        "unit_price": 871.49,
+        "amount": 12200.86
+      },
+      {
+        "description": "Office supplies",
+        "quantity": 17,
+        "unit_price": 133.67,
+        "amount": 2272.39
+      }
+    ]
+  },
+  {
+    "file": "invoice_0139.pdf",
+    "layout": "classic",
+    "expected_flags": [
+      "missing_po"
+    ],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Howard LLC",
+      "currency": "USD",
+      "invoice_number": "INV-37762",
+      "invoice_date": "2026-06-05",
+      "due_date": "2026-07-05",
+      "po_number": null,
+      "subtotal": 27479.64,
+      "tax": 2267.07,
+      "total": 29746.71
+    },
+    "line_items": [
+      {
+        "description": "Security audit",
+        "quantity": 7,
+        "unit_price": 60.61,
+        "amount": 424.27
+      },
+      {
+        "description": "Hardware repair",
+        "quantity": 20,
+        "unit_price": 548.59,
+        "amount": 10971.8
+      },
+      {
+        "description": "Marketing materials",
+        "quantity": 3,
+        "unit_price": 181.52,
+        "amount": 544.56
+      },
+      {
+        "description": "Training workshop",
+        "quantity": 19,
+        "unit_price": 656.01,
+        "amount": 12464.19
+      },
+      {
+        "description": "Hardware repair",
+        "quantity": 7,
+        "unit_price": 439.26,
+        "amount": 3074.82
+      }
+    ]
+  },
+  {
+    "file": "invoice_0140.pdf",
+    "layout": "compact",
+    "expected_flags": [
+      "total_mismatch"
+    ],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Pena, Marshall and Ramos",
+      "currency": "EUR",
+      "invoice_number": "INV-57139",
+      "invoice_date": "2026-06-07",
+      "due_date": "2026-07-22",
+      "po_number": "PO-637727",
+      "subtotal": 18559.71,
+      "tax": 1531.18,
+      "total": 20233.36
+    },
+    "line_items": [
+      {
+        "description": "IT support retainer",
+        "quantity": 8,
+        "unit_price": 630.63,
+        "amount": 5045.04
+      },
+      {
+        "description": "Office supplies",
+        "quantity": 7,
+        "unit_price": 366.02,
+        "amount": 2562.14
+      },
+      {
+        "description": "Network equipment",
+        "quantity": 18,
+        "unit_price": 299.63,
+        "amount": 5393.34
+      },
+      {
+        "description": "Printing services",
+        "quantity": 13,
+        "unit_price": 427.63,
+        "amount": 5559.19
+      }
+    ]
+  },
+  {
+    "file": "invoice_0141.pdf",
+    "layout": "compact",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Jones-Young",
+      "currency": "EUR",
+      "invoice_number": "INV-82523",
+      "invoice_date": "2026-01-09",
+      "due_date": "2026-02-23",
+      "po_number": "PO-712401",
+      "subtotal": 18317.96,
+      "tax": 915.9,
+      "total": 19233.86
+    },
+    "line_items": [
+      {
+        "description": "Cloud hosting services",
+        "quantity": 12,
+        "unit_price": 291.94,
+        "amount": 3503.28
+      },
+      {
+        "description": "IT support retainer",
+        "quantity": 19,
+        "unit_price": 779.72,
+        "amount": 14814.68
+      }
+    ]
+  },
+  {
+    "file": "invoice_0142.pdf",
+    "layout": "modern",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Vaughn, Marquez and Ross",
+      "currency": "GBP",
+      "invoice_number": "INV-94108",
+      "invoice_date": "2026-05-12",
+      "due_date": "2026-06-26",
+      "po_number": "PO-875520",
+      "subtotal": 16446.58,
+      "tax": 1356.84,
+      "total": 17803.42
+    },
+    "line_items": [
+      {
+        "description": "Security audit",
+        "quantity": 7,
+        "unit_price": 306.93,
+        "amount": 2148.51
+      },
+      {
+        "description": "Maintenance contract",
+        "quantity": 19,
+        "unit_price": 752.53,
+        "amount": 14298.07
+      }
+    ]
+  },
+  {
+    "file": "invoice_0143.pdf",
+    "layout": "classic",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Mccullough, Hunter and Estrada",
+      "currency": "USD",
+      "invoice_number": "INV-16358",
+      "invoice_date": "2026-02-08",
+      "due_date": "2026-04-09",
+      "po_number": "PO-901467",
+      "subtotal": 19725.16,
+      "tax": 0.0,
+      "total": 19725.16
+    },
+    "line_items": [
+      {
+        "description": "Training workshop",
+        "quantity": 6,
+        "unit_price": 138.86,
+        "amount": 833.16
+      },
+      {
+        "description": "API usage fees",
+        "quantity": 16,
+        "unit_price": 177.88,
+        "amount": 2846.08
+      },
+      {
+        "description": "Cloud hosting services",
+        "quantity": 18,
+        "unit_price": 891.44,
+        "amount": 16045.92
+      }
+    ]
+  },
+  {
+    "file": "invoice_0144.pdf",
+    "layout": "classic",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Walker-Velasquez",
+      "currency": "USD",
+      "invoice_number": "INV-73944",
+      "invoice_date": "2026-09-05",
+      "due_date": "2026-11-04",
+      "po_number": "PO-116495",
+      "subtotal": 5160.54,
+      "tax": 0.0,
+      "total": 5160.54
+    },
+    "line_items": [
+      {
+        "description": "Cloud hosting services",
+        "quantity": 3,
+        "unit_price": 640.85,
+        "amount": 1922.55
+      },
+      {
+        "description": "Data storage",
+        "quantity": 7,
+        "unit_price": 462.57,
+        "amount": 3237.99
+      }
+    ]
+  },
+  {
+    "file": "invoice_0145.pdf",
+    "layout": "classic",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Mitchell-Horton",
+      "currency": "USD",
+      "invoice_number": "INV-98346",
+      "invoice_date": "2026-01-09",
+      "due_date": "2026-03-10",
+      "po_number": "PO-551488",
+      "subtotal": 483.53,
+      "tax": 39.89,
+      "total": 523.42
+    },
+    "line_items": [
+      {
+        "description": "Network equipment",
+        "quantity": 1,
+        "unit_price": 483.53,
+        "amount": 483.53
+      }
+    ]
+  },
+  {
+    "file": "invoice_0146.pdf",
+    "layout": "compact",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Mejia Inc",
+      "currency": "USD",
+      "invoice_number": "INV-20566",
+      "invoice_date": "2026-06-03",
+      "due_date": "2026-08-02",
+      "po_number": "PO-785491",
+      "subtotal": 26402.93,
+      "tax": 1320.15,
+      "total": 27723.08
+    },
+    "line_items": [
+      {
+        "description": "Courier and freight",
+        "quantity": 5,
+        "unit_price": 228.26,
+        "amount": 1141.3
+      },
+      {
+        "description": "Data storage",
+        "quantity": 17,
+        "unit_price": 238.39,
+        "amount": 4052.63
+      },
+      {
+        "description": "Software license (annual)",
+        "quantity": 9,
+        "unit_price": 718.52,
+        "amount": 6466.68
+      },
+      {
+        "description": "Maintenance contract",
+        "quantity": 12,
+        "unit_price": 863.98,
+        "amount": 10367.76
+      },
+      {
+        "description": "IT support retainer",
+        "quantity": 19,
+        "unit_price": 230.24,
+        "amount": 4374.56
+      }
+    ]
+  },
+  {
+    "file": "invoice_0147.pdf",
+    "layout": "classic",
+    "expected_flags": [
+      "total_mismatch"
+    ],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Howard LLC",
+      "currency": "USD",
+      "invoice_number": "INV-40115",
+      "invoice_date": "2026-09-28",
+      "due_date": "2026-10-28",
+      "po_number": "PO-321686",
+      "subtotal": 14420.88,
+      "tax": 0.0,
+      "total": 14505.85
+    },
+    "line_items": [
+      {
+        "description": "Maintenance contract",
+        "quantity": 13,
+        "unit_price": 348.8,
+        "amount": 4534.4
+      },
+      {
+        "description": "IT support retainer",
+        "quantity": 2,
+        "unit_price": 578.52,
+        "amount": 1157.04
+      },
+      {
+        "description": "Hardware repair",
+        "quantity": 6,
+        "unit_price": 88.18,
+        "amount": 529.08
+      },
+      {
+        "description": "Data storage",
+        "quantity": 14,
+        "unit_price": 585.74,
+        "amount": 8200.36
+      }
+    ]
+  },
+  {
+    "file": "invoice_0148.pdf",
+    "layout": "compact",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Allen-Allen",
+      "currency": "USD",
+      "invoice_number": "INV-60311",
+      "invoice_date": "2026-10-04",
+      "due_date": "2026-11-18",
+      "po_number": "PO-892313",
+      "subtotal": 28344.47,
+      "tax": 2834.45,
+      "total": 31178.92
+    },
+    "line_items": [
+      {
+        "description": "Consulting hours",
+        "quantity": 19,
+        "unit_price": 597.43,
+        "amount": 11351.17
+      },
+      {
+        "description": "Office supplies",
+        "quantity": 11,
+        "unit_price": 28.86,
+        "amount": 317.46
+      },
+      {
+        "description": "Hardware repair",
+        "quantity": 19,
+        "unit_price": 142.61,
+        "amount": 2709.59
+      },
+      {
+        "description": "Network equipment",
+        "quantity": 13,
+        "unit_price": 837.05,
+        "amount": 10881.65
+      },
+      {
+        "description": "Courier and freight",
+        "quantity": 6,
+        "unit_price": 514.1,
+        "amount": 3084.6
+      }
+    ]
+  },
+  {
+    "file": "invoice_0149.pdf",
+    "layout": "compact",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Mclaughlin, Gonzalez and Reynolds",
+      "currency": "EUR",
+      "invoice_number": "INV-99088",
+      "invoice_date": "2026-08-10",
+      "due_date": "2026-09-09",
+      "po_number": "PO-714334",
+      "subtotal": 26918.88,
+      "tax": 2691.89,
+      "total": 29610.77
+    },
+    "line_items": [
+      {
+        "description": "Data storage",
+        "quantity": 3,
+        "unit_price": 458.2,
+        "amount": 1374.6
+      },
+      {
+        "description": "Office supplies",
+        "quantity": 2,
+        "unit_price": 101.45,
+        "amount": 202.9
+      },
+      {
+        "description": "Marketing materials",
+        "quantity": 3,
+        "unit_price": 316.42,
+        "amount": 949.26
+      },
+      {
+        "description": "Security audit",
+        "quantity": 20,
+        "unit_price": 860.05,
+        "amount": 17201.0
+      },
+      {
+        "description": "Network equipment",
+        "quantity": 11,
+        "unit_price": 41.22,
+        "amount": 453.42
+      },
+      {
+        "description": "Data storage",
+        "quantity": 15,
+        "unit_price": 449.18,
+        "amount": 6737.7
+      }
+    ]
+  },
+  {
+    "file": "invoice_0150.pdf",
+    "layout": "classic",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Pena, Marshall and Ramos",
+      "currency": "EUR",
+      "invoice_number": "INV-45358",
+      "invoice_date": "2026-08-16",
+      "due_date": "2026-09-30",
+      "po_number": "PO-207197",
+      "subtotal": 20517.94,
+      "tax": 1692.73,
+      "total": 22210.67
+    },
+    "line_items": [
+      {
+        "description": "IT support retainer",
+        "quantity": 10,
+        "unit_price": 721.28,
+        "amount": 7212.8
+      },
+      {
+        "description": "Consulting hours",
+        "quantity": 3,
+        "unit_price": 87.6,
+        "amount": 262.8
+      },
+      {
+        "description": "Printing services",
+        "quantity": 13,
+        "unit_price": 644.83,
+        "amount": 8382.79
+      },
+      {
+        "description": "Data storage",
+        "quantity": 5,
+        "unit_price": 669.59,
+        "amount": 3347.95
+      },
+      {
+        "description": "Cloud hosting services",
+        "quantity": 12,
+        "unit_price": 109.3,
+        "amount": 1311.6
+      }
+    ]
+  },
+  {
+    "file": "invoice_0151.pdf",
+    "layout": "compact",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Mitchell-Horton",
+      "currency": "USD",
+      "invoice_number": "INV-21101",
+      "invoice_date": "2026-07-31",
+      "due_date": "2026-09-14",
+      "po_number": "PO-860053",
+      "subtotal": 19585.65,
+      "tax": 1615.82,
+      "total": 21201.47
+    },
+    "line_items": [
+      {
+        "description": "Security audit",
+        "quantity": 18,
+        "unit_price": 505.94,
+        "amount": 9106.92
+      },
+      {
+        "description": "Data storage",
+        "quantity": 4,
+        "unit_price": 38.24,
+        "amount": 152.96
+      },
+      {
+        "description": "Courier and freight",
+        "quantity": 18,
+        "unit_price": 97.36,
+        "amount": 1752.48
+      },
+      {
+        "description": "Cloud hosting services",
+        "quantity": 11,
+        "unit_price": 779.39,
+        "amount": 8573.29
+      }
+    ]
+  },
+  {
+    "file": "invoice_0152.pdf",
+    "layout": "compact",
+    "expected_flags": [
+      "prompt_injection"
+    ],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Peterson, Carter and Moore",
+      "currency": "GBP",
+      "invoice_number": "INV-91924",
+      "invoice_date": "2026-05-09",
+      "due_date": "2026-06-08",
+      "po_number": "PO-619886",
+      "subtotal": 14529.81,
+      "tax": 1198.71,
+      "total": 15728.52
+    },
+    "line_items": [
+      {
+        "description": "Security audit",
+        "quantity": 17,
+        "unit_price": 165.08,
+        "amount": 2806.36
+      },
+      {
+        "description": "Network equipment",
+        "quantity": 6,
+        "unit_price": 137.87,
+        "amount": 827.22
+      },
+      {
+        "description": "Software license (annual)",
+        "quantity": 9,
+        "unit_price": 451.41,
+        "amount": 4062.69
+      },
+      {
+        "description": "Security audit",
+        "quantity": 6,
+        "unit_price": 399.69,
+        "amount": 2398.14
+      },
+      {
+        "description": "Software license (annual)",
+        "quantity": 10,
+        "unit_price": 443.54,
+        "amount": 4435.4
+      }
+    ]
+  },
+  {
+    "file": "invoice_0153.pdf",
+    "layout": "modern",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Larson Ltd",
+      "currency": "USD",
+      "invoice_number": "INV-67700",
+      "invoice_date": "2026-07-14",
+      "due_date": "2026-08-28",
+      "po_number": "PO-450996",
+      "subtotal": 1423.1,
+      "tax": 117.41,
+      "total": 1540.51
+    },
+    "line_items": [
+      {
+        "description": "Security audit",
+        "quantity": 5,
+        "unit_price": 284.62,
+        "amount": 1423.1
+      }
+    ]
+  },
+  {
+    "file": "invoice_0154.pdf",
+    "layout": "compact",
+    "expected_flags": [
+      "missing_po"
+    ],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Walker-Velasquez",
+      "currency": "USD",
+      "invoice_number": "INV-83905",
+      "invoice_date": "2026-07-06",
+      "due_date": "2026-08-05",
+      "po_number": null,
+      "subtotal": 32187.85,
+      "tax": 3218.78,
+      "total": 35406.63
+    },
+    "line_items": [
+      {
+        "description": "Courier and freight",
+        "quantity": 5,
+        "unit_price": 280.89,
+        "amount": 1404.45
+      },
+      {
+        "description": "Consulting hours",
+        "quantity": 7,
+        "unit_price": 438.92,
+        "amount": 3072.44
+      },
+      {
+        "description": "Network equipment",
+        "quantity": 13,
+        "unit_price": 872.32,
+        "amount": 11340.16
+      },
+      {
+        "description": "Marketing materials",
+        "quantity": 16,
+        "unit_price": 871.47,
+        "amount": 13943.52
+      },
+      {
+        "description": "Network equipment",
+        "quantity": 8,
+        "unit_price": 303.41,
+        "amount": 2427.28
+      }
+    ]
+  },
+  {
+    "file": "invoice_0155.pdf",
+    "layout": "compact",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Pena, Marshall and Ramos",
+      "currency": "EUR",
+      "invoice_number": "INV-19694",
+      "invoice_date": "2026-08-05",
+      "due_date": "2026-09-19",
+      "po_number": "PO-570880",
+      "subtotal": 16739.12,
+      "tax": 836.96,
+      "total": 17576.08
+    },
+    "line_items": [
+      {
+        "description": "Maintenance contract",
+        "quantity": 1,
+        "unit_price": 858.41,
+        "amount": 858.41
+      },
+      {
+        "description": "Network equipment",
+        "quantity": 7,
+        "unit_price": 403.03,
+        "amount": 2821.21
+      },
+      {
+        "description": "Marketing materials",
+        "quantity": 3,
+        "unit_price": 739.78,
+        "amount": 2219.34
+      },
+      {
+        "description": "Consulting hours",
+        "quantity": 14,
+        "unit_price": 610.59,
+        "amount": 8548.26
+      },
+      {
+        "description": "Printing services",
+        "quantity": 10,
+        "unit_price": 229.19,
+        "amount": 2291.9
+      }
+    ]
+  },
+  {
+    "file": "invoice_0156.pdf",
+    "layout": "compact",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Morton-Chase",
+      "currency": "USD",
+      "invoice_number": "INV-90304",
+      "invoice_date": "2026-03-27",
+      "due_date": "2026-05-26",
+      "po_number": "PO-146448",
+      "subtotal": 38791.06,
+      "tax": 3200.26,
+      "total": 41991.32
+    },
+    "line_items": [
+      {
+        "description": "Hardware repair",
+        "quantity": 17,
+        "unit_price": 832.29,
+        "amount": 14148.93
+      },
+      {
+        "description": "Marketing materials",
+        "quantity": 14,
+        "unit_price": 496.13,
+        "amount": 6945.82
+      },
+      {
+        "description": "Marketing materials",
+        "quantity": 12,
+        "unit_price": 635.95,
+        "amount": 7631.4
+      },
+      {
+        "description": "API usage fees",
+        "quantity": 18,
+        "unit_price": 540.53,
+        "amount": 9729.54
+      },
+      {
+        "description": "Office supplies",
+        "quantity": 3,
+        "unit_price": 111.79,
+        "amount": 335.37
+      }
+    ]
+  },
+  {
+    "file": "invoice_0157.pdf",
+    "layout": "classic",
+    "expected_flags": [
+      "exceeds_po"
+    ],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Carpenter LLC",
+      "currency": "GBP",
+      "invoice_number": "INV-73277",
+      "invoice_date": "2026-06-26",
+      "due_date": "2026-07-26",
+      "po_number": "PO-209627",
+      "subtotal": 32918.12,
+      "tax": 1645.91,
+      "total": 34564.03
+    },
+    "line_items": [
+      {
+        "description": "Data storage",
+        "quantity": 13,
+        "unit_price": 870.63,
+        "amount": 11318.19
+      },
+      {
+        "description": "Software license (annual)",
+        "quantity": 14,
+        "unit_price": 108.76,
+        "amount": 1522.64
+      },
+      {
+        "description": "IT support retainer",
+        "quantity": 9,
+        "unit_price": 211.47,
+        "amount": 1903.23
+      },
+      {
+        "description": "IT support retainer",
+        "quantity": 17,
+        "unit_price": 508.82,
+        "amount": 8649.94
+      },
+      {
+        "description": "Data storage",
+        "quantity": 19,
+        "unit_price": 210.61,
+        "amount": 4001.59
+      },
+      {
+        "description": "Printing services",
+        "quantity": 13,
+        "unit_price": 424.81,
+        "amount": 5522.53
+      }
+    ]
+  },
+  {
+    "file": "invoice_0158.pdf",
+    "layout": "classic",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Mccullough, Hunter and Estrada",
+      "currency": "USD",
+      "invoice_number": "INV-69303",
+      "invoice_date": "2026-02-19",
+      "due_date": "2026-04-05",
+      "po_number": "PO-434400",
+      "subtotal": 6825.57,
+      "tax": 682.56,
+      "total": 7508.13
+    },
+    "line_items": [
+      {
+        "description": "Maintenance contract",
+        "quantity": 12,
+        "unit_price": 291.02,
+        "amount": 3492.24
+      },
+      {
+        "description": "Data storage",
+        "quantity": 7,
+        "unit_price": 476.19,
+        "amount": 3333.33
+      }
+    ]
+  },
+  {
+    "file": "invoice_0159.pdf",
+    "layout": "classic",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Mclaughlin, Gonzalez and Reynolds",
+      "currency": "EUR",
+      "invoice_number": "INV-41970",
+      "invoice_date": "2026-03-26",
+      "due_date": "2026-05-25",
+      "po_number": "PO-641058",
+      "subtotal": 766.52,
+      "tax": 0.0,
+      "total": 766.52
+    },
+    "line_items": [
+      {
+        "description": "Printing services",
+        "quantity": 1,
+        "unit_price": 766.52,
+        "amount": 766.52
+      }
+    ]
+  },
+  {
+    "file": "invoice_0160.pdf",
+    "layout": "classic",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Jones-Young",
+      "currency": "EUR",
+      "invoice_number": "INV-18200",
+      "invoice_date": "2026-04-16",
+      "due_date": "2026-05-31",
+      "po_number": "PO-705393",
+      "subtotal": 48075.69,
+      "tax": 2403.78,
+      "total": 50479.47
+    },
+    "line_items": [
+      {
+        "description": "Office supplies",
+        "quantity": 14,
+        "unit_price": 863.24,
+        "amount": 12085.36
+      },
+      {
+        "description": "Consulting hours",
+        "quantity": 13,
+        "unit_price": 572.34,
+        "amount": 7440.42
+      },
+      {
+        "description": "IT support retainer",
+        "quantity": 14,
+        "unit_price": 365.09,
+        "amount": 5111.26
+      },
+      {
+        "description": "Maintenance contract",
+        "quantity": 20,
+        "unit_price": 796.54,
+        "amount": 15930.8
+      },
+      {
+        "description": "Cloud hosting services",
+        "quantity": 19,
+        "unit_price": 395.15,
+        "amount": 7507.85
+      }
+    ]
+  },
+  {
+    "file": "invoice_0161.pdf",
+    "layout": "compact",
+    "expected_flags": [
+      "total_mismatch"
+    ],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Moore, Campbell and Clark",
+      "currency": "GBP",
+      "invoice_number": "INV-51078",
+      "invoice_date": "2026-09-28",
+      "due_date": "2026-11-27",
+      "po_number": "PO-725969",
+      "subtotal": 4630.72,
+      "tax": 463.07,
+      "total": 5279.13
+    },
+    "line_items": [
+      {
+        "description": "Maintenance contract",
+        "quantity": 12,
+        "unit_price": 303.5,
+        "amount": 3642.0
+      },
+      {
+        "description": "Hardware repair",
+        "quantity": 4,
+        "unit_price": 247.18,
+        "amount": 988.72
+      }
+    ]
+  },
+  {
+    "file": "invoice_0162.pdf",
+    "layout": "modern",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Henderson-Owens",
+      "currency": "USD",
+      "invoice_number": "INV-28528",
+      "invoice_date": "2026-07-11",
+      "due_date": "2026-09-09",
+      "po_number": "PO-635638",
+      "subtotal": 14368.12,
+      "tax": 718.41,
+      "total": 15086.53
+    },
+    "line_items": [
+      {
+        "description": "Printing services",
+        "quantity": 20,
+        "unit_price": 167.69,
+        "amount": 3353.8
+      },
+      {
+        "description": "Courier and freight",
+        "quantity": 10,
+        "unit_price": 828.03,
+        "amount": 8280.3
+      },
+      {
+        "description": "Data storage",
+        "quantity": 3,
+        "unit_price": 609.82,
+        "amount": 1829.46
+      },
+      {
+        "description": "Software license (annual)",
+        "quantity": 4,
+        "unit_price": 226.14,
+        "amount": 904.56
+      }
+    ]
+  },
+  {
+    "file": "invoice_0163.pdf",
+    "layout": "modern",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Ferguson and Sons",
+      "currency": "USD",
+      "invoice_number": "INV-27895",
+      "invoice_date": "2026-01-05",
+      "due_date": "2026-02-19",
+      "po_number": "PO-304607",
+      "subtotal": 29254.39,
+      "tax": 2413.49,
+      "total": 31667.88
+    },
+    "line_items": [
+      {
+        "description": "Maintenance contract",
+        "quantity": 13,
+        "unit_price": 389.39,
+        "amount": 5062.07
+      },
+      {
+        "description": "Printing services",
+        "quantity": 18,
+        "unit_price": 628.69,
+        "amount": 11316.42
+      },
+      {
+        "description": "Maintenance contract",
+        "quantity": 6,
+        "unit_price": 506.1,
+        "amount": 3036.6
+      },
+      {
+        "description": "Data storage",
+        "quantity": 10,
+        "unit_price": 139.16,
+        "amount": 1391.6
+      },
+      {
+        "description": "Hardware repair",
+        "quantity": 15,
+        "unit_price": 563.18,
+        "amount": 8447.7
+      }
+    ]
+  },
+  {
+    "file": "invoice_0164.pdf",
+    "layout": "modern",
+    "expected_flags": [
+      "exceeds_po"
+    ],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Medina PLC",
+      "currency": "GBP",
+      "invoice_number": "INV-76952",
+      "invoice_date": "2026-09-11",
+      "due_date": "2026-11-10",
+      "po_number": "PO-218710",
+      "subtotal": 23677.53,
+      "tax": 2367.75,
+      "total": 26045.28
+    },
+    "line_items": [
+      {
+        "description": "Maintenance contract",
+        "quantity": 16,
+        "unit_price": 377.08,
+        "amount": 6033.28
+      },
+      {
+        "description": "Maintenance contract",
+        "quantity": 14,
+        "unit_price": 643.48,
+        "amount": 9008.72
+      },
+      {
+        "description": "Courier and freight",
+        "quantity": 16,
+        "unit_price": 163.02,
+        "amount": 2608.32
+      },
+      {
+        "description": "Office supplies",
+        "quantity": 1,
+        "unit_price": 719.35,
+        "amount": 719.35
+      },
+      {
+        "description": "Office supplies",
+        "quantity": 10,
+        "unit_price": 43.94,
+        "amount": 439.4
+      },
+      {
+        "description": "Marketing materials",
+        "quantity": 18,
+        "unit_price": 270.47,
+        "amount": 4868.46
+      }
+    ]
+  },
+  {
+    "file": "invoice_0165.pdf",
+    "layout": "compact",
+    "expected_flags": [
+      "total_mismatch"
+    ],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Henderson-Owens",
+      "currency": "USD",
+      "invoice_number": "INV-41056",
+      "invoice_date": "2026-08-13",
+      "due_date": "2026-09-12",
+      "po_number": "PO-320073",
+      "subtotal": 13733.59,
+      "tax": 0.0,
+      "total": 13992.6
+    },
+    "line_items": [
+      {
+        "description": "Maintenance contract",
+        "quantity": 2,
+        "unit_price": 687.6,
+        "amount": 1375.2
+      },
+      {
+        "description": "Security audit",
+        "quantity": 18,
+        "unit_price": 208.41,
+        "amount": 3751.38
+      },
+      {
+        "description": "Printing services",
+        "quantity": 4,
+        "unit_price": 666.35,
+        "amount": 2665.4
+      },
+      {
+        "description": "Cloud hosting services",
+        "quantity": 8,
+        "unit_price": 278.47,
+        "amount": 2227.76
+      },
+      {
+        "description": "Hardware repair",
+        "quantity": 15,
+        "unit_price": 247.59,
+        "amount": 3713.85
+      }
+    ]
+  },
+  {
+    "file": "invoice_0166.pdf",
+    "layout": "compact",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Porter, Wilkerson and Day",
+      "currency": "USD",
+      "invoice_number": "INV-17770",
+      "invoice_date": "2026-03-11",
+      "due_date": "2026-04-25",
+      "po_number": "PO-390794",
+      "subtotal": 20138.24,
+      "tax": 0.0,
+      "total": 20138.24
+    },
+    "line_items": [
+      {
+        "description": "Hardware repair",
+        "quantity": 5,
+        "unit_price": 709.59,
+        "amount": 3547.95
+      },
+      {
+        "description": "Courier and freight",
+        "quantity": 7,
+        "unit_price": 727.81,
+        "amount": 5094.67
+      },
+      {
+        "description": "Courier and freight",
+        "quantity": 12,
+        "unit_price": 486.07,
+        "amount": 5832.84
+      },
+      {
+        "description": "IT support retainer",
+        "quantity": 18,
+        "unit_price": 164.01,
+        "amount": 2952.18
+      },
+      {
+        "description": "Network equipment",
+        "quantity": 10,
+        "unit_price": 271.06,
+        "amount": 2710.6
+      }
+    ]
+  },
+  {
+    "file": "invoice_0167.pdf",
+    "layout": "modern",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Ferguson and Sons",
+      "currency": "USD",
+      "invoice_number": "INV-85684",
+      "invoice_date": "2026-09-08",
+      "due_date": "2026-10-08",
+      "po_number": "PO-763121",
+      "subtotal": 8734.1,
+      "tax": 873.41,
+      "total": 9607.51
+    },
+    "line_items": [
+      {
+        "description": "Hardware repair",
+        "quantity": 5,
+        "unit_price": 644.58,
+        "amount": 3222.9
+      },
+      {
+        "description": "Printing services",
+        "quantity": 8,
+        "unit_price": 688.9,
+        "amount": 5511.2
+      }
+    ]
+  },
+  {
+    "file": "invoice_0168.pdf",
+    "layout": "modern",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Morton-Chase",
+      "currency": "USD",
+      "invoice_number": "INV-22208",
+      "invoice_date": "2026-01-02",
+      "due_date": "2026-03-03",
+      "po_number": "PO-866437",
+      "subtotal": 13519.05,
+      "tax": 1115.32,
+      "total": 14634.37
+    },
+    "line_items": [
+      {
+        "description": "API usage fees",
+        "quantity": 3,
+        "unit_price": 575.76,
+        "amount": 1727.28
+      },
+      {
+        "description": "IT support retainer",
+        "quantity": 3,
+        "unit_price": 371.52,
+        "amount": 1114.56
+      },
+      {
+        "description": "API usage fees",
+        "quantity": 9,
+        "unit_price": 629.81,
+        "amount": 5668.29
+      },
+      {
+        "description": "Maintenance contract",
+        "quantity": 12,
+        "unit_price": 417.41,
+        "amount": 5008.92
+      }
+    ]
+  },
+  {
+    "file": "invoice_0169.pdf",
+    "layout": "compact",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Mclaughlin, Gonzalez and Reynolds",
+      "currency": "EUR",
+      "invoice_number": "INV-85750",
+      "invoice_date": "2026-06-22",
+      "due_date": "2026-08-21",
+      "po_number": "PO-236937",
+      "subtotal": 11429.78,
+      "tax": 942.96,
+      "total": 12372.74
+    },
+    "line_items": [
+      {
+        "description": "Security audit",
+        "quantity": 3,
+        "unit_price": 719.17,
+        "amount": 2157.51
+      },
+      {
+        "description": "Hardware repair",
+        "quantity": 7,
+        "unit_price": 871.79,
+        "amount": 6102.53
+      },
+      {
+        "description": "Data storage",
+        "quantity": 7,
+        "unit_price": 452.82,
+        "amount": 3169.74
+      }
+    ]
+  },
+  {
+    "file": "invoice_0170.pdf",
+    "layout": "classic",
+    "expected_flags": [
+      "duplicate"
+    ],
+    "duplicate_of": "invoice_0094.pdf",
+    "fields": {
+      "vendor_name": "Pena, Marshall and Ramos",
+      "currency": "EUR",
+      "invoice_number": "INV-13495",
+      "invoice_date": "2026-08-19",
+      "due_date": "2026-10-03",
+      "po_number": "PO-535050",
+      "subtotal": 7466.25,
+      "tax": 373.31,
+      "total": 7839.56
+    },
+    "line_items": [
+      {
+        "description": "Training workshop",
+        "quantity": 9,
+        "unit_price": 412.65,
+        "amount": 3713.85
+      },
+      {
+        "description": "Software license (annual)",
+        "quantity": 5,
+        "unit_price": 750.48,
+        "amount": 3752.4
+      }
+    ]
+  },
+  {
+    "file": "invoice_0171.pdf",
+    "layout": "compact",
+    "expected_flags": [
+      "duplicate"
+    ],
+    "duplicate_of": "invoice_0015.pdf",
+    "fields": {
+      "vendor_name": "Morton-Chase",
+      "currency": "USD",
+      "invoice_number": "INV-65444",
+      "invoice_date": "2026-08-21",
+      "due_date": "2026-10-05",
+      "po_number": "PO-830429",
+      "subtotal": 2102.34,
+      "tax": 173.44,
+      "total": 2275.78
+    },
+    "line_items": [
+      {
+        "description": "Security audit",
+        "quantity": 6,
+        "unit_price": 350.39,
+        "amount": 2102.34
+      }
+    ]
+  },
+  {
+    "file": "invoice_0172.pdf",
+    "layout": "modern",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Walker-Velasquez",
+      "currency": "USD",
+      "invoice_number": "INV-95798",
+      "invoice_date": "2026-05-21",
+      "due_date": "2026-06-20",
+      "po_number": "PO-477943",
+      "subtotal": 9253.39,
+      "tax": 462.67,
+      "total": 9716.06
+    },
+    "line_items": [
+      {
+        "description": "Hardware repair",
+        "quantity": 1,
+        "unit_price": 124.95,
+        "amount": 124.95
+      },
+      {
+        "description": "Cloud hosting services",
+        "quantity": 6,
+        "unit_price": 405.54,
+        "amount": 2433.24
+      },
+      {
+        "description": "IT support retainer",
+        "quantity": 14,
+        "unit_price": 194.05,
+        "amount": 2716.7
+      },
+      {
+        "description": "Network equipment",
+        "quantity": 5,
+        "unit_price": 795.7,
+        "amount": 3978.5
+      }
+    ]
+  },
+  {
+    "file": "invoice_0173.pdf",
+    "layout": "classic",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Carpenter LLC",
+      "currency": "GBP",
+      "invoice_number": "INV-65353",
+      "invoice_date": "2026-06-25",
+      "due_date": "2026-07-25",
+      "po_number": "PO-827744",
+      "subtotal": 21045.36,
+      "tax": 0.0,
+      "total": 21045.36
+    },
+    "line_items": [
+      {
+        "description": "Printing services",
+        "quantity": 6,
+        "unit_price": 60.83,
+        "amount": 364.98
+      },
+      {
+        "description": "Marketing materials",
+        "quantity": 10,
+        "unit_price": 657.5,
+        "amount": 6575.0
+      },
+      {
+        "description": "Software license (annual)",
+        "quantity": 8,
+        "unit_price": 394.87,
+        "amount": 3158.96
+      },
+      {
+        "description": "Maintenance contract",
+        "quantity": 4,
+        "unit_price": 15.96,
+        "amount": 63.84
+      },
+      {
+        "description": "Office supplies",
+        "quantity": 3,
+        "unit_price": 132.44,
+        "amount": 397.32
+      },
+      {
+        "description": "Cloud hosting services",
+        "quantity": 17,
+        "unit_price": 616.78,
+        "amount": 10485.26
+      }
+    ]
+  },
+  {
+    "file": "invoice_0174.pdf",
+    "layout": "compact",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Peterson, Carter and Moore",
+      "currency": "GBP",
+      "invoice_number": "INV-83831",
+      "invoice_date": "2026-02-05",
+      "due_date": "2026-04-06",
+      "po_number": "PO-108886",
+      "subtotal": 7432.02,
+      "tax": 371.6,
+      "total": 7803.62
+    },
+    "line_items": [
+      {
+        "description": "Software license (annual)",
+        "quantity": 3,
+        "unit_price": 661.73,
+        "amount": 1985.19
+      },
+      {
+        "description": "API usage fees",
+        "quantity": 4,
+        "unit_price": 292.32,
+        "amount": 1169.28
+      },
+      {
+        "description": "Marketing materials",
+        "quantity": 10,
+        "unit_price": 136.36,
+        "amount": 1363.6
+      },
+      {
+        "description": "Printing services",
+        "quantity": 5,
+        "unit_price": 582.79,
+        "amount": 2913.95
+      }
+    ]
+  },
+  {
+    "file": "invoice_0175.pdf",
+    "layout": "modern",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Larson Ltd",
+      "currency": "USD",
+      "invoice_number": "INV-60335",
+      "invoice_date": "2026-03-05",
+      "due_date": "2026-05-04",
+      "po_number": "PO-468611",
+      "subtotal": 12481.21,
+      "tax": 624.06,
+      "total": 13105.27
+    },
+    "line_items": [
+      {
+        "description": "Consulting hours",
+        "quantity": 7,
+        "unit_price": 570.85,
+        "amount": 3995.95
+      },
+      {
+        "description": "Maintenance contract",
+        "quantity": 14,
+        "unit_price": 560.23,
+        "amount": 7843.22
+      },
+      {
+        "description": "Software license (annual)",
+        "quantity": 7,
+        "unit_price": 91.72,
+        "amount": 642.04
+      }
+    ]
+  },
+  {
+    "file": "invoice_0176.pdf",
+    "layout": "compact",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Ferguson and Sons",
+      "currency": "USD",
+      "invoice_number": "INV-49537",
+      "invoice_date": "2026-01-14",
+      "due_date": "2026-03-15",
+      "po_number": "PO-315425",
+      "subtotal": 15113.25,
+      "tax": 1246.84,
+      "total": 16360.09
+    },
+    "line_items": [
+      {
+        "description": "Office supplies",
+        "quantity": 9,
+        "unit_price": 585.49,
+        "amount": 5269.41
+      },
+      {
+        "description": "IT support retainer",
+        "quantity": 18,
+        "unit_price": 546.88,
+        "amount": 9843.84
+      }
+    ]
+  },
+  {
+    "file": "invoice_0177.pdf",
+    "layout": "modern",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Burton Ltd",
+      "currency": "USD",
+      "invoice_number": "INV-99514",
+      "invoice_date": "2026-07-07",
+      "due_date": "2026-09-05",
+      "po_number": "PO-281162",
+      "subtotal": 32520.52,
+      "tax": 3252.05,
+      "total": 35772.57
+    },
+    "line_items": [
+      {
+        "description": "Cloud hosting services",
+        "quantity": 13,
+        "unit_price": 276.55,
+        "amount": 3595.15
+      },
+      {
+        "description": "Software license (annual)",
+        "quantity": 8,
+        "unit_price": 452.98,
+        "amount": 3623.84
+      },
+      {
+        "description": "Courier and freight",
+        "quantity": 8,
+        "unit_price": 457.13,
+        "amount": 3657.04
+      },
+      {
+        "description": "Cloud hosting services",
+        "quantity": 3,
+        "unit_price": 482.53,
+        "amount": 1447.59
+      },
+      {
+        "description": "Consulting hours",
+        "quantity": 12,
+        "unit_price": 841.52,
+        "amount": 10098.24
+      },
+      {
+        "description": "Courier and freight",
+        "quantity": 13,
+        "unit_price": 776.82,
+        "amount": 10098.66
+      }
+    ]
+  },
+  {
+    "file": "invoice_0178.pdf",
+    "layout": "modern",
+    "expected_flags": [
+      "exceeds_po"
+    ],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Pena, Marshall and Ramos",
+      "currency": "EUR",
+      "invoice_number": "INV-17925",
+      "invoice_date": "2026-04-21",
+      "due_date": "2026-05-21",
+      "po_number": "PO-927630",
+      "subtotal": 534.82,
+      "tax": 44.12,
+      "total": 578.94
+    },
+    "line_items": [
+      {
+        "description": "Cloud hosting services",
+        "quantity": 1,
+        "unit_price": 534.82,
+        "amount": 534.82
+      }
+    ]
+  },
+  {
+    "file": "invoice_0179.pdf",
+    "layout": "compact",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Medina PLC",
+      "currency": "GBP",
+      "invoice_number": "INV-61213",
+      "invoice_date": "2026-10-02",
+      "due_date": "2026-11-16",
+      "po_number": "PO-714923",
+      "subtotal": 32651.32,
+      "tax": 1632.57,
+      "total": 34283.89
+    },
+    "line_items": [
+      {
+        "description": "Software license (annual)",
+        "quantity": 14,
+        "unit_price": 636.1,
+        "amount": 8905.4
+      },
+      {
+        "description": "Consulting hours",
+        "quantity": 18,
+        "unit_price": 490.82,
+        "amount": 8834.76
+      },
+      {
+        "description": "Software license (annual)",
+        "quantity": 9,
+        "unit_price": 88.98,
+        "amount": 800.82
+      },
+      {
+        "description": "Marketing materials",
+        "quantity": 17,
+        "unit_price": 830.02,
+        "amount": 14110.34
+      }
+    ]
+  },
+  {
+    "file": "invoice_0180.pdf",
+    "layout": "classic",
+    "expected_flags": [
+      "total_mismatch"
+    ],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Walker-Velasquez",
+      "currency": "USD",
+      "invoice_number": "INV-77793",
+      "invoice_date": "2026-06-27",
+      "due_date": "2026-08-26",
+      "po_number": "PO-921021",
+      "subtotal": 8223.01,
+      "tax": 822.3,
+      "total": 9099.56
+    },
+    "line_items": [
+      {
+        "description": "Security audit",
+        "quantity": 3,
+        "unit_price": 289.5,
+        "amount": 868.5
+      },
+      {
+        "description": "Software license (annual)",
+        "quantity": 8,
+        "unit_price": 66.25,
+        "amount": 530.0
+      },
+      {
+        "description": "Courier and freight",
+        "quantity": 14,
+        "unit_price": 117.65,
+        "amount": 1647.1
+      },
+      {
+        "description": "Printing services",
+        "quantity": 20,
+        "unit_price": 63.7,
+        "amount": 1274.0
+      },
+      {
+        "description": "IT support retainer",
+        "quantity": 6,
+        "unit_price": 120.71,
+        "amount": 724.26
+      },
+      {
+        "description": "Consulting hours",
+        "quantity": 5,
+        "unit_price": 635.83,
+        "amount": 3179.15
+      }
+    ]
+  },
+  {
+    "file": "invoice_0181.pdf",
+    "layout": "compact",
+    "expected_flags": [
+      "total_mismatch"
+    ],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Allen-Allen",
+      "currency": "USD",
+      "invoice_number": "INV-23487",
+      "invoice_date": "2026-03-22",
+      "due_date": "2026-05-06",
+      "po_number": "PO-701790",
+      "subtotal": 42280.19,
+      "tax": 3488.12,
+      "total": 45695.93
+    },
+    "line_items": [
+      {
+        "description": "Cloud hosting services",
+        "quantity": 4,
+        "unit_price": 697.72,
+        "amount": 2790.88
+      },
+      {
+        "description": "Network equipment",
+        "quantity": 11,
+        "unit_price": 729.29,
+        "amount": 8022.19
+      },
+      {
+        "description": "IT support retainer",
+        "quantity": 17,
+        "unit_price": 71.53,
+        "amount": 1216.01
+      },
+      {
+        "description": "Maintenance contract",
+        "quantity": 19,
+        "unit_price": 570.37,
+        "amount": 10837.03
+      },
+      {
+        "description": "Cloud hosting services",
+        "quantity": 15,
+        "unit_price": 467.04,
+        "amount": 7005.6
+      },
+      {
+        "description": "Consulting hours",
+        "quantity": 16,
+        "unit_price": 775.53,
+        "amount": 12408.48
+      }
+    ]
+  },
+  {
+    "file": "invoice_0182.pdf",
+    "layout": "modern",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Rodriguez, Figueroa and Sanchez",
+      "currency": "USD",
+      "invoice_number": "INV-52179",
+      "invoice_date": "2026-08-03",
+      "due_date": "2026-09-02",
+      "po_number": "PO-360322",
+      "subtotal": 1731.92,
+      "tax": 0.0,
+      "total": 1731.92
+    },
+    "line_items": [
+      {
+        "description": "Security audit",
+        "quantity": 2,
+        "unit_price": 432.51,
+        "amount": 865.02
+      },
+      {
+        "description": "Hardware repair",
+        "quantity": 5,
+        "unit_price": 173.38,
+        "amount": 866.9
+      }
+    ]
+  },
+  {
+    "file": "invoice_0183.pdf",
+    "layout": "modern",
+    "expected_flags": [
+      "prompt_injection"
+    ],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Jones-Young",
+      "currency": "EUR",
+      "invoice_number": "INV-70960",
+      "invoice_date": "2026-07-25",
+      "due_date": "2026-08-24",
+      "po_number": "PO-396020",
+      "subtotal": 13222.68,
+      "tax": 0.0,
+      "total": 13222.68
+    },
+    "line_items": [
+      {
+        "description": "Software license (annual)",
+        "quantity": 3,
+        "unit_price": 520.81,
+        "amount": 1562.43
+      },
+      {
+        "description": "Cloud hosting services",
+        "quantity": 17,
+        "unit_price": 610.89,
+        "amount": 10385.13
+      },
+      {
+        "description": "Training workshop",
+        "quantity": 6,
+        "unit_price": 212.52,
+        "amount": 1275.12
+      }
+    ]
+  },
+  {
+    "file": "invoice_0184.pdf",
+    "layout": "modern",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Moore, Campbell and Clark",
+      "currency": "GBP",
+      "invoice_number": "INV-29735",
+      "invoice_date": "2026-10-07",
+      "due_date": "2026-11-06",
+      "po_number": "PO-106687",
+      "subtotal": 35038.51,
+      "tax": 1751.93,
+      "total": 36790.44
+    },
+    "line_items": [
+      {
+        "description": "Network equipment",
+        "quantity": 1,
+        "unit_price": 341.49,
+        "amount": 341.49
+      },
+      {
+        "description": "IT support retainer",
+        "quantity": 19,
+        "unit_price": 709.29,
+        "amount": 13476.51
+      },
+      {
+        "description": "Data storage",
+        "quantity": 20,
+        "unit_price": 229.69,
+        "amount": 4593.8
+      },
+      {
+        "description": "Marketing materials",
+        "quantity": 19,
+        "unit_price": 875.09,
+        "amount": 16626.71
+      }
+    ]
+  },
+  {
+    "file": "invoice_0185.pdf",
+    "layout": "compact",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Moore, Campbell and Clark",
+      "currency": "GBP",
+      "invoice_number": "INV-17850",
+      "invoice_date": "2026-08-03",
+      "due_date": "2026-09-17",
+      "po_number": "PO-249289",
+      "subtotal": 11889.34,
+      "tax": 594.47,
+      "total": 12483.81
+    },
+    "line_items": [
+      {
+        "description": "Cloud hosting services",
+        "quantity": 1,
+        "unit_price": 856.63,
+        "amount": 856.63
+      },
+      {
+        "description": "IT support retainer",
+        "quantity": 13,
+        "unit_price": 766.37,
+        "amount": 9962.81
+      },
+      {
+        "description": "Training workshop",
+        "quantity": 10,
+        "unit_price": 106.99,
+        "amount": 1069.9
+      }
+    ]
+  },
+  {
+    "file": "invoice_0186.pdf",
+    "layout": "modern",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Baldwin Ltd",
+      "currency": "USD",
+      "invoice_number": "INV-27499",
+      "invoice_date": "2026-02-18",
+      "due_date": "2026-04-19",
+      "po_number": "PO-768169",
+      "subtotal": 11518.4,
+      "tax": 0.0,
+      "total": 11518.4
+    },
+    "line_items": [
+      {
+        "description": "API usage fees",
+        "quantity": 17,
+        "unit_price": 380.56,
+        "amount": 6469.52
+      },
+      {
+        "description": "IT support retainer",
+        "quantity": 12,
+        "unit_price": 420.74,
+        "amount": 5048.88
+      }
+    ]
+  },
+  {
+    "file": "invoice_0187.pdf",
+    "layout": "modern",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Arnold-Patterson",
+      "currency": "USD",
+      "invoice_number": "INV-51288",
+      "invoice_date": "2026-05-30",
+      "due_date": "2026-07-14",
+      "po_number": "PO-939717",
+      "subtotal": 8417.64,
+      "tax": 420.88,
+      "total": 8838.52
+    },
+    "line_items": [
+      {
+        "description": "Consulting hours",
+        "quantity": 14,
+        "unit_price": 601.26,
+        "amount": 8417.64
+      }
+    ]
+  },
+  {
+    "file": "invoice_0188.pdf",
+    "layout": "classic",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Mccullough, Hunter and Estrada",
+      "currency": "USD",
+      "invoice_number": "INV-51160",
+      "invoice_date": "2026-08-19",
+      "due_date": "2026-10-03",
+      "po_number": "PO-526259",
+      "subtotal": 9240.1,
+      "tax": 462.01,
+      "total": 9702.11
+    },
+    "line_items": [
+      {
+        "description": "Office supplies",
+        "quantity": 11,
+        "unit_price": 415.69,
+        "amount": 4572.59
+      },
+      {
+        "description": "Consulting hours",
+        "quantity": 3,
+        "unit_price": 850.05,
+        "amount": 2550.15
+      },
+      {
+        "description": "Software license (annual)",
+        "quantity": 19,
+        "unit_price": 111.44,
+        "amount": 2117.36
+      }
+    ]
+  },
+  {
+    "file": "invoice_0189.pdf",
+    "layout": "classic",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Pena, Marshall and Ramos",
+      "currency": "EUR",
+      "invoice_number": "INV-52964",
+      "invoice_date": "2026-01-21",
+      "due_date": "2026-02-20",
+      "po_number": "PO-255528",
+      "subtotal": 4697.83,
+      "tax": 387.57,
+      "total": 5085.4
+    },
+    "line_items": [
+      {
+        "description": "Network equipment",
+        "quantity": 15,
+        "unit_price": 287.85,
+        "amount": 4317.75
+      },
+      {
+        "description": "Marketing materials",
+        "quantity": 4,
+        "unit_price": 95.02,
+        "amount": 380.08
+      }
+    ]
+  },
+  {
+    "file": "invoice_0190.pdf",
+    "layout": "classic",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Henderson-Owens",
+      "currency": "USD",
+      "invoice_number": "INV-23357",
+      "invoice_date": "2026-02-18",
+      "due_date": "2026-04-04",
+      "po_number": "PO-942946",
+      "subtotal": 16121.37,
+      "tax": 806.07,
+      "total": 16927.44
+    },
+    "line_items": [
+      {
+        "description": "Network equipment",
+        "quantity": 17,
+        "unit_price": 58.32,
+        "amount": 991.44
+      },
+      {
+        "description": "Consulting hours",
+        "quantity": 9,
+        "unit_price": 740.78,
+        "amount": 6667.02
+      },
+      {
+        "description": "Hardware repair",
+        "quantity": 1,
+        "unit_price": 857.61,
+        "amount": 857.61
+      },
+      {
+        "description": "Training workshop",
+        "quantity": 15,
+        "unit_price": 507.02,
+        "amount": 7605.3
+      }
+    ]
+  },
+  {
+    "file": "invoice_0191.pdf",
+    "layout": "classic",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Baldwin Ltd",
+      "currency": "USD",
+      "invoice_number": "INV-12857",
+      "invoice_date": "2026-05-13",
+      "due_date": "2026-06-12",
+      "po_number": "PO-167603",
+      "subtotal": 8420.07,
+      "tax": 0.0,
+      "total": 8420.07
+    },
+    "line_items": [
+      {
+        "description": "Security audit",
+        "quantity": 5,
+        "unit_price": 190.35,
+        "amount": 951.75
+      },
+      {
+        "description": "Printing services",
+        "quantity": 12,
+        "unit_price": 622.36,
+        "amount": 7468.32
+      }
+    ]
+  },
+  {
+    "file": "invoice_0192.pdf",
+    "layout": "compact",
+    "expected_flags": [
+      "prompt_injection"
+    ],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Larson Ltd",
+      "currency": "USD",
+      "invoice_number": "INV-66774",
+      "invoice_date": "2026-03-28",
+      "due_date": "2026-05-27",
+      "po_number": "PO-961599",
+      "subtotal": 3805.81,
+      "tax": 0.0,
+      "total": 3805.81
+    },
+    "line_items": [
+      {
+        "description": "Hardware repair",
+        "quantity": 3,
+        "unit_price": 815.99,
+        "amount": 2447.97
+      },
+      {
+        "description": "Maintenance contract",
+        "quantity": 11,
+        "unit_price": 123.44,
+        "amount": 1357.84
+      }
+    ]
+  },
+  {
+    "file": "invoice_0193.pdf",
+    "layout": "classic",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Rodriguez, Figueroa and Sanchez",
+      "currency": "USD",
+      "invoice_number": "INV-72787",
+      "invoice_date": "2026-07-30",
+      "due_date": "2026-09-28",
+      "po_number": "PO-163941",
+      "subtotal": 8779.88,
+      "tax": 877.99,
+      "total": 9657.87
+    },
+    "line_items": [
+      {
+        "description": "Office supplies",
+        "quantity": 14,
+        "unit_price": 167.93,
+        "amount": 2351.02
+      },
+      {
+        "description": "Maintenance contract",
+        "quantity": 6,
+        "unit_price": 258.36,
+        "amount": 1550.16
+      },
+      {
+        "description": "Courier and freight",
+        "quantity": 5,
+        "unit_price": 45.66,
+        "amount": 228.3
+      },
+      {
+        "description": "Network equipment",
+        "quantity": 20,
+        "unit_price": 232.52,
+        "amount": 4650.4
+      }
+    ]
+  },
+  {
+    "file": "invoice_0194.pdf",
+    "layout": "modern",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Ferguson and Sons",
+      "currency": "USD",
+      "invoice_number": "INV-75849",
+      "invoice_date": "2026-06-26",
+      "due_date": "2026-08-25",
+      "po_number": "PO-437226",
+      "subtotal": 26295.91,
+      "tax": 2629.59,
+      "total": 28925.5
+    },
+    "line_items": [
+      {
+        "description": "Marketing materials",
+        "quantity": 7,
+        "unit_price": 583.75,
+        "amount": 4086.25
+      },
+      {
+        "description": "Marketing materials",
+        "quantity": 17,
+        "unit_price": 235.5,
+        "amount": 4003.5
+      },
+      {
+        "description": "Security audit",
+        "quantity": 18,
+        "unit_price": 718.44,
+        "amount": 12931.92
+      },
+      {
+        "description": "Marketing materials",
+        "quantity": 12,
+        "unit_price": 439.52,
+        "amount": 5274.24
+      }
+    ]
+  },
+  {
+    "file": "invoice_0195.pdf",
+    "layout": "classic",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Rodriguez, Figueroa and Sanchez",
+      "currency": "USD",
+      "invoice_number": "INV-42487",
+      "invoice_date": "2026-03-23",
+      "due_date": "2026-04-22",
+      "po_number": "PO-788772",
+      "subtotal": 10410.86,
+      "tax": 520.54,
+      "total": 10931.4
+    },
+    "line_items": [
+      {
+        "description": "API usage fees",
+        "quantity": 20,
+        "unit_price": 208.83,
+        "amount": 4176.6
+      },
+      {
+        "description": "Maintenance contract",
+        "quantity": 9,
+        "unit_price": 66.85,
+        "amount": 601.65
+      },
+      {
+        "description": "Courier and freight",
+        "quantity": 17,
+        "unit_price": 331.33,
+        "amount": 5632.61
+      }
+    ]
+  },
+  {
+    "file": "invoice_0196.pdf",
+    "layout": "compact",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Mccullough, Hunter and Estrada",
+      "currency": "USD",
+      "invoice_number": "INV-33081",
+      "invoice_date": "2026-07-01",
+      "due_date": "2026-07-31",
+      "po_number": "PO-348041",
+      "subtotal": 4195.92,
+      "tax": 419.59,
+      "total": 4615.51
+    },
+    "line_items": [
+      {
+        "description": "Marketing materials",
+        "quantity": 8,
+        "unit_price": 524.49,
+        "amount": 4195.92
+      }
+    ]
+  },
+  {
+    "file": "invoice_0197.pdf",
+    "layout": "classic",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Mccullough, Hunter and Estrada",
+      "currency": "USD",
+      "invoice_number": "INV-90495",
+      "invoice_date": "2026-01-01",
+      "due_date": "2026-02-15",
+      "po_number": "PO-311250",
+      "subtotal": 35770.11,
+      "tax": 3577.01,
+      "total": 39347.12
+    },
+    "line_items": [
+      {
+        "description": "Cloud hosting services",
+        "quantity": 12,
+        "unit_price": 823.87,
+        "amount": 9886.44
+      },
+      {
+        "description": "Courier and freight",
+        "quantity": 12,
+        "unit_price": 853.59,
+        "amount": 10243.08
+      },
+      {
+        "description": "Office supplies",
+        "quantity": 5,
+        "unit_price": 513.35,
+        "amount": 2566.75
+      },
+      {
+        "description": "Consulting hours",
+        "quantity": 16,
+        "unit_price": 494.78,
+        "amount": 7916.48
+      },
+      {
+        "description": "Cloud hosting services",
+        "quantity": 16,
+        "unit_price": 48.6,
+        "amount": 777.6
+      },
+      {
+        "description": "Cloud hosting services",
+        "quantity": 8,
+        "unit_price": 547.47,
+        "amount": 4379.76
+      }
+    ]
+  },
+  {
+    "file": "invoice_0198.pdf",
+    "layout": "modern",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Porter, Wilkerson and Day",
+      "currency": "USD",
+      "invoice_number": "INV-23242",
+      "invoice_date": "2026-07-22",
+      "due_date": "2026-09-20",
+      "po_number": "PO-452909",
+      "subtotal": 16774.06,
+      "tax": 1383.86,
+      "total": 18157.92
+    },
+    "line_items": [
+      {
+        "description": "Courier and freight",
+        "quantity": 2,
+        "unit_price": 34.39,
+        "amount": 68.78
+      },
+      {
+        "description": "Hardware repair",
+        "quantity": 5,
+        "unit_price": 700.31,
+        "amount": 3501.55
+      },
+      {
+        "description": "Software license (annual)",
+        "quantity": 17,
+        "unit_price": 776.69,
+        "amount": 13203.73
+      }
+    ]
+  },
+  {
+    "file": "invoice_0199.pdf",
+    "layout": "compact",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Porter, Wilkerson and Day",
+      "currency": "USD",
+      "invoice_number": "INV-88956",
+      "invoice_date": "2026-01-17",
+      "due_date": "2026-02-16",
+      "po_number": "PO-433674",
+      "subtotal": 47598.85,
+      "tax": 4759.89,
+      "total": 52358.74
+    },
+    "line_items": [
+      {
+        "description": "Maintenance contract",
+        "quantity": 14,
+        "unit_price": 715.78,
+        "amount": 10020.92
+      },
+      {
+        "description": "Training workshop",
+        "quantity": 11,
+        "unit_price": 169.17,
+        "amount": 1860.87
+      },
+      {
+        "description": "Office supplies",
+        "quantity": 20,
+        "unit_price": 711.49,
+        "amount": 14229.8
+      },
+      {
+        "description": "Security audit",
+        "quantity": 19,
+        "unit_price": 735.79,
+        "amount": 13980.01
+      },
+      {
+        "description": "Network equipment",
+        "quantity": 10,
+        "unit_price": 664.59,
+        "amount": 6645.9
+      },
+      {
+        "description": "Cloud hosting services",
+        "quantity": 5,
+        "unit_price": 172.27,
+        "amount": 861.35
+      }
+    ]
+  },
+  {
+    "file": "invoice_0200.pdf",
+    "layout": "compact",
+    "expected_flags": [],
+    "duplicate_of": null,
+    "fields": {
+      "vendor_name": "Arnold-Patterson",
+      "currency": "USD",
+      "invoice_number": "INV-51879",
+      "invoice_date": "2026-05-02",
+      "due_date": "2026-06-16",
+      "po_number": "PO-276042",
+      "subtotal": 2231.52,
+      "tax": 0.0,
+      "total": 2231.52
+    },
+    "line_items": [
+      {
+        "description": "IT support retainer",
+        "quantity": 16,
+        "unit_price": 139.47,
+        "amount": 2231.52
+      }
+    ]
+  }
+]
