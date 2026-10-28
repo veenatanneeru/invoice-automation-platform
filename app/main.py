@@ -7,6 +7,7 @@ from fastapi import FastAPI, File, HTTPException, UploadFile
 from sqlalchemy import func, select
 
 from app.db import Base, Invoice, SessionLocal, engine
+from app.review import router as review_router
 
 MAX_BYTES = 10 * 1024 * 1024
 UPLOAD_DIR = Path(os.getenv("UPLOAD_DIR", "uploads"))
@@ -20,6 +21,7 @@ async def lifespan(app):
 
 
 app = FastAPI(title="Invoice Automation Platform", lifespan=lifespan)
+app.include_router(review_router)
 
 
 def view(i: Invoice) -> dict:

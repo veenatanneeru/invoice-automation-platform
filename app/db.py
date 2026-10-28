@@ -40,4 +40,7 @@ class Invoice(Base):
     flags: Mapped[list | None] = mapped_column(JSON, nullable=True)
     decision: Mapped[str | None] = mapped_column(String, index=True, nullable=True)
     seconds: Mapped[float | None] = mapped_column(Float, nullable=True)
+    review_action: Mapped[str | None] = mapped_column(String, nullable=True)
+    review_note: Mapped[str | None] = mapped_column(String, nullable=True)
+    reviewed_at: Mapped[datetime | None] = mapped_column(DateTime, nullable=True)
     created_at: Mapped[datetime] = mapped_column(DateTime, server_default=func.now())
