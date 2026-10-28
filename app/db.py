@@ -2,7 +2,7 @@ import os
 from datetime import datetime
 
 from dotenv import load_dotenv
-from sqlalchemy import JSON, DateTime, Float, String, create_engine, func
+from sqlalchemy import JSON, DateTime, Float, Integer, String, create_engine, func
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, sessionmaker
 
 load_dotenv()
@@ -29,11 +29,15 @@ class Invoice(Base):
     __tablename__ = "invoices"
     id: Mapped[int] = mapped_column(primary_key=True)
     filename: Mapped[str] = mapped_column(String)
+    file_path: Mapped[str] = mapped_column(String)
+    status: Mapped[str] = mapped_column(String, index=True, default="queued")
+    attempts: Mapped[int] = mapped_column(Integer, default=0)
+    error: Mapped[str | None] = mapped_column(String, nullable=True)
     vendor_name: Mapped[str | None] = mapped_column(String, nullable=True)
     invoice_number: Mapped[str | None] = mapped_column(String, nullable=True)
     total: Mapped[float | None] = mapped_column(Float, nullable=True)
-    fields: Mapped[dict] = mapped_column(JSON)
-    flags: Mapped[list] = mapped_column(JSON)
-    decision: Mapped[str] = mapped_column(String, index=True)
-    seconds: Mapped[float] = mapped_column(Float)
+    fields: Mapped[dict | None] = mapped_column(JSON, nullable=True)
+    flags: Mapped[list | None] = mapped_column(JSON, nullable=True)
+    decision: Mapped[str | None] = mapped_column(String, index=True, nullable=True)
+    seconds: Mapped[float | None] = mapped_column(Float, nullable=True)
     created_at: Mapped[datetime] = mapped_column(DateTime, server_default=func.now())

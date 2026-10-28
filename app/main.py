@@ -1,22 +1,20 @@
 import os
-import tempfile
-import time
 from contextlib import asynccontextmanager
 from pathlib import Path
+from uuid import uuid4
 
 from fastapi import FastAPI, File, HTTPException, UploadFile
 from sqlalchemy import func, select
 
-from app.db import Base, Invoice, PurchaseOrder, SessionLocal, engine
-from app.validation.checks import Validator
-from app.validation.decision import decide
+from app.db import Base, Invoice, SessionLocal, engine
 
 MAX_BYTES = 10 * 1024 * 1024
-EXTRACTOR = os.getenv("EXTRACTOR", "ollama")
+UPLOAD_DIR = Path(os.getenv("UPLOAD_DIR", "uploads"))
 
 
 @asynccontextmanager
 async def lifespan(app):
+    UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
     Base.metadata.create_all(engine)
     yield
 
@@ -24,20 +22,18 @@ async def lifespan(app):
 app = FastAPI(title="Invoice Automation Platform", lifespan=lifespan)
 
 
-def get_extractor():
-    if EXTRACTOR == "rules":
-        from app.extraction.rules import extract_with_rules
-        return extract_with_rules
-    from app.extraction.local import extract_with_ollama
-    return extract_with_ollama
+def view(i: Invoice) -> dict:
+    return {"id": i.id, "filename": i.filename, "status": i.status, "decision": i.decision,
+            "flags": i.flags, "fields": i.fields, "seconds": i.seconds,
+            "attempts": i.attempts, "error": i.error}
 
 
 @app.get("/health")
 def health():
-    return {"status": "ok", "extractor": EXTRACTOR}
+    return {"status": "ok"}
 
 
-@app.post("/invoices")
+@app.post("/invoices", status_code=202)
 async def upload_invoice(file: UploadFile = File(...)):
     data = await file.read(MAX_BYTES + 1)
     if len(data) > MAX_BYTES:
@@ -45,34 +41,22 @@ async def upload_invoice(file: UploadFile = File(...)):
     if not data.startswith(b"%PDF"):
         raise HTTPException(415, "Only PDF files are accepted")
 
-    start = time.time()
-    with tempfile.TemporaryDirectory() as tmp:
-        path = Path(tmp) / "upload.pdf"
-        path.write_bytes(data)
-        try:
-            fields = get_extractor()(path).model_dump()
-        except Exception as e:
-            raise HTTPException(502, f"Extraction failed: {type(e).__name__}")
-
+    path = UPLOAD_DIR / f"{uuid4().hex}.pdf"  # never use the client's filename on disk
+    path.write_bytes(data)
     with SessionLocal() as db:
-        pos = [{"po_number": p.po_number, "vendor_name": p.vendor_name,
-                "approved_amount": p.approved_amount}
-               for p in db.scalars(select(PurchaseOrder))]
-        validator = Validator(pos)
-        validator.seen = {(i.vendor_name, i.invoice_number)
-                          for i in db.scalars(select(Invoice)) if i.invoice_number}
-        flags = validator.check(fields)
-        decision = decide(flags)
-
-        row = Invoice(filename=file.filename or "upload.pdf",
-                      vendor_name=fields["vendor_name"],
-                      invoice_number=fields["invoice_number"],
-                      total=fields["total"], fields=fields, flags=flags,
-                      decision=decision, seconds=round(time.time() - start, 2))
+        row = Invoice(filename=(file.filename or "upload.pdf")[:200], file_path=str(path))
         db.add(row)
         db.commit()
-        return {"id": row.id, "decision": decision, "flags": flags, "fields": fields,
-                "seconds": row.seconds}
+        return {"id": row.id, "status": row.status}
+
+
+@app.get("/invoices/{invoice_id}")
+def get_invoice(invoice_id: int):
+    with SessionLocal() as db:
+        row = db.get(Invoice, invoice_id)
+        if row is None:
+            raise HTTPException(404, "Not found")
+        return view(row)
 
 
 @app.get("/invoices")
@@ -81,16 +65,16 @@ def list_invoices(decision: str | None = None, limit: int = 100):
         q = select(Invoice).order_by(Invoice.id.desc()).limit(min(limit, 500))
         if decision:
             q = q.where(Invoice.decision == decision)
-        return [{"id": i.id, "filename": i.filename, "vendor": i.vendor_name,
-                 "invoice_number": i.invoice_number, "total": i.total,
-                 "decision": i.decision, "flags": i.flags} for i in db.scalars(q)]
+        return [view(i) for i in db.scalars(q)]
 
 
 @app.get("/stats")
 def stats():
     with SessionLocal() as db:
-        rows = db.execute(select(Invoice.decision, func.count()).group_by(Invoice.decision)).all()
-        counts = {d: n for d, n in rows}
-        total = sum(counts.values())
-        return {"total": total, "counts": counts,
-                "automation_rate": round(counts.get("approve", 0) / total, 3) if total else None}
+        by_status = dict(db.execute(select(Invoice.status, func.count()).group_by(Invoice.status)).all())
+        by_decision = dict(db.execute(
+            select(Invoice.decision, func.count()).where(Invoice.status == "done")
+            .group_by(Invoice.decision)).all())
+        done = sum(by_decision.values())
+        return {"queue": by_status, "decisions": by_decision, "processed": done,
+                "automation_rate": round(by_decision.get("approve", 0) / done, 3) if done else None}
