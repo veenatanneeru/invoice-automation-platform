@@ -82,4 +82,3 @@ def stats():
         done = sum(by_decision.values())
         return {"queue": by_status, "decisions": by_decision, "processed": done,
                 "automation_rate": round(by_decision.get("approve", 0) / done, 3) if done else None}
-EOF
