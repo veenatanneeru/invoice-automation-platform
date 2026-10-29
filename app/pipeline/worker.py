@@ -6,6 +6,7 @@ from pathlib import Path
 from sqlalchemy import select
 
 from app.db import Base, Invoice, PurchaseOrder, SessionLocal, engine
+from app.security.scanner import scan_pdf
 from app.validation.checks import Validator
 from app.validation.decision import decide
 
@@ -58,7 +59,7 @@ def handle(job_id, path, extract):
         validator.seen = {(i.vendor_name, i.invoice_number) for i in
                           db.scalars(select(Invoice).where(Invoice.status == "done"))
                           if i.invoice_number}
-        flags = validator.check(fields)
+        flags = validator.check(fields) + scan_pdf(Path(path))
 
         job = db.get(Invoice, job_id)
         job.fields, job.flags = fields, flags
