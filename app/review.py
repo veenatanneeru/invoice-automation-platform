@@ -1,11 +1,12 @@
-"""Human review: queue of flagged invoices, PDF viewer, and approve/reject endpoint."""
+"""Human review: queue of flagged invoices, PDF viewer, and approve/reject (reviewer role only)."""
 from datetime import datetime
 
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, Depends, HTTPException
 from fastapi.responses import FileResponse, HTMLResponse
 from pydantic import BaseModel, Field
 from sqlalchemy import select
 
+from app.auth import require_reviewer
 from app.db import Invoice, SessionLocal
 
 router = APIRouter()
@@ -16,7 +17,7 @@ class ReviewIn(BaseModel):
     note: str = Field(default="", max_length=500)
 
 
-@router.get("/review/queue")
+@router.get("/review/queue", dependencies=[Depends(require_reviewer)])
 def review_queue():
     with SessionLocal() as db:
         q = (select(Invoice)
@@ -26,7 +27,7 @@ def review_queue():
         return [{"id": i.id, "fields": i.fields, "flags": i.flags} for i in db.scalars(q)]
 
 
-@router.get("/invoices/{invoice_id}/file")
+@router.get("/invoices/{invoice_id}/file", dependencies=[Depends(require_reviewer)])
 def invoice_file(invoice_id: int):
     with SessionLocal() as db:
         row = db.get(Invoice, invoice_id)
@@ -36,7 +37,7 @@ def invoice_file(invoice_id: int):
 
 
 @router.post("/invoices/{invoice_id}/review")
-def submit_review(invoice_id: int, body: ReviewIn):
+def submit_review(invoice_id: int, body: ReviewIn, reviewer: str = Depends(require_reviewer)):
     with SessionLocal() as db:
         row = db.get(Invoice, invoice_id)
         if row is None:
@@ -48,8 +49,9 @@ def submit_review(invoice_id: int, body: ReviewIn):
         row.review_action = body.action
         row.review_note = body.note
         row.reviewed_at = datetime.utcnow()
+        row.reviewed_by = reviewer
         db.commit()
-        return {"id": row.id, "review_action": row.review_action}
+        return {"id": row.id, "review_action": row.review_action, "reviewed_by": reviewer}
 
 
 PAGE = """<!doctype html>
@@ -62,13 +64,31 @@ button{margin-right:8px;padding:6px 14px;cursor:pointer}
 td{padding:2px 14px 2px 0}
 </style></head><body>
 <h1>Invoices awaiting review</h1>
-<div id="list">Loading…</div>
+<div>
+  <input id="key" type="password" placeholder="Reviewer API key" autocomplete="off">
+  <button id="signin">Sign in</button>
+</div>
+<div id="list"></div>
 <script>
+function apiKey() { return sessionStorage.getItem('apikey') || ''; }
+function api(path, opts) {
+  opts = opts || {};
+  opts.headers = Object.assign({'X-API-Key': apiKey()}, opts.headers || {});
+  return fetch(path, opts);
+}
+async function openPdf(id) {
+  const w = window.open('', '_blank');
+  const r = await api('/invoices/' + id + '/file');
+  if (!r.ok) { if (w) w.close(); alert('Could not open the PDF (' + r.status + ')'); return; }
+  const blob = await r.blob();
+  if (w) w.location = URL.createObjectURL(blob);
+}
 async function load() {
-  const r = await fetch('/review/queue');
-  const items = await r.json();
   const list = document.getElementById('list');
   list.replaceChildren();
+  const r = await api('/review/queue');
+  if (r.status === 401) { list.textContent = 'Enter a valid reviewer key to continue.'; return; }
+  const items = await r.json();
   if (!items.length) { list.textContent = 'Nothing waiting for review.'; return; }
   for (const it of items) {
     const card = document.createElement('div'); card.className = 'card';
@@ -88,8 +108,8 @@ async function load() {
       tr.insertCell().textContent = (v === null ? '—' : v);
     }
     card.appendChild(t);
-    const a = document.createElement('a');
-    a.href = '/invoices/' + it.id + '/file'; a.target = '_blank'; a.textContent = 'Open PDF';
+    const a = document.createElement('button'); a.textContent = 'Open PDF';
+    a.onclick = () => openPdf(it.id);
     card.appendChild(a);
     const note = document.createElement('input');
     note.placeholder = 'Note (optional)'; note.maxLength = 500;
@@ -98,7 +118,7 @@ async function load() {
     for (const act of ['approve', 'reject']) {
       const b = document.createElement('button'); b.textContent = act;
       b.onclick = async () => {
-        await fetch('/invoices/' + it.id + '/review', {
+        await api('/invoices/' + it.id + '/review', {
           method: 'POST', headers: {'Content-Type': 'application/json'},
           body: JSON.stringify({action: act, note: note.value})});
         load();
@@ -108,6 +128,11 @@ async function load() {
     list.appendChild(card);
   }
 }
+document.getElementById('signin').onclick = () => {
+  sessionStorage.setItem('apikey', document.getElementById('key').value);
+  document.getElementById('key').value = '';
+  load();
+};
 load();
 </script></body></html>"""
 

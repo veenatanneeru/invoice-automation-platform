@@ -43,4 +43,5 @@ class Invoice(Base):
     review_action: Mapped[str | None] = mapped_column(String, nullable=True)
     review_note: Mapped[str | None] = mapped_column(String, nullable=True)
     reviewed_at: Mapped[datetime | None] = mapped_column(DateTime, nullable=True)
+    reviewed_by: Mapped[str | None] = mapped_column(String, nullable=True)
     created_at: Mapped[datetime] = mapped_column(DateTime, server_default=func.now())

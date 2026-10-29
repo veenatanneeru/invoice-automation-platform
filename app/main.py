@@ -3,9 +3,10 @@ from contextlib import asynccontextmanager
 from pathlib import Path
 from uuid import uuid4
 
-from fastapi import FastAPI, File, HTTPException, UploadFile
+from fastapi import Depends, FastAPI, File, HTTPException, UploadFile
 from sqlalchemy import func, select
 
+from app.auth import require_reviewer, require_uploader
 from app.db import Base, Invoice, SessionLocal, engine
 from app.review import router as review_router
 
@@ -27,7 +28,8 @@ app.include_router(review_router)
 def view(i: Invoice) -> dict:
     return {"id": i.id, "filename": i.filename, "status": i.status, "decision": i.decision,
             "flags": i.flags, "fields": i.fields, "seconds": i.seconds,
-            "attempts": i.attempts, "error": i.error}
+            "attempts": i.attempts, "error": i.error, "review_action": i.review_action,
+            "reviewed_by": i.reviewed_by}
 
 
 @app.get("/health")
@@ -35,7 +37,7 @@ def health():
     return {"status": "ok"}
 
 
-@app.post("/invoices", status_code=202)
+@app.post("/invoices", status_code=202, dependencies=[Depends(require_uploader)])
 async def upload_invoice(file: UploadFile = File(...)):
     data = await file.read(MAX_BYTES + 1)
     if len(data) > MAX_BYTES:
@@ -52,7 +54,7 @@ async def upload_invoice(file: UploadFile = File(...)):
         return {"id": row.id, "status": row.status}
 
 
-@app.get("/invoices/{invoice_id}")
+@app.get("/invoices/{invoice_id}", dependencies=[Depends(require_reviewer)])
 def get_invoice(invoice_id: int):
     with SessionLocal() as db:
         row = db.get(Invoice, invoice_id)
@@ -61,7 +63,7 @@ def get_invoice(invoice_id: int):
         return view(row)
 
 
-@app.get("/invoices")
+@app.get("/invoices", dependencies=[Depends(require_reviewer)])
 def list_invoices(decision: str | None = None, limit: int = 100):
     with SessionLocal() as db:
         q = select(Invoice).order_by(Invoice.id.desc()).limit(min(limit, 500))
@@ -70,7 +72,7 @@ def list_invoices(decision: str | None = None, limit: int = 100):
         return [view(i) for i in db.scalars(q)]
 
 
-@app.get("/stats")
+@app.get("/stats", dependencies=[Depends(require_reviewer)])
 def stats():
     with SessionLocal() as db:
         by_status = dict(db.execute(select(Invoice.status, func.count()).group_by(Invoice.status)).all())
@@ -80,3 +82,4 @@ def stats():
         done = sum(by_decision.values())
         return {"queue": by_status, "decisions": by_decision, "processed": done,
                 "automation_rate": round(by_decision.get("approve", 0) / done, 3) if done else None}
+EOF
