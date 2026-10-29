@@ -1,4 +1,3 @@
-cat > scripts/diagnose.py << 'EOF'
 """Show what an extractor returns for one text invoice and one scanned invoice."""
 import json
 from pathlib import Path
@@ -12,4 +11,3 @@ for want_scanned in (False, True):
     print("=====", lab["file"], "scanned" if want_scanned else "text PDF")
     print("GOT:     ", local.extract_with_ollama(path).model_dump())
     print("EXPECTED:", lab["fields"])
-EOF
